@@ -28,3 +28,6 @@ jobs:
         with:
           commit_message: "Refresh dashboard data"
           file_pattern: data/dashboard.json
+
+      - name: Publish refreshed site
+        run: git push origin HEAD:gh-pages --force
