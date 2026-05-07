@@ -1,0 +1,11 @@
+{
+  "name": "personal-market-brief-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check app.js && node --check scripts/update-data.js",
+    "refresh": "node scripts/update-data.js",
+    "serve": "npx serve ."
+  }
+}

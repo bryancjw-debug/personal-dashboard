@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f7f5">
+    <title>Bryan's Market Brief</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar" aria-label="Dashboard header">
+        <div>
+          <p class="eyebrow">Personal financial advisor dashboard</p>
+          <h1>Market Brief</h1>
+          <p class="lede">Daily view of market movers, Singapore policy signals, FX, crypto, commodities, and official source links.</p>
+        </div>
+        <div class="status-panel" id="refresh-status" aria-live="polite">
+          <span class="status-dot"></span>
+          <span>Loading latest snapshot...</span>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero-grid" aria-label="Dashboard summary">
+          <article class="summary-card primary-card">
+            <div>
+              <p class="card-kicker">Today</p>
+              <h2 id="today-title">Checking the tape</h2>
+              <p id="today-summary">Fetching the latest daily snapshot and source health.</p>
+            </div>
+            <a class="button button-dark" href="#official-sources">Review sources</a>
+          </article>
+
+          <article class="summary-card">
+            <p class="card-kicker">Coverage</p>
+            <h2>News, policy, markets, FX</h2>
+            <p>Grouped for a fast one-page scan before client meetings.</p>
+          </article>
+
+          <article class="summary-card">
+            <p class="card-kicker">Refresh</p>
+            <h2>Daily at 06:30 SGT</h2>
+            <p>GitHub Actions refreshes the data file and redeploys the site.</p>
+          </article>
+        </section>
+
+        <section class="dashboard-grid" aria-label="Dashboard cards">
+          <article class="card span-2">
+            <div class="card-header">
+              <div>
+                <p class="card-kicker">World</p>
+                <h2>Finance and technology headlines</h2>
+              </div>
+              <a class="button" href="https://www.reuters.com/business/" target="_blank" rel="noopener">Reuters</a>
+            </div>
+            <div class="list" id="world-news">
+              <div class="loading-row"></div>
+              <div class="loading-row short"></div>
+            </div>
+          </article>
+
+          <article class="card span-2">
+            <div class="card-header">
+              <div>
+                <p class="card-kicker">Singapore</p>
+                <h2>Policy, finance, tech, and insurance</h2>
+              </div>
+              <a class="button" href="https://www.gov.sg/" target="_blank" rel="noopener">gov.sg</a>
+            </div>
+            <div class="list" id="singapore-news">
+              <div class="loading-row"></div>
+              <div class="loading-row short"></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <div>
+                <p class="card-kicker">US equities</p>
+                <h2>Top gainers</h2>
+              </div>
+              <a class="button" href="https://www.nasdaq.com/market-activity/stocks/screener" target="_blank" rel="noopener">NASDAQ</a>
+            </div>
+            <div class="market-list" id="us-gainers"></div>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <div>
+                <p class="card-kicker">Singapore equities</p>
+                <h2>SGX movers</h2>
+              </div>
+              <a class="button" href="https://www.sgx.com/securities/stock-screener" target="_blank" rel="noopener">SGX</a>
+            </div>
+            <div class="market-list" id="sgx-gainers"></div>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <div>
+                <p class="card-kicker">Funds</p>
+                <h2>Unit trusts</h2>
+              </div>
+              <a class="button" href="https://eservices.mas.gov.sg/fid" target="_blank" rel="noopener">MAS FID</a>
+            </div>
+            <div class="market-list" id="fund-gainers"></div>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <div>
+                <p class="card-kicker">Digital assets</p>
+                <h2>Crypto movers</h2>
+              </div>
+              <a class="button" href="https://www.coingecko.com/" target="_blank" rel="noopener">CoinGecko</a>
+            </div>
+            <div class="market-list" id="crypto-prices"></div>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <div>
+                <p class="card-kicker">Real assets</p>
+                <h2>Commodities</h2>
+              </div>
+              <a class="button" href="https://www.cmegroup.com/markets.html" target="_blank" rel="noopener">CME</a>
+            </div>
+            <div class="market-list" id="commodity-prices"></div>
+          </article>
+
+          <article class="card span-2">
+            <div class="card-header">
+              <div>
+                <p class="card-kicker">Currency</p>
+                <h2>FX against SGD</h2>
+              </div>
+              <a class="button" href="https://eservices.mas.gov.sg/Statistics/msb/ExchangeRates.aspx" target="_blank" rel="noopener">MAS rates</a>
+            </div>
+            <div class="fx-grid" id="fx-rates"></div>
+          </article>
+        </section>
+
+        <section class="source-section" id="official-sources" aria-label="Official source links">
+          <div class="section-heading">
+            <p class="card-kicker">Source desk</p>
+            <h2>Official links for deeper checks</h2>
+          </div>
+          <div class="source-grid" id="source-links"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
