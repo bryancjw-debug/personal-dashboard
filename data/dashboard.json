@@ -1,10 +1,8 @@
 {
-  "generatedAt": "2026-05-07T05:06:31.301Z",
-  "health": "partial",
-  "errors": [
-    "SGX gainers: https://sginvestors.io/market/sgx-top-gainers-by-percent returned 403"
-  ],
-  "summary": "Captured 41 updates. 1 source needs manual verification.",
+  "generatedAt": "2026-05-07T05:17:33.919Z",
+  "health": "ok",
+  "errors": [],
+  "summary": "Captured 49 updates across news, markets, FX, crypto, commodities, and Singapore policy sources.",
   "news": {
     "world": [
       {
@@ -186,7 +184,64 @@
         "url": "https://www.nasdaq.com/market-activity/stocks/acls"
       }
     ],
-    "sgxGainers": [],
+    "sgxGainers": [
+      {
+        "symbol": "SGX:J36",
+        "name": "Jardine Matheson watchlist",
+        "price": 68.77,
+        "changePct": 2.4277638146700222,
+        "url": "https://www.sgx.com/securities/equities/J36"
+      },
+      {
+        "symbol": "SGX:BN4",
+        "name": "Keppel watchlist",
+        "price": 11.11,
+        "changePct": 1.368612785866263,
+        "url": "https://www.sgx.com/securities/equities/BN4"
+      },
+      {
+        "symbol": "SGX:C6L",
+        "name": "Singapore Airlines watchlist",
+        "price": 6.33,
+        "changePct": 0.6359306580216378,
+        "url": "https://www.sgx.com/securities/equities/C6L"
+      },
+      {
+        "symbol": "SGX:D05",
+        "name": "DBS Group watchlist",
+        "price": 59,
+        "changePct": 0.2548879010504451,
+        "url": "https://www.sgx.com/securities/equities/D05"
+      },
+      {
+        "symbol": "SGX:C09",
+        "name": "City Developments watchlist",
+        "price": 8.27,
+        "changePct": 0.24242424242423727,
+        "url": "https://www.sgx.com/securities/equities/C09"
+      },
+      {
+        "symbol": "SGX:Z74",
+        "name": "Singtel watchlist",
+        "price": 4.6,
+        "changePct": 0.21786159214986084,
+        "url": "https://www.sgx.com/securities/equities/Z74"
+      },
+      {
+        "symbol": "SGX:O39",
+        "name": "OCBC Bank watchlist",
+        "price": 22.04,
+        "changePct": 0.18181818181817794,
+        "url": "https://www.sgx.com/securities/equities/O39"
+      },
+      {
+        "symbol": "SGX:G13",
+        "name": "Genting Singapore watchlist",
+        "price": 0.685,
+        "changePct": -3.4805631086519864e-7,
+        "url": "https://www.sgx.com/securities/equities/G13"
+      }
+    ],
     "fundGainers": [
       {
         "symbol": "Fund centres",
@@ -228,36 +283,36 @@
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price": 102738,
-        "changePct": -0.6311,
+        "price": 102806,
+        "changePct": -0.57319,
         "url": "https://www.coingecko.com/en/coins/bitcoin"
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price": 2954.56,
-        "changePct": -1.76053,
+        "price": 2954.58,
+        "changePct": -1.79486,
         "url": "https://www.coingecko.com/en/coins/ethereum"
       },
       {
         "symbol": "XRP",
         "name": "XRP",
         "price": 1.79,
-        "changePct": -1.09491,
+        "changePct": -0.78508,
         "url": "https://www.coingecko.com/en/coins/ripple"
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price": 816.92,
-        "changePct": 1.26949,
+        "price": 817.41,
+        "changePct": 1.35457,
         "url": "https://www.coingecko.com/en/coins/binancecoin"
       },
       {
         "symbol": "SOL",
         "name": "Solana",
-        "price": 112.23,
-        "changePct": 1.64661,
+        "price": 112.24,
+        "changePct": 1.58046,
         "url": "https://www.coingecko.com/en/coins/solana"
       }
     ],
@@ -265,36 +320,36 @@
       {
         "symbol": "GC",
         "name": "Gold futures",
-        "price": 4703,
-        "changePct": 0.4506738310592102,
+        "price": 4707.6,
+        "changePct": 0.5489245432903199,
         "url": "https://www.cmegroup.com/search.html?q=Gold%20futures"
       },
       {
         "symbol": "SI",
         "name": "Silver futures",
-        "price": 78.175,
-        "changePct": 1.7757912848832145,
+        "price": 78.36,
+        "changePct": 2.0166422140511533,
         "url": "https://www.cmegroup.com/search.html?q=Silver%20futures"
       },
       {
         "symbol": "CL",
         "name": "WTI crude futures",
-        "price": 95.65,
-        "changePct": 0.5994932246195513,
+        "price": 95.71,
+        "changePct": 0.6625979772957246,
         "url": "https://www.cmegroup.com/search.html?q=WTI%20crude%20futures"
       },
       {
         "symbol": "BZ",
         "name": "Brent crude futures",
-        "price": 101.7,
-        "changePct": 0.4246108138515845,
+        "price": 101.9,
+        "changePct": 0.6221026738591617,
         "url": "https://www.cmegroup.com/search.html?q=Brent%20crude%20futures"
       },
       {
         "symbol": "HG",
         "name": "Copper futures",
-        "price": 6.1935,
-        "changePct": 0.9288701923581296,
+        "price": 6.196,
+        "changePct": 0.9696100285542779,
         "url": "https://www.cmegroup.com/search.html?q=Copper%20futures"
       }
     ]

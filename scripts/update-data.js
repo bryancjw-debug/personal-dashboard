@@ -229,23 +229,71 @@ async function fetchUsGainers() {
 
 async function fetchSgxGainers() {
   const url = "https://sginvestors.io/market/sgx-top-gainers-by-percent";
-  const html = await getText(url);
-  const text = cleanHtml(html).replace(/\s+/g, " ");
-  const pattern = /([A-Z0-9&'(). -]{4,80}) \(SGX:([A-Z0-9]+)\).*?SGD\s*([0-9.]+)\s*\+([0-9.]+)\s*\(\+([0-9.]+)%\)/g;
-  const items = [];
-  let match;
+  try {
+    const html = await getText(url);
+    const text = cleanHtml(html).replace(/\s+/g, " ");
+    const pattern = /([A-Z0-9&'(). -]{4,80}) \(SGX:([A-Z0-9]+)\).*?SGD\s*([0-9.]+)\s*\+([0-9.]+)\s*\(\+([0-9.]+)%\)/g;
+    const items = [];
+    let match;
 
-  while ((match = pattern.exec(text)) && items.length < 8) {
-    items.push({
-      symbol: `SGX:${match[2]}`,
-      name: titleCase(match[1]),
-      price: Number(match[3]),
-      changePct: Number(match[5]),
-      url: `https://www.sgx.com/securities/equities/${match[2]}`
-    });
+    while ((match = pattern.exec(text)) && items.length < 8) {
+      items.push({
+        symbol: `SGX:${match[2]}`,
+        name: titleCase(match[1]),
+        price: Number(match[3]),
+        changePct: Number(match[5]),
+        url: `https://www.sgx.com/securities/equities/${match[2]}`
+      });
+    }
+
+    if (items.length) return items;
+  } catch {
+    // Fall through to the liquid-name watchlist when the broad mover page blocks automation.
   }
 
-  return items;
+  return fetchSgxWatchlistGainers();
+}
+
+async function fetchSgxWatchlistGainers() {
+  const watchlist = [
+    ["D05.SI", "DBS Group"],
+    ["O39.SI", "OCBC Bank"],
+    ["U11.SI", "UOB"],
+    ["Z74.SI", "Singtel"],
+    ["S68.SI", "Singapore Exchange"],
+    ["C38U.SI", "CapitaLand Integrated Commercial Trust"],
+    ["C09.SI", "City Developments"],
+    ["J36.SI", "Jardine Matheson"],
+    ["BN4.SI", "Keppel"],
+    ["C6L.SI", "Singapore Airlines"],
+    ["G13.SI", "Genting Singapore"],
+    ["A17U.SI", "CapitaLand Ascendas REIT"]
+  ];
+
+  const settled = await Promise.allSettled(watchlist.map(async ([symbol, name]) => {
+    const json = await getJson(`https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?range=5d&interval=1d`);
+    const result = json?.chart?.result?.[0];
+    const meta = result?.meta || {};
+    const closes = result?.indicators?.quote?.[0]?.close?.filter((value) => Number.isFinite(value)) || [];
+    const last = Number(meta.regularMarketPrice || closes.at(-1));
+    const prev = Number(closes.at(-2) || meta.chartPreviousClose);
+    const changePct = prev ? ((last - prev) / prev) * 100 : null;
+    const code = symbol.replace(".SI", "");
+    return {
+      symbol: `SGX:${code}`,
+      name,
+      price: last,
+      changePct,
+      url: `https://www.sgx.com/securities/equities/${code}`
+    };
+  }));
+
+  return settled
+    .filter((result) => result.status === "fulfilled" && Number.isFinite(result.value.changePct))
+    .map((result) => result.value)
+    .sort((a, b) => b.changePct - a.changePct)
+    .slice(0, 8)
+    .map((item) => ({ ...item, name: `${item.name} watchlist` }));
 }
 
 async function fetchCrypto() {
