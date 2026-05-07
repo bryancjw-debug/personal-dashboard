@@ -42,17 +42,77 @@ const singaporeKeywords = [
 const officialLinks = {
   sgx: "https://www.sgx.com/securities/stock-screener",
   us: "https://www.nasdaq.com/market-activity/stocks/screener",
-  funds: "https://eservices.mas.gov.sg/fid",
+  etfs: "https://www.sgx.com/securities/etf",
   cme: "https://www.cmegroup.com/markets.html",
   masFx: "https://eservices.mas.gov.sg/Statistics/msb/ExchangeRates.aspx"
 };
 
-const fundCentreLinks = [
-  { symbol: "Fund centres", name: "MAS Financial Institutions Directory", value: "Official lookup", changePct: null, url: "https://eservices.mas.gov.sg/fid" },
-  { symbol: "Great Eastern", name: "GreatLink fund prices and factsheets", value: "Open", changePct: null, url: "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/investment-linked-plans/fund-prices.html" },
-  { symbol: "Lion Global", name: "Singapore fund prices and literature", value: "Open", changePct: null, url: "https://www.lionglobalinvestors.com/en/fund-centre.html" },
-  { symbol: "Fullerton", name: "Fund prices and factsheets", value: "Open", changePct: null, url: "https://www.fullertonfund.com/fund-prices" },
-  { symbol: "Eastspring", name: "Singapore funds and factsheets", value: "Open", changePct: null, url: "https://www.eastspring.com/sg/funds" }
+const sgxWatchlist = [
+  ["D05.SI", "DBS Group"],
+  ["O39.SI", "OCBC Bank"],
+  ["U11.SI", "UOB"],
+  ["Z74.SI", "Singtel"],
+  ["S68.SI", "Singapore Exchange"],
+  ["C38U.SI", "CapitaLand Integrated Commercial Trust"],
+  ["C09.SI", "City Developments"],
+  ["J36.SI", "Jardine Matheson"],
+  ["BN4.SI", "Keppel"],
+  ["C6L.SI", "Singapore Airlines"],
+  ["G13.SI", "Genting Singapore"],
+  ["A17U.SI", "CapitaLand Ascendas REIT"],
+  ["M44U.SI", "Mapletree Logistics Trust"],
+  ["N2IU.SI", "Mapletree Pan Asia Commercial Trust"],
+  ["T82U.SI", "Suntec REIT"],
+  ["F34.SI", "Wilmar"],
+  ["S58.SI", "SATS"],
+  ["BS6.SI", "Yangzijiang Shipbuilding"],
+  ["Y92.SI", "Thai Beverage"],
+  ["C07.SI", "Jardine Cycle & Carriage"]
+];
+
+const etfWatchlist = [
+  ["SPY", "SPDR S&P 500 ETF", "US ETF"],
+  ["QQQ", "Invesco QQQ Trust", "US ETF"],
+  ["IWM", "iShares Russell 2000 ETF", "US ETF"],
+  ["DIA", "SPDR Dow Jones Industrial Average ETF", "US ETF"],
+  ["VTI", "Vanguard Total Stock Market ETF", "US ETF"],
+  ["VEA", "Vanguard FTSE Developed Markets ETF", "US ETF"],
+  ["VWO", "Vanguard FTSE Emerging Markets ETF", "US ETF"],
+  ["TLT", "iShares 20+ Year Treasury Bond ETF", "US ETF"],
+  ["HYG", "iShares iBoxx High Yield Corporate Bond ETF", "US ETF"],
+  ["GLD", "SPDR Gold Shares", "US ETF"],
+  ["SLV", "iShares Silver Trust", "US ETF"],
+  ["USO", "United States Oil Fund", "US ETF"],
+  ["ES3.SI", "SPDR Straits Times Index ETF", "SG ETF"],
+  ["G3B.SI", "Nikko AM Singapore STI ETF", "SG ETF"],
+  ["A35.SI", "ABF Singapore Bond Index Fund", "SG ETF"],
+  ["CLR.SI", "Lion-OCBC Securities Singapore Low Carbon ETF", "SG ETF"],
+  ["CFA.SI", "NikkoAM-StraitsTrading Asia ex Japan REIT ETF", "SG ETF"],
+  ["OVQ.SI", "Lion-OCBC Securities Hang Seng TECH ETF", "SG ETF"],
+  ["HST.SI", "Lion-OCBC Securities Hang Seng TECH ETF", "SG ETF"],
+  ["MBH.SI", "Nikko AM SGD Investment Grade Corporate Bond ETF", "SG ETF"]
+];
+
+const commodityWatchlist = [
+  ["GC=F", "Gold futures"],
+  ["SI=F", "Silver futures"],
+  ["PL=F", "Platinum futures"],
+  ["PA=F", "Palladium futures"],
+  ["HG=F", "Copper futures"],
+  ["CL=F", "WTI crude futures"],
+  ["BZ=F", "Brent crude futures"],
+  ["NG=F", "Natural gas futures"],
+  ["HO=F", "Heating oil futures"],
+  ["RB=F", "RBOB gasoline futures"],
+  ["ZC=F", "Corn futures"],
+  ["ZW=F", "Wheat futures"],
+  ["ZS=F", "Soybean futures"],
+  ["KC=F", "Coffee futures"],
+  ["CC=F", "Cocoa futures"],
+  ["CT=F", "Cotton futures"],
+  ["SB=F", "Sugar futures"],
+  ["LE=F", "Live cattle futures"],
+  ["HE=F", "Lean hog futures"]
 ];
 
 async function main() {
@@ -67,13 +127,14 @@ async function main() {
     }
   };
 
-  const [world, singapore, usGainers, sgxGainers, crypto, commodities, fx] = await Promise.all([
+  const [world, singapore, us, sgx, etfs, crypto, commodities, fx] = await Promise.all([
     safe("World news", () => collectNews(sourcePages.world, 7)),
     safe("Singapore news", () => collectNews(sourcePages.singapore, 8)),
-    safe("US gainers", fetchUsGainers),
-    safe("SGX gainers", fetchSgxGainers),
-    safe("Crypto", fetchCrypto),
-    safe("Commodities", fetchCommodities),
+    safe("US market movers", fetchUsMovers, emptyMovers()),
+    safe("SGX market movers", fetchSgxMovers, emptyMovers()),
+    safe("ETF movers", fetchEtfMovers, emptyMovers()),
+    safe("Crypto movers", fetchCryptoMovers, emptyMovers()),
+    safe("Commodity movers", fetchCommodityMovers, emptyMovers()),
     safe("FX", fetchFx)
   ]);
 
@@ -81,12 +142,12 @@ async function main() {
     generatedAt,
     health: errors.length ? "partial" : "ok",
     errors,
-    summary: buildSummary({ world, singapore, usGainers, sgxGainers, crypto, commodities, fx }, errors),
+    summary: buildSummary({ world, singapore, us, sgx, etfs, crypto, commodities, fx }, errors),
     news: { world, singapore },
     markets: {
-      usGainers,
-      sgxGainers,
-      fundGainers: fundCentreLinks,
+      us,
+      sgx,
+      etfs,
       crypto,
       commodities
     },
@@ -100,11 +161,23 @@ async function main() {
 }
 
 function buildSummary(groups, errors = []) {
-  const counts = Object.values(groups).map((items) => items?.length || 0);
+  const counts = Object.values(groups).map(countItems);
   const captured = counts.reduce((sum, count) => sum + count, 0);
   if (captured && errors.length) return `Captured ${captured} updates. ${errors.length} source ${errors.length === 1 ? "needs" : "need"} manual verification.`;
   if (!captured) return "Refresh completed, but source data was limited. Use the official source links for direct checks.";
   return `Captured ${captured} updates across news, markets, FX, crypto, commodities, and Singapore policy sources.`;
+}
+
+function emptyMovers() {
+  return { gainers: [], losers: [] };
+}
+
+function countItems(value) {
+  if (Array.isArray(value)) return value.length;
+  if (value && typeof value === "object") {
+    return (value.gainers?.length || 0) + (value.losers?.length || 0);
+  }
+  return 0;
 }
 
 async function collectNews(sources, limit) {
@@ -214,17 +287,66 @@ function looksLikeNavigation(title) {
   ].some((word) => lower.includes(word));
 }
 
-async function fetchUsGainers() {
-  const url = "https://query1.finance.yahoo.com/v1/finance/screener/predefined/saved?scrIds=day_gainers&count=10";
+async function fetchUsMovers() {
+  const [gainers, losers] = await Promise.all([
+    fetchYahooScreener("day_gainers"),
+    fetchYahooScreener("day_losers")
+  ]);
+  return { gainers, losers };
+}
+
+async function fetchYahooScreener(screenId) {
+  const url = `https://query1.finance.yahoo.com/v1/finance/screener/predefined/saved?scrIds=${screenId}&count=15`;
   const json = await getJson(url);
   const quotes = json?.finance?.result?.[0]?.quotes || [];
-  return quotes.slice(0, 8).map((quote) => ({
+  return quotes.slice(0, 15).map((quote) => ({
     symbol: quote.symbol,
     name: quote.shortName || quote.longName || "US listed equity",
     price: quote.regularMarketPrice,
     changePct: quote.regularMarketChangePercent,
     url: `https://www.nasdaq.com/market-activity/stocks/${String(quote.symbol).toLowerCase()}`
   }));
+}
+
+async function fetchSgxMovers() {
+  const broad = await fetchSgxBroadMovers();
+  if (broad.gainers.length || broad.losers.length) return broad;
+  return moversFromWatchlist(sgxWatchlist, "SGX equity", (symbol) => `https://www.sgx.com/securities/equities/${symbol.replace(".SI", "")}`);
+}
+
+async function fetchSgxBroadMovers() {
+  const [gainers, losers] = await Promise.all([
+    scrapeSgxMovers("https://sginvestors.io/market/sgx-top-gainers-by-percent", "gainers"),
+    scrapeSgxMovers("https://sginvestors.io/market/sgx-top-losers-by-percent", "losers")
+  ]);
+  return { gainers, losers };
+}
+
+async function scrapeSgxMovers(url, type) {
+  try {
+    const sign = type === "losers" ? "-" : "+";
+    const escapedSign = sign === "+" ? "\\+" : "-";
+    const html = await getText(url);
+    const text = cleanHtml(html).replace(/\s+/g, " ");
+    const pattern = new RegExp(`([A-Z0-9&'(). -]{4,80}) \\(SGX:([A-Z0-9]+)\\).*?SGD\\s*([0-9.]+)\\s*${escapedSign}([0-9.]+)\\s*\\(${escapedSign}([0-9.]+)%\\)`, "g");
+    const items = [];
+    let match;
+
+    while ((match = pattern.exec(text)) && items.length < 15) {
+      const changePct = Number(match[5]) * (type === "losers" ? -1 : 1);
+      items.push({
+        symbol: `SGX:${match[2]}`,
+        name: titleCase(match[1]),
+        price: Number(match[3]),
+        changePct,
+        url: `https://www.sgx.com/securities/equities/${match[2]}`
+      });
+    }
+
+    return items;
+  } catch {
+    return [];
+  }
 }
 
 async function fetchSgxGainers() {
@@ -255,22 +377,53 @@ async function fetchSgxGainers() {
 }
 
 async function fetchSgxWatchlistGainers() {
-  const watchlist = [
-    ["D05.SI", "DBS Group"],
-    ["O39.SI", "OCBC Bank"],
-    ["U11.SI", "UOB"],
-    ["Z74.SI", "Singtel"],
-    ["S68.SI", "Singapore Exchange"],
-    ["C38U.SI", "CapitaLand Integrated Commercial Trust"],
-    ["C09.SI", "City Developments"],
-    ["J36.SI", "Jardine Matheson"],
-    ["BN4.SI", "Keppel"],
-    ["C6L.SI", "Singapore Airlines"],
-    ["G13.SI", "Genting Singapore"],
-    ["A17U.SI", "CapitaLand Ascendas REIT"]
-  ];
+  const { gainers } = await moversFromWatchlist(sgxWatchlist, "SGX equity", (symbol) => `https://www.sgx.com/securities/equities/${symbol.replace(".SI", "")}`);
+  return gainers;
+}
 
-  const settled = await Promise.allSettled(watchlist.map(async ([symbol, name]) => {
+async function fetchEtfMovers() {
+  return moversFromWatchlist(etfWatchlist, "ETF", (symbol) => {
+    if (symbol.endsWith(".SI")) return `https://www.sgx.com/securities/etf/${symbol.replace(".SI", "")}`;
+    return `https://www.nasdaq.com/market-activity/etf/${symbol.toLowerCase()}`;
+  });
+}
+
+async function fetchCryptoMovers() {
+  const url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=sgd&order=market_cap_desc&per_page=60&page=1&sparkline=false&price_change_percentage=24h";
+  const json = await getJson(url);
+  const items = json.map((coin) => ({
+    symbol: String(coin.symbol || "").toUpperCase(),
+    name: coin.name,
+    price: coin.current_price,
+    changePct: coin.price_change_percentage_24h,
+    url: `https://www.coingecko.com/en/coins/${coin.id}`
+  })).filter((item) => Number.isFinite(item.changePct));
+  return splitMovers(items);
+}
+
+async function fetchCommodityMovers() {
+  return moversFromWatchlist(commodityWatchlist, "Commodity", (symbol, name) => `https://www.cmegroup.com/search.html?q=${encodeURIComponent(name)}`);
+}
+
+async function moversFromWatchlist(watchlist, label, urlFor) {
+  const settled = await Promise.allSettled(watchlist.map(async ([symbol, name, group]) => {
+    const quote = await fetchYahooChartQuote(symbol);
+    return {
+      symbol: displaySymbol(symbol),
+      name: group ? `${name} · ${group}` : `${name} · ${label}`,
+      price: quote.price,
+      changePct: quote.changePct,
+      url: urlFor(symbol, name)
+    };
+  }));
+
+  const items = settled
+    .filter((result) => result.status === "fulfilled" && Number.isFinite(result.value.changePct))
+    .map((result) => result.value);
+  return splitMovers(items);
+}
+
+async function fetchYahooChartQuote(symbol) {
     const json = await getJson(`https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?range=5d&interval=1d`);
     const result = json?.chart?.result?.[0];
     const meta = result?.meta || {};
@@ -278,64 +431,19 @@ async function fetchSgxWatchlistGainers() {
     const last = Number(meta.regularMarketPrice || closes.at(-1));
     const prev = Number(closes.at(-2) || meta.chartPreviousClose);
     const changePct = prev ? ((last - prev) / prev) * 100 : null;
-    const code = symbol.replace(".SI", "");
-    return {
-      symbol: `SGX:${code}`,
-      name,
-      price: last,
-      changePct,
-      url: `https://www.sgx.com/securities/equities/${code}`
-    };
-  }));
-
-  return settled
-    .filter((result) => result.status === "fulfilled" && Number.isFinite(result.value.changePct))
-    .map((result) => result.value)
-    .sort((a, b) => b.changePct - a.changePct)
-    .slice(0, 8)
-    .map((item) => ({ ...item, name: `${item.name} watchlist` }));
+    return { price: last, changePct };
 }
 
-async function fetchCrypto() {
-  const url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=sgd&ids=bitcoin,ethereum,solana,ripple,binancecoin&order=market_cap_desc&per_page=5&page=1&sparkline=false&price_change_percentage=24h";
-  const json = await getJson(url);
-  return json.map((coin) => ({
-    symbol: String(coin.symbol || "").toUpperCase(),
-    name: coin.name,
-    price: coin.current_price,
-    changePct: coin.price_change_percentage_24h,
-    url: `https://www.coingecko.com/en/coins/${coin.id}`
-  }));
+function splitMovers(items) {
+  const valid = items.filter((item) => Number.isFinite(item.changePct));
+  return {
+    gainers: [...valid].sort((a, b) => b.changePct - a.changePct).slice(0, 15),
+    losers: [...valid].sort((a, b) => a.changePct - b.changePct).slice(0, 15)
+  };
 }
 
-async function fetchCommodities() {
-  const symbols = [
-    ["GC=F", "Gold futures"],
-    ["SI=F", "Silver futures"],
-    ["CL=F", "WTI crude futures"],
-    ["BZ=F", "Brent crude futures"],
-    ["HG=F", "Copper futures"]
-  ];
-
-  const settled = await Promise.allSettled(symbols.map(async ([symbol, name]) => {
-    const encoded = encodeURIComponent(symbol);
-    const json = await getJson(`https://query1.finance.yahoo.com/v8/finance/chart/${encoded}?range=5d&interval=1d`);
-    const result = json?.chart?.result?.[0];
-    const meta = result?.meta || {};
-    const closes = result?.indicators?.quote?.[0]?.close?.filter((value) => Number.isFinite(value)) || [];
-    const last = Number(meta.regularMarketPrice || closes.at(-1));
-    const prev = Number(closes.at(-2) || meta.chartPreviousClose);
-    const changePct = prev ? ((last - prev) / prev) * 100 : null;
-    return {
-      symbol: symbol.replace("=F", ""),
-      name,
-      price: last,
-      changePct,
-      url: `https://www.cmegroup.com/search.html?q=${encodeURIComponent(name)}`
-    };
-  }));
-
-  return settled.filter((result) => result.status === "fulfilled").map((result) => result.value);
+function displaySymbol(symbol) {
+  return symbol.replace("=F", "").replace(".SI", "");
 }
 
 async function fetchFx() {
@@ -449,11 +557,11 @@ main().catch(async (error) => {
     summary: `Refresh failed: ${error.message}. Official source links remain available.`,
     news: { world: [], singapore: [] },
     markets: {
-      usGainers: [],
-      sgxGainers: [],
-      fundGainers: fundCentreLinks,
-      crypto: [],
-      commodities: []
+      us: emptyMovers(),
+      sgx: emptyMovers(),
+      etfs: emptyMovers(),
+      crypto: emptyMovers(),
+      commodities: emptyMovers()
     },
     fx: [],
     officialLinks

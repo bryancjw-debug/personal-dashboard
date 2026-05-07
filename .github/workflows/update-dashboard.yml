@@ -2,7 +2,7 @@ name: Update dashboard data
 
 on:
   schedule:
-    - cron: "30 22 * * *"
+    - cron: "0 23 * * *"
   workflow_dispatch:
 
 permissions:

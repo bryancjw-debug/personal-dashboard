@@ -15,9 +15,15 @@
           <h1>Market Brief</h1>
           <p class="lede">Daily view of market movers, Singapore policy signals, FX, crypto, commodities, and official source links.</p>
         </div>
-        <div class="status-panel" id="refresh-status" aria-live="polite">
-          <span class="status-dot"></span>
-          <span>Loading latest snapshot...</span>
+        <div class="topbar-actions">
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+            <span class="theme-icon" aria-hidden="true"></span>
+            <span id="theme-label">Light</span>
+          </button>
+          <div class="status-panel" id="refresh-status" aria-live="polite">
+            <span class="status-dot"></span>
+            <span>Loading latest snapshot...</span>
+          </div>
         </div>
       </header>
 
@@ -40,7 +46,7 @@
 
           <article class="summary-card">
             <p class="card-kicker">Refresh</p>
-            <h2>Daily at 06:30 SGT</h2>
+            <h2>Daily at 07:00 SGT</h2>
             <p>GitHub Actions refreshes the data file and redeploys the site.</p>
           </article>
         </section>
@@ -74,18 +80,18 @@
             </div>
           </article>
 
-          <article class="card">
+          <article class="card market-card">
             <div class="card-header">
               <div>
                 <p class="card-kicker">US equities</p>
-                <h2>Top gainers</h2>
+                <h2>Market movers</h2>
               </div>
               <a class="button" href="https://www.nasdaq.com/market-activity/stocks/screener" target="_blank" rel="noopener">NASDAQ</a>
             </div>
-            <div class="market-list" id="us-gainers"></div>
+            <div class="market-panel" id="us-market"></div>
           </article>
 
-          <article class="card">
+          <article class="card market-card">
             <div class="card-header">
               <div>
                 <p class="card-kicker">Singapore equities</p>
@@ -93,21 +99,21 @@
               </div>
               <a class="button" href="https://www.sgx.com/securities/stock-screener" target="_blank" rel="noopener">SGX</a>
             </div>
-            <div class="market-list" id="sgx-gainers"></div>
+            <div class="market-panel" id="sgx-market"></div>
           </article>
 
-          <article class="card">
+          <article class="card market-card">
             <div class="card-header">
               <div>
-                <p class="card-kicker">Funds</p>
-                <h2>Unit trusts</h2>
+                <p class="card-kicker">ETFs</p>
+                <h2>SG and US ETFs</h2>
               </div>
-              <a class="button" href="https://eservices.mas.gov.sg/fid" target="_blank" rel="noopener">MAS FID</a>
+              <a class="button" href="https://www.sgx.com/securities/etf" target="_blank" rel="noopener">SGX ETF</a>
             </div>
-            <div class="market-list" id="fund-gainers"></div>
+            <div class="market-panel" id="etf-market"></div>
           </article>
 
-          <article class="card">
+          <article class="card market-card">
             <div class="card-header">
               <div>
                 <p class="card-kicker">Digital assets</p>
@@ -115,10 +121,10 @@
               </div>
               <a class="button" href="https://www.coingecko.com/" target="_blank" rel="noopener">CoinGecko</a>
             </div>
-            <div class="market-list" id="crypto-prices"></div>
+            <div class="market-panel" id="crypto-market"></div>
           </article>
 
-          <article class="card">
+          <article class="card market-card">
             <div class="card-header">
               <div>
                 <p class="card-kicker">Real assets</p>
@@ -126,7 +132,7 @@
               </div>
               <a class="button" href="https://www.cmegroup.com/markets.html" target="_blank" rel="noopener">CME</a>
             </div>
-            <div class="market-list" id="commodity-prices"></div>
+            <div class="market-panel" id="commodity-market"></div>
           </article>
 
           <article class="card span-2">

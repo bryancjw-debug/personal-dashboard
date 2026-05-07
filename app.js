@@ -12,7 +12,7 @@ const sourceLinks = [
   ["NASDAQ", "US listed equity market activity", "https://www.nasdaq.com/market-activity"],
   ["NYSE", "US exchange official market information", "https://www.nyse.com/markets"],
   ["CME Group", "Futures and commodities market reference", "https://www.cmegroup.com/markets.html"],
-  ["MAS FID", "Singapore financial institutions directory", "https://eservices.mas.gov.sg/fid"]
+  ["SGX ETFs", "Singapore-listed ETF reference and product pages", "https://www.sgx.com/securities/etf"]
 ];
 
 const fallbackData = {
@@ -24,17 +24,17 @@ const fallbackData = {
     singapore: []
   },
   markets: {
-    usGainers: [],
-    sgxGainers: [],
-    fundGainers: [],
-    crypto: [],
-    commodities: []
+    us: { gainers: [], losers: [] },
+    sgx: { gainers: [], losers: [] },
+    etfs: { gainers: [], losers: [] },
+    crypto: { gainers: [], losers: [] },
+    commodities: { gainers: [], losers: [] }
   },
   fx: []
 };
 
 const fmt = new Intl.NumberFormat("en-SG", { maximumFractionDigits: 4 });
-const compact = new Intl.NumberFormat("en-SG", { notation: "compact", maximumFractionDigits: 1 });
+const THEME_KEY = "marketBriefTheme";
 
 function text(selector, value) {
   const node = document.querySelector(selector);
@@ -68,6 +68,31 @@ function formatChange(value) {
   return `${sign}${number.toFixed(2)}%`;
 }
 
+function setTheme(theme) {
+  const resolved = theme === "dark" ? "dark" : "light";
+  document.documentElement.dataset.theme = resolved;
+  document.querySelector("meta[name='theme-color']")?.setAttribute("content", resolved === "dark" ? "#111316" : "#f7f7f5");
+
+  const button = document.getElementById("theme-toggle");
+  const label = document.getElementById("theme-label");
+  if (button && label) {
+    button.setAttribute("aria-pressed", String(resolved === "dark"));
+    button.setAttribute("aria-label", resolved === "dark" ? "Switch to light mode" : "Switch to dark mode");
+    label.textContent = resolved === "dark" ? "Dark" : "Light";
+  }
+}
+
+function initTheme() {
+  const stored = localStorage.getItem(THEME_KEY);
+  const preferred = window.matchMedia?.("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  setTheme(stored || preferred);
+  document.getElementById("theme-toggle")?.addEventListener("click", () => {
+    const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+    localStorage.setItem(THEME_KEY, next);
+    setTheme(next);
+  });
+}
+
 function renderNews(containerId, items) {
   const container = document.getElementById(containerId);
   container.replaceChildren();
@@ -97,8 +122,7 @@ function renderNews(containerId, items) {
   });
 }
 
-function renderMarket(containerId, items, emptyCopy) {
-  const container = document.getElementById(containerId);
+function renderMarketList(container, items, emptyCopy) {
   container.replaceChildren();
 
   if (!items?.length) {
@@ -106,7 +130,7 @@ function renderMarket(containerId, items, emptyCopy) {
     return;
   }
 
-  items.slice(0, 7).forEach((item) => {
+  items.slice(0, 15).forEach((item) => {
     const row = create("a", "market-row");
     row.href = item.url || "#";
     row.target = "_blank";
@@ -125,6 +149,42 @@ function renderMarket(containerId, items, emptyCopy) {
     row.append(left, right);
     container.append(row);
   });
+}
+
+function renderTabbedMarket(containerId, market, emptyCopy) {
+  const container = document.getElementById(containerId);
+  container.replaceChildren();
+
+  const gainers = market?.gainers || [];
+  const losers = market?.losers || [];
+
+  if (!gainers.length && !losers.length) {
+    container.append(emptyState(emptyCopy));
+    return;
+  }
+
+  const tabs = create("div", "tab-list");
+  const list = create("div", "market-list");
+  const buttons = [
+    ["gainers", "Top gainers", gainers],
+    ["losers", "Top losers", losers]
+  ].map(([key, label, items], index) => {
+    const button = create("button", `tab-button ${index === 0 ? "is-active" : ""}`, label);
+    button.type = "button";
+    button.setAttribute("aria-pressed", String(index === 0));
+    button.addEventListener("click", () => {
+      tabs.querySelectorAll(".tab-button").forEach((node) => {
+        node.classList.toggle("is-active", node === button);
+        node.setAttribute("aria-pressed", String(node === button));
+      });
+      renderMarketList(list, items, emptyCopy);
+    });
+    return button;
+  });
+
+  tabs.append(...buttons);
+  container.append(tabs, list);
+  renderMarketList(list, gainers.length ? gainers : losers, emptyCopy);
 }
 
 function renderFx(items) {
@@ -176,16 +236,18 @@ function updateStatus(data) {
 }
 
 function normalizeMarket(data) {
+  const legacyPair = (gainers, losers = []) => ({ gainers: gainers || [], losers: losers || [] });
   return {
-    usGainers: data.markets?.usGainers || [],
-    sgxGainers: data.markets?.sgxGainers || [],
-    fundGainers: data.markets?.fundGainers || [],
-    crypto: data.markets?.crypto || [],
-    commodities: data.markets?.commodities || []
+    us: data.markets?.us || legacyPair(data.markets?.usGainers, data.markets?.usLosers),
+    sgx: data.markets?.sgx || legacyPair(data.markets?.sgxGainers, data.markets?.sgxLosers),
+    etfs: data.markets?.etfs || legacyPair(data.markets?.fundGainers, data.markets?.fundLosers),
+    crypto: Array.isArray(data.markets?.crypto) ? legacyPair(data.markets.crypto) : (data.markets?.crypto || legacyPair()),
+    commodities: Array.isArray(data.markets?.commodities) ? legacyPair(data.markets.commodities) : (data.markets?.commodities || legacyPair())
   };
 }
 
 async function loadDashboard() {
+  initTheme();
   renderSources();
 
   let data = fallbackData;
@@ -201,11 +263,11 @@ async function loadDashboard() {
   updateStatus(data);
   renderNews("world-news", data.news?.world);
   renderNews("singapore-news", data.news?.singapore);
-  renderMarket("us-gainers", markets.usGainers, "US top gainers will populate after the market data refresh. NASDAQ is linked for official verification.");
-  renderMarket("sgx-gainers", markets.sgxGainers, "SGX movers will populate after refresh where source access is available. SGX is linked for official verification.");
-  renderMarket("fund-gainers", markets.fundGainers, "Public official unit trust gainer feeds are limited. Use MAS FID and fund-house links to verify the latest fund factsheets.");
-  renderMarket("crypto-prices", markets.crypto, "Crypto prices will populate after the daily refresh. Review exchange and product suitability before client use.");
-  renderMarket("commodity-prices", markets.commodities, "Commodity prices will populate after the daily refresh. CME is linked for official futures reference.");
+  renderTabbedMarket("us-market", markets.us, "US market movers will populate after the data refresh. NASDAQ is linked for official verification.");
+  renderTabbedMarket("sgx-market", markets.sgx, "SGX movers will populate after refresh. SGX is linked for official verification.");
+  renderTabbedMarket("etf-market", markets.etfs, "ETF movers will populate after refresh across Singapore and US ETF watchlists.");
+  renderTabbedMarket("crypto-market", markets.crypto, "Crypto movers will populate after the daily refresh. Review exchange and product suitability before client use.");
+  renderTabbedMarket("commodity-market", markets.commodities, "Commodity movers will populate after the daily refresh. CME is linked for official futures reference.");
   renderFx(data.fx);
 }
 
