@@ -5,7 +5,7 @@ A clean, mobile-first dashboard for a Singapore-based financial advisor. It grou
 ## How it updates
 
 - `scripts/update-data.js` refreshes `data/dashboard.json`.
-- `.github/workflows/update-dashboard.yml` runs daily at 07:00 Singapore time, commits the refreshed snapshot to `main`, and syncs the published `gh-pages` branch.
+- `.github/workflows/update-dashboard.yml` runs daily at 07:00 Singapore time, with a 07:10 backup trigger, commits the refreshed snapshot to `main`, and syncs the published `gh-pages` branch.
 
 ## Local commands
 

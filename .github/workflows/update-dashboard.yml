@@ -3,6 +3,7 @@ name: Update dashboard data
 on:
   schedule:
     - cron: "0 23 * * *"
+    - cron: "10 23 * * *"
   workflow_dispatch:
 
 permissions:
@@ -14,6 +15,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -23,11 +26,17 @@ jobs:
       - name: Refresh dashboard snapshot
         run: node scripts/update-data.js
 
-      - name: Commit refreshed data
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Refresh dashboard data"
-          file_pattern: data/dashboard.json
+      - name: Commit refreshed data if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/dashboard.json
+          if git diff --cached --quiet; then
+            echo "No dashboard data changes to commit."
+          else
+            git commit -m "Refresh dashboard data"
+            git push origin HEAD:main
+          fi
 
       - name: Publish refreshed site
         run: git push origin HEAD:gh-pages --force
