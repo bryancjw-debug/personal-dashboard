@@ -1,10 +1,50 @@
 {
-  "generatedAt": "2026-05-09T06:34:50.920Z",
+  "generatedAt": "2026-05-10T07:36:50.457Z",
   "health": "ok",
   "errors": [],
   "summary": "Captured 173 updates across news, markets, FX, crypto, commodities, and Singapore policy sources.",
   "news": {
     "world": [
+      {
+        "title": "Campaigners call for ban on use of weedkiller glyphosate at harvest time",
+        "url": "https://www.bbc.com/news/articles/cvgz420ee0zo?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Business",
+        "category": "World finance",
+        "date": "Sun, 10 May 2026 05:33:42 GMT",
+        "summary": "Campaigners are calling for a ban on the use of the weedkiller over health concerns."
+      },
+      {
+        "title": "Commentary: China's invisible hand is rebalancing the oil market",
+        "url": "https://www.channelnewsasia.com/commentary/iran-war-china-cuts-oil-imports-energy-prices-6109266",
+        "source": "CNA Business",
+        "category": "World finance",
+        "date": "Sun, 10 May 2026 06:00:00 +0800",
+        "summary": "Amid a global energy crisis, China has quietly slashed oil imports without having to take extreme measures, says Javier Blas for Bloomberg Opinion."
+      },
+      {
+        "title": "Pakistan to issue first 'Panda bond' next week, finance minister says",
+        "url": "https://www.channelnewsasia.com/business/pakistan-issue-first-panda-bond-next-week-finance-minister-says-6111481",
+        "source": "CNA Business",
+        "category": "World finance",
+        "date": "Sun, 10 May 2026 04:13:00 +0800",
+        "summary": null
+      },
+      {
+        "title": "How sunburn inspired a new way to store energy",
+        "url": "https://www.bbc.com/news/articles/c62l9gnx775o?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Business",
+        "category": "World finance",
+        "date": "Sat, 09 May 2026 08:28:23 GMT",
+        "summary": "Molecules that can capture heat could be a useful technology to decarbonise heating."
+      },
+      {
+        "title": "How Sir David Attenborough built 'Green Hollywood'",
+        "url": "https://www.bbc.com/news/articles/cg4pkqv1lewo?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Business",
+        "category": "World finance",
+        "date": "Sat, 09 May 2026 06:13:11 GMT",
+        "summary": "The city is responsible for 80% of the world's natural history TV shows."
+      },
       {
         "title": "US Senate Committee set to consider long-awaited crypto bill next week",
         "url": "https://www.channelnewsasia.com/business/us-senate-committee-set-consider-long-awaited-crypto-bill-next-week-6110736",
@@ -20,46 +60,6 @@
         "category": "World tech",
         "date": "Sat, 09 May 2026 01:00:00 GMT",
         "summary": "Andrew Rogers explores new tech trials helping people stay underwater for longer."
-      },
-      {
-        "title": "IMF board approves $1.22 billion disbursement to Pakistan",
-        "url": "https://www.channelnewsasia.com/business/imf-board-approves-122-billion-disbursement-pakistan-6110566",
-        "source": "CNA Business",
-        "category": "World finance",
-        "date": "Sat, 09 May 2026 05:52:59 +0800",
-        "summary": null
-      },
-      {
-        "title": "US judge will not rubber-stamp Elon Musk settlement with SEC",
-        "url": "https://www.channelnewsasia.com/business/us-judge-will-not-rubber-stamp-elon-musk-settlement-sec-6110526",
-        "source": "CNA Business",
-        "category": "World finance",
-        "date": "Sat, 09 May 2026 05:28:30 +0800",
-        "summary": null
-      },
-      {
-        "title": "Global stocks diverge, oil rises as fresh US-Iran clashes hit peace hopes",
-        "url": "https://www.channelnewsasia.com/world/us-iran-war-hormuz-stocks-market-oil-us-jobs-6110491",
-        "source": "CNA World",
-        "category": "World news",
-        "date": "Sat, 09 May 2026 05:23:00 +0800",
-        "summary": "The US added 115,000 jobs in April, helping push stock markets higher."
-      },
-      {
-        "title": "US jobs data beats expectations for second month in a row",
-        "url": "https://www.bbc.com/news/articles/cx21664lp32o?at_medium=RSS&at_campaign=rss",
-        "source": "BBC Business",
-        "category": "World finance",
-        "date": "Fri, 08 May 2026 20:41:19 GMT",
-        "summary": "The solid figures came despite rising gas prices and economic uncertainty sparked by the Iran war."
-      },
-      {
-        "title": "Honeywell's Quantinuum moves closer to public markets with US IPO filing",
-        "url": "https://www.channelnewsasia.com/business/honeywells-quantinuum-moves-closer-public-markets-us-ipo-filing-6110451",
-        "source": "CNA Business",
-        "category": "World finance",
-        "date": "Sat, 09 May 2026 04:16:27 +0800",
-        "summary": null
       }
     ],
     "singapore": [
@@ -68,7 +68,7 @@
         "url": "https://www.channelnewsasia.com/singapore/asean-regional-fuel-stockpile-summit-myanmar-6110856",
         "source": "CNA Singapore",
         "category": "Singapore news",
-        "date": "Sat, 09 May 2026 14:32:33 +0800",
+        "date": "Sat, 09 May 2026 14:32:00 +0800",
         "summary": "ASEAN already has a rice stockpile with China, Japan and Korea. The question is whether the region could pursue something similar for energy, says Singapore's prime minister."
       },
       {
@@ -778,216 +778,216 @@
     "crypto": {
       "gainers": [
         {
-          "symbol": "ONDO",
-          "name": "Ondo",
-          "price": 0.557293,
-          "changePct": 22.16836,
-          "url": "https://www.coingecko.com/en/coins/ondo-finance"
-        },
-        {
-          "symbol": "ICP",
-          "name": "Internet Computer",
-          "price": 4.75,
-          "changePct": 13.55271,
-          "url": "https://www.coingecko.com/en/coins/internet-computer"
+          "symbol": "UNI",
+          "name": "Uniswap",
+          "price": 5.12,
+          "changePct": 10.04333,
+          "url": "https://www.coingecko.com/en/coins/uniswap"
         },
         {
           "symbol": "SUI",
           "name": "Sui",
-          "price": 1.36,
-          "changePct": 11.39576,
+          "price": 1.38,
+          "changePct": 1.41148,
           "url": "https://www.coingecko.com/en/coins/sui"
         },
         {
-          "symbol": "ZEC",
-          "name": "Zcash",
-          "price": 790.45,
-          "changePct": 8.62064,
-          "url": "https://www.coingecko.com/en/coins/zcash"
-        },
-        {
-          "symbol": "ASTER",
-          "name": "Aster",
-          "price": 0.911026,
-          "changePct": 8.26606,
-          "url": "https://www.coingecko.com/en/coins/aster-2"
-        },
-        {
-          "symbol": "UNI",
-          "name": "Uniswap",
-          "price": 4.71,
-          "changePct": 8.05712,
-          "url": "https://www.coingecko.com/en/coins/uniswap"
-        },
-        {
-          "symbol": "NEAR",
-          "name": "NEAR Protocol",
-          "price": 2.02,
-          "changePct": 6.87421,
-          "url": "https://www.coingecko.com/en/coins/near"
-        },
-        {
-          "symbol": "CC",
-          "name": "Canton",
-          "price": 0.196489,
-          "changePct": 6.5883,
-          "url": "https://www.coingecko.com/en/coins/canton-network"
-        },
-        {
-          "symbol": "LINK",
-          "name": "Chainlink",
-          "price": 13.3,
-          "changePct": 6.49927,
-          "url": "https://www.coingecko.com/en/coins/chainlink"
-        },
-        {
-          "symbol": "SOL",
-          "name": "Solana",
-          "price": 118.53,
-          "changePct": 6.25678,
-          "url": "https://www.coingecko.com/en/coins/solana"
-        },
-        {
-          "symbol": "ETC",
-          "name": "Ethereum Classic",
-          "price": 12.46,
-          "changePct": 5.56144,
-          "url": "https://www.coingecko.com/en/coins/ethereum-classic"
-        },
-        {
-          "symbol": "ADA",
-          "name": "Cardano",
-          "price": 0.349473,
-          "changePct": 5.52474,
-          "url": "https://www.coingecko.com/en/coins/cardano"
-        },
-        {
-          "symbol": "AVAX",
-          "name": "Avalanche",
-          "price": 12.65,
-          "changePct": 5.36663,
-          "url": "https://www.coingecko.com/en/coins/avalanche-2"
+          "symbol": "HBAR",
+          "name": "Hedera",
+          "price": 0.11925,
+          "changePct": 0.80104,
+          "url": "https://www.coingecko.com/en/coins/hedera-hashgraph"
         },
         {
           "symbol": "AAVE",
           "name": "Aave",
-          "price": 123.24,
-          "changePct": 4.95502,
+          "price": 123.47,
+          "changePct": 0.6718,
           "url": "https://www.coingecko.com/en/coins/aave"
         },
         {
-          "symbol": "PEPE",
-          "name": "Pepe",
-          "price": 0.00000549,
-          "changePct": 4.94858,
-          "url": "https://www.coingecko.com/en/coins/pepe"
-        }
-      ],
-      "losers": [
-        {
-          "symbol": "M",
-          "name": "MemeCore",
-          "price": 4.4,
-          "changePct": -8.30837,
-          "url": "https://www.coingecko.com/en/coins/memecore"
+          "symbol": "BTC",
+          "name": "Bitcoin",
+          "price": 102348,
+          "changePct": 0.66481,
+          "url": "https://www.coingecko.com/en/coins/bitcoin"
         },
         {
-          "symbol": "TON",
-          "name": "Toncoin",
-          "price": 3.28,
-          "changePct": -6.46134,
-          "url": "https://www.coingecko.com/en/coins/the-open-network"
+          "symbol": "ZEC",
+          "name": "Zcash",
+          "price": 780.88,
+          "changePct": 0.64062,
+          "url": "https://www.coingecko.com/en/coins/zcash"
+        },
+        {
+          "symbol": "WBT",
+          "name": "WhiteBIT Coin",
+          "price": 75.53,
+          "changePct": 0.59252,
+          "url": "https://www.coingecko.com/en/coins/whitebit"
+        },
+        {
+          "symbol": "ETH",
+          "name": "Ethereum",
+          "price": 2951.03,
+          "changePct": 0.55868,
+          "url": "https://www.coingecko.com/en/coins/ethereum"
+        },
+        {
+          "symbol": "BCH",
+          "name": "Bitcoin Cash",
+          "price": 573.91,
+          "changePct": 0.54435,
+          "url": "https://www.coingecko.com/en/coins/bitcoin-cash"
+        },
+        {
+          "symbol": "TAO",
+          "name": "Bittensor",
+          "price": 397.47,
+          "changePct": 0.47723,
+          "url": "https://www.coingecko.com/en/coins/bittensor"
         },
         {
           "symbol": "LEO",
           "name": "LEO Token",
-          "price": 13.05,
-          "changePct": -0.77377,
+          "price": 13.09,
+          "changePct": 0.3429,
           "url": "https://www.coingecko.com/en/coins/leo-token"
+        },
+        {
+          "symbol": "AVAX",
+          "name": "Avalanche",
+          "price": 12.66,
+          "changePct": 0.26902,
+          "url": "https://www.coingecko.com/en/coins/avalanche-2"
+        },
+        {
+          "symbol": "CRO",
+          "name": "Cronos",
+          "price": 0.090487,
+          "changePct": 0.2496,
+          "url": "https://www.coingecko.com/en/coins/crypto-com-chain"
         },
         {
           "symbol": "XAUT",
           "name": "Tether Gold",
-          "price": 5955.39,
-          "changePct": -0.49978,
+          "price": 5970.09,
+          "changePct": 0.24878,
           "url": "https://www.coingecko.com/en/coins/tether-gold"
         },
         {
           "symbol": "PAXG",
           "name": "PAX Gold",
-          "price": 5963.05,
-          "changePct": -0.38409,
+          "price": 5973.53,
+          "changePct": 0.18464,
           "url": "https://www.coingecko.com/en/coins/pax-gold"
+        }
+      ],
+      "losers": [
+        {
+          "symbol": "WLFI",
+          "name": "World Liberty Financial",
+          "price": 0.085979,
+          "changePct": -9.73962,
+          "url": "https://www.coingecko.com/en/coins/world-liberty-financial"
+        },
+        {
+          "symbol": "ICP",
+          "name": "Internet Computer",
+          "price": 4.38,
+          "changePct": -7.51429,
+          "url": "https://www.coingecko.com/en/coins/internet-computer"
+        },
+        {
+          "symbol": "ONDO",
+          "name": "Ondo",
+          "price": 0.518582,
+          "changePct": -6.10921,
+          "url": "https://www.coingecko.com/en/coins/ondo-finance"
+        },
+        {
+          "symbol": "ASTER",
+          "name": "Aster",
+          "price": 0.886881,
+          "changePct": -3.28831,
+          "url": "https://www.coingecko.com/en/coins/aster-2"
+        },
+        {
+          "symbol": "SKY",
+          "name": "Sky",
+          "price": 0.100658,
+          "changePct": -3.13051,
+          "url": "https://www.coingecko.com/en/coins/sky"
+        },
+        {
+          "symbol": "M",
+          "name": "MemeCore",
+          "price": 4.28,
+          "changePct": -2.42756,
+          "url": "https://www.coingecko.com/en/coins/memecore"
+        },
+        {
+          "symbol": "TON",
+          "name": "Toncoin",
+          "price": 3.17,
+          "changePct": -2.27468,
+          "url": "https://www.coingecko.com/en/coins/the-open-network"
+        },
+        {
+          "symbol": "HYPE",
+          "name": "Hyperliquid",
+          "price": 54.59,
+          "changePct": -1.85921,
+          "url": "https://www.coingecko.com/en/coins/hyperliquid"
+        },
+        {
+          "symbol": "XLM",
+          "name": "Stellar",
+          "price": 0.205737,
+          "changePct": -1.75857,
+          "url": "https://www.coingecko.com/en/coins/stellar"
+        },
+        {
+          "symbol": "PEPE",
+          "name": "Pepe",
+          "price": 0.00000538,
+          "changePct": -1.73425,
+          "url": "https://www.coingecko.com/en/coins/pepe"
+        },
+        {
+          "symbol": "DOGE",
+          "name": "Dogecoin",
+          "price": 0.137573,
+          "changePct": -1.58733,
+          "url": "https://www.coingecko.com/en/coins/dogecoin"
+        },
+        {
+          "symbol": "DOT",
+          "name": "Polkadot",
+          "price": 1.71,
+          "changePct": -1.57735,
+          "url": "https://www.coingecko.com/en/coins/polkadot"
+        },
+        {
+          "symbol": "ADA",
+          "name": "Cardano",
+          "price": 0.343146,
+          "changePct": -1.51766,
+          "url": "https://www.coingecko.com/en/coins/cardano"
         },
         {
           "symbol": "PI",
           "name": "Pi Network",
-          "price": 0.221113,
-          "changePct": -0.32589,
+          "price": 0.219563,
+          "changePct": -1.11401,
           "url": "https://www.coingecko.com/en/coins/pi-network"
         },
         {
-          "symbol": "USD1",
-          "name": "USD1",
-          "price": 1.27,
-          "changePct": -0.15917,
-          "url": "https://www.coingecko.com/en/coins/usd1-wlfi"
-        },
-        {
-          "symbol": "USDF",
-          "name": "Falcon USD",
-          "price": 1.26,
-          "changePct": -0.13135,
-          "url": "https://www.coingecko.com/en/coins/falcon-finance"
-        },
-        {
-          "symbol": "DAI",
-          "name": "Dai",
-          "price": 1.27,
-          "changePct": -0.1232,
-          "url": "https://www.coingecko.com/en/coins/dai"
-        },
-        {
-          "symbol": "PYUSD",
-          "name": "PayPal USD",
-          "price": 1.27,
-          "changePct": -0.1154,
-          "url": "https://www.coingecko.com/en/coins/paypal-usd"
-        },
-        {
-          "symbol": "USDG",
-          "name": "Global Dollar",
-          "price": 1.27,
-          "changePct": -0.10852,
-          "url": "https://www.coingecko.com/en/coins/global-dollar"
-        },
-        {
-          "symbol": "USDC",
-          "name": "USDC",
-          "price": 1.27,
-          "changePct": -0.10544,
-          "url": "https://www.coingecko.com/en/coins/usd-coin"
-        },
-        {
-          "symbol": "RLUSD",
-          "name": "Ripple USD",
-          "price": 1.27,
-          "changePct": -0.09465,
-          "url": "https://www.coingecko.com/en/coins/ripple-usd"
-        },
-        {
-          "symbol": "USDT",
-          "name": "Tether",
-          "price": 1.27,
-          "changePct": -0.09065,
-          "url": "https://www.coingecko.com/en/coins/tether"
-        },
-        {
-          "symbol": "USDE",
-          "name": "Ethena USDe",
-          "price": 1.27,
-          "changePct": -0.08944,
-          "url": "https://www.coingecko.com/en/coins/ethena-usde"
+          "symbol": "XMR",
+          "name": "Monero",
+          "price": 515.63,
+          "changePct": -1.05687,
+          "url": "https://www.coingecko.com/en/coins/monero"
         }
       ]
     },
@@ -1103,8 +1103,8 @@
         {
           "symbol": "KC",
           "name": "Coffee futures · Commodity",
-          "price": 274.2,
-          "changePct": -5.789379316158771,
+          "price": 266.3,
+          "changePct": -8.503689685970382,
           "url": "https://www.cmegroup.com/search.html?q=Coffee%20futures"
         },
         {
@@ -1115,18 +1115,18 @@
           "url": "https://www.cmegroup.com/search.html?q=RBOB%20gasoline%20futures"
         },
         {
-          "symbol": "CC",
-          "name": "Cocoa futures · Commodity",
-          "price": 4241,
-          "changePct": -2.6400367309458215,
-          "url": "https://www.cmegroup.com/search.html?q=Cocoa%20futures"
-        },
-        {
           "symbol": "PA",
           "name": "Palladium futures · Commodity",
           "price": 1487.8,
           "changePct": -1.9765481527878275,
           "url": "https://www.cmegroup.com/search.html?q=Palladium%20futures"
+        },
+        {
+          "symbol": "CC",
+          "name": "Cocoa futures · Commodity",
+          "price": 4326,
+          "changePct": -0.6887052341597797,
+          "url": "https://www.cmegroup.com/search.html?q=Cocoa%20futures"
         },
         {
           "symbol": "LE",
