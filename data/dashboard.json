@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T08:14:48.676Z",
+  "generatedAt": "2026-05-12T08:15:08.471Z",
   "health": "ok",
   "errors": [],
   "summary": "Captured 173 updates across news, markets, FX, crypto, commodities, and Singapore policy sources.",
@@ -149,13 +149,6 @@
           "url": "https://www.nasdaq.com/market-activity/stocks/lqda"
         },
         {
-          "symbol": "PS",
-          "name": "Pershing Square Inc.",
-          "price": 52.09,
-          "changePct": 25.1562,
-          "url": "https://www.nasdaq.com/market-activity/stocks/ps"
-        },
-        {
           "symbol": "NVTS",
           "name": "Navitas Semiconductor Corporati",
           "price": 22.65,
@@ -198,18 +191,18 @@
           "url": "https://www.nasdaq.com/market-activity/stocks/lite"
         },
         {
-          "symbol": "CRCL",
-          "name": "Circle Internet Group, Inc.",
-          "price": 131.76,
-          "changePct": 15.9145,
-          "url": "https://www.nasdaq.com/market-activity/stocks/crcl"
-        },
-        {
           "symbol": "HIMX",
           "name": "Himax Technologies, Inc.",
           "price": 20.65,
           "changePct": 16.0764,
           "url": "https://www.nasdaq.com/market-activity/stocks/himx"
+        },
+        {
+          "symbol": "CRCL",
+          "name": "Circle Internet Group, Inc.",
+          "price": 131.76,
+          "changePct": 15.9145,
+          "url": "https://www.nasdaq.com/market-activity/stocks/crcl"
         },
         {
           "symbol": "IONQ",
@@ -231,6 +224,13 @@
           "price": 105.94,
           "changePct": 13.963,
           "url": "https://www.nasdaq.com/market-activity/stocks/blln"
+        },
+        {
+          "symbol": "HYMC",
+          "name": "Hycroft Mining Holding Corporat",
+          "price": 43.71,
+          "changePct": 13.7097,
+          "url": "https://www.nasdaq.com/market-activity/stocks/hymc"
         }
       ],
       "losers": [
@@ -365,18 +365,18 @@
           "url": "https://www.sgx.com/securities/equities/J36"
         },
         {
-          "symbol": "F34",
-          "name": "Wilmar · SGX equity",
-          "price": 3.68,
-          "changePct": 0.5464457295162173,
-          "url": "https://www.sgx.com/securities/equities/F34"
-        },
-        {
           "symbol": "S68",
           "name": "Singapore Exchange · SGX equity",
           "price": 21.05,
           "changePct": 0.4293936997068759,
           "url": "https://www.sgx.com/securities/equities/S68"
+        },
+        {
+          "symbol": "F34",
+          "name": "Wilmar · SGX equity",
+          "price": 3.67,
+          "changePct": 0.27322169220774295,
+          "url": "https://www.sgx.com/securities/equities/F34"
         },
         {
           "symbol": "C09",
@@ -405,6 +405,13 @@
           "price": 37.01,
           "changePct": 0.05406412713098868,
           "url": "https://www.sgx.com/securities/equities/U11"
+        },
+        {
+          "symbol": "M44U",
+          "name": "Mapletree Logistics Trust · SGX equity",
+          "price": 1.18,
+          "changePct": 0.000004445092345060591,
+          "url": "https://www.sgx.com/securities/equities/M44U"
         },
         {
           "symbol": "S58",
@@ -440,13 +447,6 @@
           "price": 4.71,
           "changePct": -0.8421052631578954,
           "url": "https://www.sgx.com/securities/equities/Z74"
-        },
-        {
-          "symbol": "M44U",
-          "name": "Mapletree Logistics Trust · SGX equity",
-          "price": 1.17,
-          "changePct": -0.8474532196965738,
-          "url": "https://www.sgx.com/securities/equities/M44U"
         }
       ],
       "losers": [
@@ -486,13 +486,6 @@
           "url": "https://www.sgx.com/securities/equities/C38U"
         },
         {
-          "symbol": "M44U",
-          "name": "Mapletree Logistics Trust · SGX equity",
-          "price": 1.17,
-          "changePct": -0.8474532196965738,
-          "url": "https://www.sgx.com/securities/equities/M44U"
-        },
-        {
           "symbol": "Z74",
           "name": "Singtel · SGX equity",
           "price": 4.71,
@@ -526,6 +519,13 @@
           "price": 3.25,
           "changePct": 0,
           "url": "https://www.sgx.com/securities/equities/S58"
+        },
+        {
+          "symbol": "M44U",
+          "name": "Mapletree Logistics Trust · SGX equity",
+          "price": 1.18,
+          "changePct": 0.000004445092345060591,
+          "url": "https://www.sgx.com/securities/equities/M44U"
         },
         {
           "symbol": "U11",
@@ -1006,6 +1006,13 @@
           "url": "https://www.cmegroup.com/search.html?q=Lean%20hog%20futures"
         },
         {
+          "symbol": "ZC",
+          "name": "Corn futures · Commodity",
+          "price": 475.25,
+          "changePct": 3.1470428648941944,
+          "url": "https://www.cmegroup.com/search.html?q=Corn%20futures"
+        },
+        {
           "symbol": "ZW",
           "name": "Wheat futures · Commodity",
           "price": 641.75,
@@ -1013,39 +1020,39 @@
           "url": "https://www.cmegroup.com/search.html?q=Wheat%20futures"
         },
         {
-          "symbol": "ZC",
-          "name": "Corn futures · Commodity",
-          "price": 475,
-          "changePct": 3.0927835051546393,
-          "url": "https://www.cmegroup.com/search.html?q=Corn%20futures"
-        },
-        {
           "symbol": "CL",
           "name": "WTI crude futures · Commodity",
-          "price": 100.95,
-          "changePct": 2.936678203464683,
+          "price": 100.96,
+          "changePct": 2.946875001701768,
           "url": "https://www.cmegroup.com/search.html?q=WTI%20crude%20futures"
         },
         {
           "symbol": "BZ",
           "name": "Brent crude futures · Commodity",
-          "price": 106.7,
-          "changePct": 2.38940690663374,
+          "price": 106.76,
+          "changePct": 2.4469829555034517,
           "url": "https://www.cmegroup.com/search.html?q=Brent%20crude%20futures"
         },
         {
           "symbol": "HO",
           "name": "Heating oil futures · Commodity",
-          "price": 4.0539,
-          "changePct": 2.149371681200602,
+          "price": 4.0531,
+          "changePct": 2.12921343917565,
           "url": "https://www.cmegroup.com/search.html?q=Heating%20oil%20futures"
         },
         {
           "symbol": "ZS",
           "name": "Soybean futures · Commodity",
-          "price": 1215.25,
-          "changePct": 1.2919358199624922,
+          "price": 1215.5,
+          "changePct": 1.3127734944780163,
           "url": "https://www.cmegroup.com/search.html?q=Soybean%20futures"
+        },
+        {
+          "symbol": "SB",
+          "name": "Sugar futures · Commodity",
+          "price": 15.05,
+          "changePct": 0.9389681691525357,
+          "url": "https://www.cmegroup.com/search.html?q=Sugar%20futures"
         },
         {
           "symbol": "HG",
@@ -1055,38 +1062,31 @@
           "url": "https://www.cmegroup.com/search.html?q=Copper%20futures"
         },
         {
-          "symbol": "SB",
-          "name": "Sugar futures · Commodity",
-          "price": 15.02,
-          "changePct": 0.7377609236326226,
-          "url": "https://www.cmegroup.com/search.html?q=Sugar%20futures"
-        },
-        {
           "symbol": "NG",
           "name": "Natural gas futures · Commodity",
-          "price": 2.919,
-          "changePct": 0.3092753918851672,
+          "price": 2.92,
+          "changePct": 0.3436396520399716,
           "url": "https://www.cmegroup.com/search.html?q=Natural%20gas%20futures"
         },
         {
           "symbol": "GC",
           "name": "Gold futures · Commodity",
-          "price": 4713.5,
-          "changePct": -0.11020397773238086,
+          "price": 4713,
+          "changePct": -0.12080011606082762,
           "url": "https://www.cmegroup.com/search.html?q=Gold%20futures"
         },
         {
           "symbol": "SI",
           "name": "Silver futures · Commodity",
-          "price": 85.3,
-          "changePct": -0.2164129485063877,
+          "price": 85.27,
+          "changePct": -0.2515068243744407,
           "url": "https://www.cmegroup.com/search.html?q=Silver%20futures"
         },
         {
           "symbol": "PA",
           "name": "Palladium futures · Commodity",
-          "price": 1510,
-          "changePct": -0.2510271307671528,
+          "price": 1509.5,
+          "changePct": -0.2840565919821305,
           "url": "https://www.cmegroup.com/search.html?q=Palladium%20futures"
         },
         {
@@ -1122,8 +1122,8 @@
         {
           "symbol": "PL",
           "name": "Platinum futures · Commodity",
-          "price": 2089.6,
-          "changePct": -1.2242968565351025,
+          "price": 2089.3,
+          "changePct": -1.2384779012053804,
           "url": "https://www.cmegroup.com/search.html?q=Platinum%20futures"
         },
         {
@@ -1136,37 +1136,30 @@
         {
           "symbol": "PA",
           "name": "Palladium futures · Commodity",
-          "price": 1510,
-          "changePct": -0.2510271307671528,
+          "price": 1509.5,
+          "changePct": -0.2840565919821305,
           "url": "https://www.cmegroup.com/search.html?q=Palladium%20futures"
         },
         {
           "symbol": "SI",
           "name": "Silver futures · Commodity",
-          "price": 85.3,
-          "changePct": -0.2164129485063877,
+          "price": 85.27,
+          "changePct": -0.2515068243744407,
           "url": "https://www.cmegroup.com/search.html?q=Silver%20futures"
         },
         {
           "symbol": "GC",
           "name": "Gold futures · Commodity",
-          "price": 4713.5,
-          "changePct": -0.11020397773238086,
+          "price": 4713,
+          "changePct": -0.12080011606082762,
           "url": "https://www.cmegroup.com/search.html?q=Gold%20futures"
         },
         {
           "symbol": "NG",
           "name": "Natural gas futures · Commodity",
-          "price": 2.919,
-          "changePct": 0.3092753918851672,
+          "price": 2.92,
+          "changePct": 0.3436396520399716,
           "url": "https://www.cmegroup.com/search.html?q=Natural%20gas%20futures"
-        },
-        {
-          "symbol": "SB",
-          "name": "Sugar futures · Commodity",
-          "price": 15.02,
-          "changePct": 0.7377609236326226,
-          "url": "https://www.cmegroup.com/search.html?q=Sugar%20futures"
         },
         {
           "symbol": "HG",
@@ -1176,31 +1169,38 @@
           "url": "https://www.cmegroup.com/search.html?q=Copper%20futures"
         },
         {
+          "symbol": "SB",
+          "name": "Sugar futures · Commodity",
+          "price": 15.05,
+          "changePct": 0.9389681691525357,
+          "url": "https://www.cmegroup.com/search.html?q=Sugar%20futures"
+        },
+        {
           "symbol": "ZS",
           "name": "Soybean futures · Commodity",
-          "price": 1215.25,
-          "changePct": 1.2919358199624922,
+          "price": 1215.5,
+          "changePct": 1.3127734944780163,
           "url": "https://www.cmegroup.com/search.html?q=Soybean%20futures"
         },
         {
           "symbol": "HO",
           "name": "Heating oil futures · Commodity",
-          "price": 4.0539,
-          "changePct": 2.149371681200602,
+          "price": 4.0531,
+          "changePct": 2.12921343917565,
           "url": "https://www.cmegroup.com/search.html?q=Heating%20oil%20futures"
         },
         {
           "symbol": "BZ",
           "name": "Brent crude futures · Commodity",
-          "price": 106.7,
-          "changePct": 2.38940690663374,
+          "price": 106.76,
+          "changePct": 2.4469829555034517,
           "url": "https://www.cmegroup.com/search.html?q=Brent%20crude%20futures"
         },
         {
           "symbol": "CL",
           "name": "WTI crude futures · Commodity",
-          "price": 100.95,
-          "changePct": 2.936678203464683,
+          "price": 100.96,
+          "changePct": 2.946875001701768,
           "url": "https://www.cmegroup.com/search.html?q=WTI%20crude%20futures"
         }
       ]
