@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-15T09:36:10.914Z",
+  "generatedAt": "2026-05-15T09:36:46.895Z",
   "health": "ok",
   "errors": [],
   "summary": "Captured 173 updates across news, markets, FX, crypto, commodities, and Singapore policy sources.",
@@ -14,11 +14,11 @@
         "summary": null
       },
       {
-        "title": "Hong Kong Q1 GDP expands 5.9% y/y, government maintains 2026 growth forecast",
-        "url": "https://www.channelnewsasia.com/business/hong-kong-q1-gdp-expands-59-yy-government-maintains-2026-growth-forecast-6123686",
+        "title": "Hong Kong Q1 GDP expands 5.9% year-on-year, government maintains 2026 growth forecast",
+        "url": "https://www.channelnewsasia.com/business/hong-kong-q1-gdp-expands-59-year-year-government-maintains-2026-growth-forecast-6123686",
         "source": "CNA Business",
         "category": "World finance",
-        "date": "Fri, 15 May 2026 17:21:24 +0800",
+        "date": "Fri, 15 May 2026 17:21:00 +0800",
         "summary": null
       },
       {
@@ -305,13 +305,6 @@
           "url": "https://www.nasdaq.com/market-activity/stocks/bili"
         },
         {
-          "symbol": "PS",
-          "name": "Pershing Square Inc.",
-          "price": 42.61,
-          "changePct": -8.99188,
-          "url": "https://www.nasdaq.com/market-activity/stocks/ps"
-        },
-        {
           "symbol": "AAOI",
           "name": "Applied Optoelectronics, Inc.",
           "price": 203.57,
@@ -338,6 +331,13 @@
           "price": 19.45,
           "changePct": -7.60094,
           "url": "https://www.nasdaq.com/market-activity/stocks/hl"
+        },
+        {
+          "symbol": "VNET",
+          "name": "VNET Group, Inc.",
+          "price": 10.45,
+          "changePct": -7.35816,
+          "url": "https://www.nasdaq.com/market-activity/stocks/vnet"
         }
       ]
     },
@@ -1036,8 +1036,8 @@
         {
           "symbol": "NG",
           "name": "Natural gas futures · Commodity",
-          "price": 2.941,
-          "changePct": 1.6240478827540765,
+          "price": 2.942,
+          "changePct": 1.6586021322891966,
           "url": "https://www.cmegroup.com/search.html?q=Natural%20gas%20futures"
         },
         {
@@ -1050,29 +1050,29 @@
         {
           "symbol": "CL",
           "name": "WTI crude futures · Commodity",
-          "price": 100.5,
-          "changePct": -0.6622498577359588,
+          "price": 100.49,
+          "changePct": -0.6721342109839503,
           "url": "https://www.cmegroup.com/search.html?q=WTI%20crude%20futures"
         },
         {
           "symbol": "CC",
           "name": "Cocoa futures · Commodity",
-          "price": 4154,
-          "changePct": -0.83552160420148,
+          "price": 4155,
+          "changePct": -0.811649558367152,
           "url": "https://www.cmegroup.com/search.html?q=Cocoa%20futures"
         },
         {
           "symbol": "PA",
           "name": "Palladium futures · Commodity",
-          "price": 1425.5,
-          "changePct": -2.135107518001097,
+          "price": 1425,
+          "changePct": -2.1694340323757024,
           "url": "https://www.cmegroup.com/search.html?q=Palladium%20futures"
         },
         {
           "symbol": "RB",
           "name": "RBOB gasoline futures · Commodity",
-          "price": 3.5203,
-          "changePct": -2.3684725751520666,
+          "price": 3.5213,
+          "changePct": -2.3407387094517467,
           "url": "https://www.cmegroup.com/search.html?q=RBOB%20gasoline%20futures"
         },
         {
@@ -1092,8 +1092,8 @@
         {
           "symbol": "GC",
           "name": "Gold futures · Commodity",
-          "price": 4554.7,
-          "changePct": -2.6378250802729557,
+          "price": 4555.8,
+          "changePct": -2.6143112610506716,
           "url": "https://www.cmegroup.com/search.html?q=Gold%20futures"
         }
       ],
@@ -1101,36 +1101,36 @@
         {
           "symbol": "KC",
           "name": "Coffee futures · Commodity",
-          "price": 266,
-          "changePct": -9.662085592656629,
+          "price": 265.8,
+          "changePct": -9.730008836571919,
           "url": "https://www.cmegroup.com/search.html?q=Coffee%20futures"
         },
         {
           "symbol": "SI",
           "name": "Silver futures · Commodity",
-          "price": 78.12,
-          "changePct": -7.99887219524607,
+          "price": 78.18,
+          "changePct": -7.928210806763154,
           "url": "https://www.cmegroup.com/search.html?q=Silver%20futures"
         },
         {
           "symbol": "HG",
           "name": "Copper futures · Commodity",
-          "price": 6.32,
-          "changePct": -3.7685589665495884,
+          "price": 6.3205,
+          "changePct": -3.760945719632389,
           "url": "https://www.cmegroup.com/search.html?q=Copper%20futures"
         },
         {
           "symbol": "PL",
           "name": "Platinum futures · Commodity",
-          "price": 2005.7,
-          "changePct": -3.7341012718982456,
+          "price": 2007.2,
+          "changePct": -3.662107031437483,
           "url": "https://www.cmegroup.com/search.html?q=Platinum%20futures"
         },
         {
           "symbol": "GC",
           "name": "Gold futures · Commodity",
-          "price": 4554.7,
-          "changePct": -2.6378250802729557,
+          "price": 4555.8,
+          "changePct": -2.6143112610506716,
           "url": "https://www.cmegroup.com/search.html?q=Gold%20futures"
         },
         {
@@ -1150,29 +1150,29 @@
         {
           "symbol": "RB",
           "name": "RBOB gasoline futures · Commodity",
-          "price": 3.5203,
-          "changePct": -2.3684725751520666,
+          "price": 3.5213,
+          "changePct": -2.3407387094517467,
           "url": "https://www.cmegroup.com/search.html?q=RBOB%20gasoline%20futures"
         },
         {
           "symbol": "PA",
           "name": "Palladium futures · Commodity",
-          "price": 1425.5,
-          "changePct": -2.135107518001097,
+          "price": 1425,
+          "changePct": -2.1694340323757024,
           "url": "https://www.cmegroup.com/search.html?q=Palladium%20futures"
         },
         {
           "symbol": "CC",
           "name": "Cocoa futures · Commodity",
-          "price": 4154,
-          "changePct": -0.83552160420148,
+          "price": 4155,
+          "changePct": -0.811649558367152,
           "url": "https://www.cmegroup.com/search.html?q=Cocoa%20futures"
         },
         {
           "symbol": "CL",
           "name": "WTI crude futures · Commodity",
-          "price": 100.5,
-          "changePct": -0.6622498577359588,
+          "price": 100.49,
+          "changePct": -0.6721342109839503,
           "url": "https://www.cmegroup.com/search.html?q=WTI%20crude%20futures"
         },
         {
@@ -1185,8 +1185,8 @@
         {
           "symbol": "NG",
           "name": "Natural gas futures · Commodity",
-          "price": 2.941,
-          "changePct": 1.6240478827540765,
+          "price": 2.942,
+          "changePct": 1.6586021322891966,
           "url": "https://www.cmegroup.com/search.html?q=Natural%20gas%20futures"
         },
         {
