@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-21T10:54:42.977Z",
+  "generatedAt": "2026-05-21T10:55:34.440Z",
   "health": "ok",
   "errors": [],
   "summary": "Captured 173 updates across news, markets, FX, crypto, commodities, and Singapore policy sources.",
@@ -996,8 +996,8 @@
         {
           "symbol": "NG",
           "name": "Natural gas futures · Commodity",
-          "price": 3.183,
-          "changePct": 5.9587235208742,
+          "price": 3.184,
+          "changePct": 5.992012469514134,
           "url": "https://www.cmegroup.com/search.html?q=Natural%20gas%20futures"
         },
         {
@@ -1010,29 +1010,29 @@
         {
           "symbol": "CL",
           "name": "WTI crude futures · Commodity",
-          "price": 100.57,
-          "changePct": 2.3509035350588308,
+          "price": 100.67,
+          "changePct": 2.4526743449773623,
           "url": "https://www.cmegroup.com/search.html?q=WTI%20crude%20futures"
         },
         {
           "symbol": "BZ",
           "name": "Brent crude futures · Commodity",
-          "price": 107.07,
-          "changePct": 1.9520123999822385,
+          "price": 107.21,
+          "changePct": 2.085320345587894,
           "url": "https://www.cmegroup.com/search.html?q=Brent%20crude%20futures"
         },
         {
           "symbol": "SB",
           "name": "Sugar futures · Commodity",
-          "price": 14.93,
-          "changePct": 1.3577764017588505,
+          "price": 14.91,
+          "changePct": 1.2219990723526126,
           "url": "https://www.cmegroup.com/search.html?q=Sugar%20futures"
         },
         {
           "symbol": "CC",
           "name": "Cocoa futures · Commodity",
-          "price": 3932,
-          "changePct": 1.105682694780149,
+          "price": 3928,
+          "changePct": 1.002828490614554,
           "url": "https://www.cmegroup.com/search.html?q=Cocoa%20futures"
         },
         {
@@ -1052,50 +1052,50 @@
         {
           "symbol": "GC",
           "name": "Gold futures · Commodity",
-          "price": 4518.6,
-          "changePct": -0.28026847118705434,
+          "price": 4517.8,
+          "changePct": -0.2979234495482876,
           "url": "https://www.cmegroup.com/search.html?q=Gold%20futures"
-        },
-        {
-          "symbol": "HG",
-          "name": "Copper futures · Commodity",
-          "price": 6.2655,
-          "changePct": -0.3974272852726218,
-          "url": "https://www.cmegroup.com/search.html?q=Copper%20futures"
         },
         {
           "symbol": "ZC",
           "name": "Corn futures · Commodity",
-          "price": 463.75,
-          "changePct": -0.4294149221685454,
+          "price": 464,
+          "changePct": -0.3757380568974772,
           "url": "https://www.cmegroup.com/search.html?q=Corn%20futures"
+        },
+        {
+          "symbol": "HG",
+          "name": "Copper futures · Commodity",
+          "price": 6.2635,
+          "changePct": -0.42922125948529777,
+          "url": "https://www.cmegroup.com/search.html?q=Copper%20futures"
         },
         {
           "symbol": "PL",
           "name": "Platinum futures · Commodity",
-          "price": 1937.9,
-          "changePct": -0.6103214960568452,
+          "price": 1937.4,
+          "changePct": -0.6359651511742256,
           "url": "https://www.cmegroup.com/search.html?q=Platinum%20futures"
         },
         {
           "symbol": "SI",
           "name": "Silver futures · Commodity",
-          "price": 75.245,
-          "changePct": -0.798932039635711,
+          "price": 75.26,
+          "changePct": -0.7791564263802718,
           "url": "https://www.cmegroup.com/search.html?q=Silver%20futures"
         },
         {
           "symbol": "ZW",
           "name": "Wheat futures · Commodity",
-          "price": 653.5,
-          "changePct": -1.0598031794095382,
+          "price": 653.75,
+          "changePct": -1.0219530658591975,
           "url": "https://www.cmegroup.com/search.html?q=Wheat%20futures"
         },
         {
           "symbol": "PA",
           "name": "Palladium futures · Commodity",
-          "price": 1358.5,
-          "changePct": -1.1137027430721236,
+          "price": 1357,
+          "changePct": -1.2228889380558496,
           "url": "https://www.cmegroup.com/search.html?q=Palladium%20futures"
         }
       ],
@@ -1110,8 +1110,8 @@
         {
           "symbol": "RB",
           "name": "RBOB gasoline futures · Commodity",
-          "price": 3.4082,
-          "changePct": -2.2710344005311773,
+          "price": 3.4106,
+          "changePct": -2.202215224004347,
           "url": "https://www.cmegroup.com/search.html?q=RBOB%20gasoline%20futures"
         },
         {
@@ -1124,57 +1124,57 @@
         {
           "symbol": "HO",
           "name": "Heating oil futures · Commodity",
-          "price": 3.8848,
-          "changePct": -1.5783721032075686,
+          "price": 3.8923,
+          "changePct": -1.3883591786745242,
           "url": "https://www.cmegroup.com/search.html?q=Heating%20oil%20futures"
         },
         {
           "symbol": "PA",
           "name": "Palladium futures · Commodity",
-          "price": 1358.5,
-          "changePct": -1.1137027430721236,
+          "price": 1357,
+          "changePct": -1.2228889380558496,
           "url": "https://www.cmegroup.com/search.html?q=Palladium%20futures"
         },
         {
           "symbol": "ZW",
           "name": "Wheat futures · Commodity",
-          "price": 653.5,
-          "changePct": -1.0598031794095382,
+          "price": 653.75,
+          "changePct": -1.0219530658591975,
           "url": "https://www.cmegroup.com/search.html?q=Wheat%20futures"
         },
         {
           "symbol": "SI",
           "name": "Silver futures · Commodity",
-          "price": 75.245,
-          "changePct": -0.798932039635711,
+          "price": 75.26,
+          "changePct": -0.7791564263802718,
           "url": "https://www.cmegroup.com/search.html?q=Silver%20futures"
         },
         {
           "symbol": "PL",
           "name": "Platinum futures · Commodity",
-          "price": 1937.9,
-          "changePct": -0.6103214960568452,
+          "price": 1937.4,
+          "changePct": -0.6359651511742256,
           "url": "https://www.cmegroup.com/search.html?q=Platinum%20futures"
-        },
-        {
-          "symbol": "ZC",
-          "name": "Corn futures · Commodity",
-          "price": 463.75,
-          "changePct": -0.4294149221685454,
-          "url": "https://www.cmegroup.com/search.html?q=Corn%20futures"
         },
         {
           "symbol": "HG",
           "name": "Copper futures · Commodity",
-          "price": 6.2655,
-          "changePct": -0.3974272852726218,
+          "price": 6.2635,
+          "changePct": -0.42922125948529777,
           "url": "https://www.cmegroup.com/search.html?q=Copper%20futures"
+        },
+        {
+          "symbol": "ZC",
+          "name": "Corn futures · Commodity",
+          "price": 464,
+          "changePct": -0.3757380568974772,
+          "url": "https://www.cmegroup.com/search.html?q=Corn%20futures"
         },
         {
           "symbol": "GC",
           "name": "Gold futures · Commodity",
-          "price": 4518.6,
-          "changePct": -0.28026847118705434,
+          "price": 4517.8,
+          "changePct": -0.2979234495482876,
           "url": "https://www.cmegroup.com/search.html?q=Gold%20futures"
         },
         {
@@ -1194,15 +1194,15 @@
         {
           "symbol": "CC",
           "name": "Cocoa futures · Commodity",
-          "price": 3932,
-          "changePct": 1.105682694780149,
+          "price": 3928,
+          "changePct": 1.002828490614554,
           "url": "https://www.cmegroup.com/search.html?q=Cocoa%20futures"
         },
         {
           "symbol": "SB",
           "name": "Sugar futures · Commodity",
-          "price": 14.93,
-          "changePct": 1.3577764017588505,
+          "price": 14.91,
+          "changePct": 1.2219990723526126,
           "url": "https://www.cmegroup.com/search.html?q=Sugar%20futures"
         }
       ]
