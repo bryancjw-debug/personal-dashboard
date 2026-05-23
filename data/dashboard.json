@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-23T07:56:22.279Z",
+  "generatedAt": "2026-05-23T07:56:44.720Z",
   "health": "ok",
   "errors": [],
   "summary": "Captured 173 updates across news, markets, FX, crypto, commodities, and Singapore policy sources.",
@@ -176,13 +176,6 @@
           "url": "https://www.nasdaq.com/market-activity/stocks/fly"
         },
         {
-          "symbol": "IMAX",
-          "name": "Imax Corporation",
-          "price": 39.12,
-          "changePct": 15.4663,
-          "url": "https://www.nasdaq.com/market-activity/stocks/imax"
-        },
-        {
           "symbol": "HPQ",
           "name": "HP Inc.",
           "price": 25.24,
@@ -230,6 +223,13 @@
           "price": 47.25,
           "changePct": 12.0465,
           "url": "https://www.nasdaq.com/market-activity/stocks/vsh"
+        },
+        {
+          "symbol": "EL",
+          "name": "Estee Lauder Companies, Inc. (T",
+          "price": 88.32,
+          "changePct": 11.925,
+          "url": "https://www.nasdaq.com/market-activity/stocks/el"
         }
       ],
       "losers": [
@@ -260,13 +260,6 @@
           "price": 38.35,
           "changePct": -9.76471,
           "url": "https://www.nasdaq.com/market-activity/stocks/frvo"
-        },
-        {
-          "symbol": "OCTVV",
-          "name": "Octave Intelligence plc Class B Ordinary Shares When Issued",
-          "price": 21.75,
-          "changePct": -9.375,
-          "url": "https://www.nasdaq.com/market-activity/stocks/octvv"
         },
         {
           "symbol": "CBRS",
@@ -337,6 +330,13 @@
           "price": 16.82,
           "changePct": -6.1384,
           "url": "https://www.nasdaq.com/market-activity/stocks/xp"
+        },
+        {
+          "symbol": "BBAR",
+          "name": "Banco BBVA Argentina S.A.",
+          "price": 15.28,
+          "changePct": -6.02706,
+          "url": "https://www.nasdaq.com/market-activity/stocks/bbar"
         }
       ]
     },
