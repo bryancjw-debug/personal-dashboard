@@ -1,68 +1,76 @@
 {
-  "generatedAt": "2026-05-30T00:16:53.091Z",
+  "generatedAt": "2026-05-31T00:04:56.117Z",
   "health": "ok",
   "errors": [],
   "summary": "Captured 173 updates across news, markets, FX, crypto, commodities, and Singapore policy sources.",
   "news": {
     "world": [
       {
-        "title": "Meta plans 'Wearables for Work' and AI pendant, The Information reports",
-        "url": "https://www.channelnewsasia.com/business/meta-plans-wearables-work-and-ai-pendant-information-reports-6150896",
+        "title": "Ferrari wanted to take on Chinese EVs with the Luce - then the backlash started",
+        "url": "https://www.bbc.com/news/articles/c1l2y7j7454o?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Business",
+        "category": "World finance",
+        "date": "Sat, 30 May 2026 22:23:32 GMT",
+        "summary": "The brand's first EV has been heavily criticised, with some saying it has abandoned Ferrari's roots."
+      },
+      {
+        "title": "SoftBank to build up AI data centres in France with major investment",
+        "url": "https://www.channelnewsasia.com/business/softbank-build-up-ai-data-centres-in-france-major-investment-6151756",
+        "source": "CNA Business",
+        "category": "World finance",
+        "date": "Sun, 31 May 2026 03:01:50 +0800",
+        "summary": null
+      },
+      {
+        "title": "First Windows PC powered by Nvidia chips to debut next week, Axios reports",
+        "url": "https://www.channelnewsasia.com/business/first-windows-pc-powered-nvidia-chips-debut-next-week-axios-reports-6151456",
+        "source": "CNA Business",
+        "category": "World finance",
+        "date": "Sat, 30 May 2026 20:50:24 +0800",
+        "summary": null
+      },
+      {
+        "title": "East Coast Seafood Centre to be redeveloped; tenants told to vacate in 2026: NParks",
+        "url": "https://www.channelnewsasia.com/singapore/east-coast-park-seafood-centre-jumbo-long-beach-vacate-nparks-6151361",
+        "source": "CNA Business",
+        "category": "World finance",
+        "date": "Sat, 30 May 2026 20:24:00 +0800",
+        "summary": "The National Parks Board told CNA that the planned redevelopment is part of efforts to \"enhance the experience\" of East Coast Park visitors."
+      },
+      {
+        "title": "Blue Origin faces months of delays after rocket explosion damages launch pad",
+        "url": "https://www.channelnewsasia.com/business/blue-origin-faces-months-delays-after-rocket-explosion-damages-launch-pad-6151366",
+        "source": "CNA Business",
+        "category": "World finance",
+        "date": "Sat, 30 May 2026 19:04:25 +0800",
+        "summary": null
+      },
+      {
+        "title": "Tech Now",
+        "url": "https://www.bbc.co.uk/iplayer/episode/m002xbvq?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Technology",
+        "category": "World tech",
+        "date": "Sat, 30 May 2026 01:00:00 GMT",
+        "summary": "Shiona McCallum visits Fifa HQ in Zurich to see new tech being used in the World Cup."
+      },
+      {
+        "title": "Meta plans AI pendant, 'wearables for work' in hardware boost, The Information reports",
+        "url": "https://www.channelnewsasia.com/business/meta-plans-ai-pendant-wearables-work-in-hardware-boost-information-reports-6150896",
         "source": "CNA Business",
         "category": "World finance",
         "date": "Sat, 30 May 2026 07:59:14 +0800",
         "summary": null
-      },
-      {
-        "title": "Social media companies pay $27 million to settle Kentucky school district's lawsuit over social media harms, records show",
-        "url": "https://www.channelnewsasia.com/business/social-media-companies-pay-27-million-settle-kentucky-school-districts-lawsuit-over-social-media-harms-records-show-6150886",
-        "source": "CNA Business",
-        "category": "World finance",
-        "date": "Sat, 30 May 2026 07:48:25 +0800",
-        "summary": null
-      },
-      {
-        "title": "Commentary: What if remote working, not AI, is to blame for weak junior hiring?",
-        "url": "https://www.channelnewsasia.com/commentary/remote-work-impact-younger-workers-ai-career-progression-6149286",
-        "source": "CNA World",
-        "category": "World news",
-        "date": "Sat, 30 May 2026 06:00:00 +0800",
-        "summary": "New evidence suggests the rise of working from home has made entry-level hires a less attractive proposition, according to this Financial Times writer."
-      },
-      {
-        "title": "Oil falls, stocks mixed on US-Iran truce prospects",
-        "url": "https://www.channelnewsasia.com/world/oil-prices-stocks-market-us-iran-deal-6150796",
-        "source": "CNA World",
-        "category": "World news",
-        "date": "Sat, 30 May 2026 05:36:19 +0800",
-        "summary": "Analysts said oil traders were taking an \"optimistic view\" that disruption in the region could soon ease."
-      },
-      {
-        "title": "Universal rejects billionaire Bill Ackman's takeover bid",
-        "url": "https://www.bbc.com/news/articles/cn8pnd9yj4eo?at_medium=RSS&at_campaign=rss",
-        "source": "BBC Business",
-        "category": "World finance",
-        "date": "Fri, 29 May 2026 19:29:12 GMT",
-        "summary": "The music giant said Pershing Square's offer fundamentally undervalued the business."
-      },
-      {
-        "title": "SpaceX wins $4.16 billion US Space Force contract for threat-detection satellites",
-        "url": "https://www.channelnewsasia.com/business/spacex-wins-416-billion-us-space-force-contract-threat-detection-satellites-6150646",
-        "source": "CNA Business",
-        "category": "World finance",
-        "date": "Sat, 30 May 2026 03:25:16 +0800",
-        "summary": null
-      },
-      {
-        "title": "UK banks still lack access to Mythos AI model, BoE's Bailey says",
-        "url": "https://www.channelnewsasia.com/business/uk-banks-still-lack-access-mythos-ai-model-boes-bailey-says-6150626",
-        "source": "CNA Business",
-        "category": "World finance",
-        "date": "Sat, 30 May 2026 02:50:37 +0800",
-        "summary": null
       }
     ],
     "singapore": [
+      {
+        "title": "East Coast Seafood Centre to be redeveloped; tenants told to vacate in 2026: NParks",
+        "url": "https://www.channelnewsasia.com/singapore/east-coast-park-seafood-centre-jumbo-long-beach-vacate-nparks-6151361",
+        "source": "CNA Business",
+        "category": "Singapore finance",
+        "date": "Sat, 30 May 2026 20:24:00 +0800",
+        "summary": "The National Parks Board told CNA that the planned redevelopment is part of efforts to \"enhance the experience\" of East Coast Park visitors."
+      },
       {
         "title": "Singapore workers likely to feel AI disruption sooner than most: ESR committee on human capital",
         "url": "https://www.channelnewsasia.com/singapore/economic-strategy-review-esr-committee-human-capital-interview-david-neo-marcus-lam-6149426",
@@ -70,22 +78,6 @@
         "category": "Singapore news",
         "date": "Fri, 29 May 2026 16:40:00 +0800",
         "summary": "The nation must continue accelerating AI adoption, as slowing down would ultimately hurt Singapore's workers, said the committee."
-      },
-      {
-        "title": "Annette Lee says she'll refund moviegoers if her new film Dream Stall 'wasted their time'",
-        "url": "https://www.channelnewsasia.com/entertainment/annette-lee-dream-stall-refund-6148961",
-        "source": "CNA Singapore",
-        "category": "Singapore news",
-        "date": "Fri, 29 May 2026 13:18:00 +0800",
-        "summary": "The creator and director-writer insisted her refund promise was \"not a joke\" and wanted honest feedback from moviegoers."
-      },
-      {
-        "title": "Singer Frances Tan swapped law for music, now represents Singapore in Commonwealth Song Contest finals",
-        "url": "https://www.channelnewsasia.com/entertainment/frances-tan-commonwealth-song-contest-6148836",
-        "source": "CNA Singapore",
-        "category": "Singapore news",
-        "date": "Fri, 29 May 2026 11:59:00 +0800",
-        "summary": "Public voting for the Commonwealth Song Contest 2026 ends on May 31. On the same day, Tan will host a free concert to launch her debut album, I Am Frances."
       },
       {
         "title": "123,000 AIS Employers to Submit Employees' Employment Income Data by 1 Mar 2026, Enabling IRAS to Pre-fill Over 2 Million Tax Returns",
@@ -118,6 +110,13 @@
       {
         "title": "440,000 CPF Members qualify for Matched Retirement Savings Scheme in 2021",
         "url": "https://www.cpf.gov.sg/member/infohub/news/news-releases/440000-cpf-members-qualify-for-matched-retirement-savings-scheme-in-2021",
+        "source": "CPF",
+        "category": "Retirement policy",
+        "date": null
+      },
+      {
+        "title": "Reduction of CPF Investment Scheme fees deferred to 1 October 2020",
+        "url": "https://www.cpf.gov.sg/member/infohub/news/news-releases/reduction-of-cpf-investment-scheme-fees-deferred-to-1-october-2020",
         "source": "CPF",
         "category": "Retirement policy",
         "date": null
@@ -567,11 +566,39 @@
           "url": "https://www.nasdaq.com/market-activity/etf/gld"
         },
         {
+          "symbol": "G3B",
+          "name": "Nikko AM Singapore STI ETF · SG ETF",
+          "price": 5.241,
+          "changePct": 0.7884652353604045,
+          "url": "https://www.sgx.com/securities/etf/G3B"
+        },
+        {
           "symbol": "DIA",
           "name": "SPDR Dow Jones Industrial Average ETF · US ETF",
           "price": 510.78,
           "changePct": 0.7356300753041743,
           "url": "https://www.nasdaq.com/market-activity/etf/dia"
+        },
+        {
+          "symbol": "CLR",
+          "name": "Lion-OCBC Securities Singapore Low Carbon ETF · SG ETF",
+          "price": 0.826,
+          "changePct": 0.60901585251269,
+          "url": "https://www.sgx.com/securities/etf/CLR"
+        },
+        {
+          "symbol": "ES3",
+          "name": "SPDR Straits Times Index ETF · SG ETF",
+          "price": 5.12,
+          "changePct": 0.4906812725778213,
+          "url": "https://www.sgx.com/securities/etf/ES3"
+        },
+        {
+          "symbol": "A35",
+          "name": "ABF Singapore Bond Index Fund · SG ETF",
+          "price": 1.15,
+          "changePct": 0.4366828957883749,
+          "url": "https://www.sgx.com/securities/etf/A35"
         },
         {
           "symbol": "QQQ",
@@ -581,25 +608,11 @@
           "url": "https://www.nasdaq.com/market-activity/etf/qqq"
         },
         {
-          "symbol": "G3B",
-          "name": "Nikko AM Singapore STI ETF · SG ETF",
-          "price": 5.241,
-          "changePct": 0.3254215727922347,
-          "url": "https://www.sgx.com/securities/etf/G3B"
-        },
-        {
           "symbol": "SPY",
           "name": "SPDR S&P 500 ETF · US ETF",
           "price": 756.48,
           "changePct": 0.24914185991096843,
           "url": "https://www.nasdaq.com/market-activity/etf/spy"
-        },
-        {
-          "symbol": "CLR",
-          "name": "Lion-OCBC Securities Singapore Low Carbon ETF · SG ETF",
-          "price": 0.826,
-          "changePct": 0.24271833058384681,
-          "url": "https://www.sgx.com/securities/etf/CLR"
         },
         {
           "symbol": "VTI",
@@ -609,18 +622,18 @@
           "url": "https://www.nasdaq.com/market-activity/etf/vti"
         },
         {
-          "symbol": "A35",
-          "name": "ABF Singapore Bond Index Fund · SG ETF",
-          "price": 1.15,
-          "changePct": 0.1742158614397539,
-          "url": "https://www.sgx.com/securities/etf/A35"
-        },
-        {
           "symbol": "VEA",
           "name": "Vanguard FTSE Developed Markets ETF · US ETF",
           "price": 71.77,
           "changePct": 0.15349753316965317,
           "url": "https://www.nasdaq.com/market-activity/etf/vea"
+        },
+        {
+          "symbol": "CFA",
+          "name": "NikkoAM-StraitsTrading Asia ex Japan REIT ETF · SG ETF",
+          "price": 0.796,
+          "changePct": 0.12578406159836775,
+          "url": "https://www.sgx.com/securities/etf/CFA"
         },
         {
           "symbol": "HYG",
@@ -649,20 +662,6 @@
           "price": 59.88,
           "changePct": -0.033391528162586656,
           "url": "https://www.nasdaq.com/market-activity/etf/vwo"
-        },
-        {
-          "symbol": "SLV",
-          "name": "iShares Silver Trust · US ETF",
-          "price": 68.33,
-          "changePct": -0.04388620550571104,
-          "url": "https://www.nasdaq.com/market-activity/etf/slv"
-        },
-        {
-          "symbol": "ES3",
-          "name": "SPDR Straits Times Index ETF · SG ETF",
-          "price": 5.12,
-          "changePct": -0.09756097560975402,
-          "url": "https://www.sgx.com/securities/etf/ES3"
         }
       ],
       "losers": [
@@ -674,20 +673,6 @@
           "url": "https://www.nasdaq.com/market-activity/etf/uso"
         },
         {
-          "symbol": "OVQ",
-          "name": "Lion-OCBC Securities Hang Seng TECH ETF · SG ETF",
-          "price": 1.501,
-          "changePct": -1.1849935992697151,
-          "url": "https://www.sgx.com/securities/etf/OVQ"
-        },
-        {
-          "symbol": "HST",
-          "name": "Lion-OCBC Securities Hang Seng TECH ETF · SG ETF",
-          "price": 0.779,
-          "changePct": -1.1421304243442283,
-          "url": "https://www.sgx.com/securities/etf/HST"
-        },
-        {
           "symbol": "IWM",
           "name": "iShares Russell 2000 ETF · US ETF",
           "price": 290.43,
@@ -695,18 +680,18 @@
           "url": "https://www.nasdaq.com/market-activity/etf/iwm"
         },
         {
-          "symbol": "CFA",
-          "name": "NikkoAM-StraitsTrading Asia ex Japan REIT ETF · SG ETF",
-          "price": 0.796,
-          "changePct": -0.25062382461952226,
-          "url": "https://www.sgx.com/securities/etf/CFA"
+          "symbol": "OVQ",
+          "name": "Lion-OCBC Securities Hang Seng TECH ETF · SG ETF",
+          "price": 1.501,
+          "changePct": -0.4641920515388941,
+          "url": "https://www.sgx.com/securities/etf/OVQ"
         },
         {
-          "symbol": "ES3",
-          "name": "SPDR Straits Times Index ETF · SG ETF",
-          "price": 5.12,
-          "changePct": -0.09756097560975402,
-          "url": "https://www.sgx.com/securities/etf/ES3"
+          "symbol": "HST",
+          "name": "Lion-OCBC Securities Hang Seng TECH ETF · SG ETF",
+          "price": 0.779,
+          "changePct": -0.383632381724603,
+          "url": "https://www.sgx.com/securities/etf/HST"
         },
         {
           "symbol": "SLV",
@@ -744,18 +729,18 @@
           "url": "https://www.nasdaq.com/market-activity/etf/hyg"
         },
         {
+          "symbol": "CFA",
+          "name": "NikkoAM-StraitsTrading Asia ex Japan REIT ETF · SG ETF",
+          "price": 0.796,
+          "changePct": 0.12578406159836775,
+          "url": "https://www.sgx.com/securities/etf/CFA"
+        },
+        {
           "symbol": "VEA",
           "name": "Vanguard FTSE Developed Markets ETF · US ETF",
           "price": 71.77,
           "changePct": 0.15349753316965317,
           "url": "https://www.nasdaq.com/market-activity/etf/vea"
-        },
-        {
-          "symbol": "A35",
-          "name": "ABF Singapore Bond Index Fund · SG ETF",
-          "price": 1.15,
-          "changePct": 0.1742158614397539,
-          "url": "https://www.sgx.com/securities/etf/A35"
         },
         {
           "symbol": "VTI",
@@ -765,227 +750,241 @@
           "url": "https://www.nasdaq.com/market-activity/etf/vti"
         },
         {
-          "symbol": "CLR",
-          "name": "Lion-OCBC Securities Singapore Low Carbon ETF · SG ETF",
-          "price": 0.826,
-          "changePct": 0.24271833058384681,
-          "url": "https://www.sgx.com/securities/etf/CLR"
+          "symbol": "SPY",
+          "name": "SPDR S&P 500 ETF · US ETF",
+          "price": 756.48,
+          "changePct": 0.24914185991096843,
+          "url": "https://www.nasdaq.com/market-activity/etf/spy"
+        },
+        {
+          "symbol": "QQQ",
+          "name": "Invesco QQQ Trust · US ETF",
+          "price": 738.31,
+          "changePct": 0.3684100739540934,
+          "url": "https://www.nasdaq.com/market-activity/etf/qqq"
+        },
+        {
+          "symbol": "A35",
+          "name": "ABF Singapore Bond Index Fund · SG ETF",
+          "price": 1.15,
+          "changePct": 0.4366828957883749,
+          "url": "https://www.sgx.com/securities/etf/A35"
         }
       ]
     },
     "crypto": {
       "gainers": [
         {
+          "symbol": "LAB",
+          "name": "LAB",
+          "price": 10.16,
+          "changePct": 23.92211,
+          "url": "https://www.coingecko.com/en/coins/lab"
+        },
+        {
+          "symbol": "BNB",
+          "name": "BNB",
+          "price": 918.38,
+          "changePct": 12.01455,
+          "url": "https://www.coingecko.com/en/coins/binancecoin"
+        },
+        {
+          "symbol": "ASTER",
+          "name": "Aster",
+          "price": 0.954031,
+          "changePct": 11.0775,
+          "url": "https://www.coingecko.com/en/coins/aster-2"
+        },
+        {
+          "symbol": "BGB",
+          "name": "Bitget Token",
+          "price": 2.76,
+          "changePct": 9.07043,
+          "url": "https://www.coingecko.com/en/coins/bitget-token"
+        },
+        {
+          "symbol": "MORPHO",
+          "name": "Morpho",
+          "price": 2.78,
+          "changePct": 6.86814,
+          "url": "https://www.coingecko.com/en/coins/morpho"
+        },
+        {
+          "symbol": "HYPE",
+          "name": "Hyperliquid",
+          "price": 87.03,
+          "changePct": 6.07859,
+          "url": "https://www.coingecko.com/en/coins/hyperliquid"
+        },
+        {
+          "symbol": "ONDO",
+          "name": "Ondo",
+          "price": 0.477329,
+          "changePct": 5.73073,
+          "url": "https://www.coingecko.com/en/coins/ondo-finance"
+        },
+        {
+          "symbol": "MNT",
+          "name": "Mantle",
+          "price": 0.864072,
+          "changePct": 5.2825,
+          "url": "https://www.coingecko.com/en/coins/mantle"
+        },
+        {
+          "symbol": "OKB",
+          "name": "OKB",
+          "price": 115.81,
+          "changePct": 4.16985,
+          "url": "https://www.coingecko.com/en/coins/okb"
+        },
+        {
+          "symbol": "TON",
+          "name": "Toncoin",
+          "price": 2.32,
+          "changePct": 3.70934,
+          "url": "https://www.coingecko.com/en/coins/the-open-network"
+        },
+        {
+          "symbol": "LINK",
+          "name": "Chainlink",
+          "price": 11.72,
+          "changePct": 1.8207,
+          "url": "https://www.coingecko.com/en/coins/chainlink"
+        },
+        {
+          "symbol": "TAO",
+          "name": "Bittensor",
+          "price": 325.06,
+          "changePct": 1.77202,
+          "url": "https://www.coingecko.com/en/coins/bittensor"
+        },
+        {
+          "symbol": "LEO",
+          "name": "LEO Token",
+          "price": 12.85,
+          "changePct": 1.47811,
+          "url": "https://www.coingecko.com/en/coins/leo-token"
+        },
+        {
+          "symbol": "AVAX",
+          "name": "Avalanche",
+          "price": 11.41,
+          "changePct": 1.41896,
+          "url": "https://www.coingecko.com/en/coins/avalanche-2"
+        },
+        {
+          "symbol": "SHIB",
+          "name": "Shiba Inu",
+          "price": 0.00000701,
+          "changePct": 1.33841,
+          "url": "https://www.coingecko.com/en/coins/shiba-inu"
+        }
+      ],
+      "losers": [
+        {
           "symbol": "XLM",
           "name": "Stellar",
-          "price": 0.33641,
-          "changePct": 29.38292,
+          "price": 0.292157,
+          "changePct": -12.03992,
           "url": "https://www.coingecko.com/en/coins/stellar"
         },
         {
           "symbol": "XMR",
           "name": "Monero",
-          "price": 511.61,
-          "changePct": 13.10643,
+          "price": 472.45,
+          "changePct": -6.26893,
           "url": "https://www.coingecko.com/en/coins/monero"
-        },
-        {
-          "symbol": "HBAR",
-          "name": "Hedera",
-          "price": 0.130103,
-          "changePct": 11.02119,
-          "url": "https://www.coingecko.com/en/coins/hedera-hashgraph"
-        },
-        {
-          "symbol": "HYPE",
-          "name": "Hyperliquid",
-          "price": 82.17,
-          "changePct": 4.41247,
-          "url": "https://www.coingecko.com/en/coins/hyperliquid"
-        },
-        {
-          "symbol": "MNT",
-          "name": "Mantle",
-          "price": 0.821959,
-          "changePct": 2.05965,
-          "url": "https://www.coingecko.com/en/coins/mantle"
-        },
-        {
-          "symbol": "CRO",
-          "name": "Cronos",
-          "price": 0.08704,
-          "changePct": 1.86684,
-          "url": "https://www.coingecko.com/en/coins/crypto-com-chain"
-        },
-        {
-          "symbol": "RAIN",
-          "name": "Rain",
-          "price": 0.01847001,
-          "changePct": 1.38668,
-          "url": "https://www.coingecko.com/en/coins/rain"
-        },
-        {
-          "symbol": "FIGR_HELOC",
-          "name": "Figure Heloc",
-          "price": 1.32,
-          "changePct": 1.34134,
-          "url": "https://www.coingecko.com/en/coins/figure-heloc"
-        },
-        {
-          "symbol": "SHIB",
-          "name": "Shiba Inu",
-          "price": 0.00000694,
-          "changePct": 1.24354,
-          "url": "https://www.coingecko.com/en/coins/shiba-inu"
-        },
-        {
-          "symbol": "PAXG",
-          "name": "PAX Gold",
-          "price": 5784.94,
-          "changePct": 1.08259,
-          "url": "https://www.coingecko.com/en/coins/pax-gold"
-        },
-        {
-          "symbol": "XAUT",
-          "name": "Tether Gold",
-          "price": 5769.58,
-          "changePct": 1.03151,
-          "url": "https://www.coingecko.com/en/coins/tether-gold"
-        },
-        {
-          "symbol": "BNB",
-          "name": "BNB",
-          "price": 821.99,
-          "changePct": 0.94123,
-          "url": "https://www.coingecko.com/en/coins/binancecoin"
-        },
-        {
-          "symbol": "XRP",
-          "name": "XRP",
-          "price": 1.7,
-          "changePct": 0.91041,
-          "url": "https://www.coingecko.com/en/coins/ripple"
-        },
-        {
-          "symbol": "LTC",
-          "name": "Litecoin",
-          "price": 66.28,
-          "changePct": 0.59759,
-          "url": "https://www.coingecko.com/en/coins/litecoin"
-        },
-        {
-          "symbol": "BCH",
-          "name": "Bitcoin Cash",
-          "price": 386.77,
-          "changePct": 0.51645,
-          "url": "https://www.coingecko.com/en/coins/bitcoin-cash"
-        }
-      ],
-      "losers": [
-        {
-          "symbol": "ONDO",
-          "name": "Ondo",
-          "price": 0.451774,
-          "changePct": -4.31683,
-          "url": "https://www.coingecko.com/en/coins/ondo-finance"
-        },
-        {
-          "symbol": "TAO",
-          "name": "Bittensor",
-          "price": 321.58,
-          "changePct": -3.38452,
-          "url": "https://www.coingecko.com/en/coins/bittensor"
-        },
-        {
-          "symbol": "SUI",
-          "name": "Sui",
-          "price": 1.16,
-          "changePct": -2.78809,
-          "url": "https://www.coingecko.com/en/coins/sui"
-        },
-        {
-          "symbol": "ICP",
-          "name": "Internet Computer",
-          "price": 3.39,
-          "changePct": -2.56557,
-          "url": "https://www.coingecko.com/en/coins/internet-computer"
-        },
-        {
-          "symbol": "ZEC",
-          "name": "Zcash",
-          "price": 678.17,
-          "changePct": -2.50109,
-          "url": "https://www.coingecko.com/en/coins/zcash"
-        },
-        {
-          "symbol": "HTX",
-          "name": "HTX DAO",
-          "price": 0.00000232,
-          "changePct": -2.44372,
-          "url": "https://www.coingecko.com/en/coins/htx-dao"
-        },
-        {
-          "symbol": "TRX",
-          "name": "TRON",
-          "price": 0.439146,
-          "changePct": -2.17297,
-          "url": "https://www.coingecko.com/en/coins/tron"
         },
         {
           "symbol": "NEAR",
           "name": "NEAR Protocol",
-          "price": 3.05,
-          "changePct": -1.75606,
+          "price": 2.87,
+          "changePct": -5.57552,
           "url": "https://www.coingecko.com/en/coins/near"
         },
         {
-          "symbol": "OKB",
-          "name": "OKB",
-          "price": 111.17,
-          "changePct": -1.67401,
-          "url": "https://www.coingecko.com/en/coins/okb"
+          "symbol": "HBAR",
+          "name": "Hedera",
+          "price": 0.12124,
+          "changePct": -4.83669,
+          "url": "https://www.coingecko.com/en/coins/hedera-hashgraph"
+        },
+        {
+          "symbol": "M",
+          "name": "MemeCore",
+          "price": 3.67,
+          "changePct": -3.0304,
+          "url": "https://www.coingecko.com/en/coins/memecore"
+        },
+        {
+          "symbol": "SKY",
+          "name": "Sky",
+          "price": 0.081928,
+          "changePct": -2.34787,
+          "url": "https://www.coingecko.com/en/coins/sky"
+        },
+        {
+          "symbol": "FIGR_HELOC",
+          "name": "Figure Heloc",
+          "price": 1.3,
+          "changePct": -1.55549,
+          "url": "https://www.coingecko.com/en/coins/figure-heloc"
+        },
+        {
+          "symbol": "RAIN",
+          "name": "Rain",
+          "price": 0.01831606,
+          "changePct": -0.87206,
+          "url": "https://www.coingecko.com/en/coins/rain"
+        },
+        {
+          "symbol": "CC",
+          "name": "Canton",
+          "price": 0.195787,
+          "changePct": -0.84497,
+          "url": "https://www.coingecko.com/en/coins/canton-network"
         },
         {
           "symbol": "DOT",
           "name": "Polkadot",
-          "price": 1.53,
-          "changePct": -1.54576,
+          "price": 1.52,
+          "changePct": -0.35197,
           "url": "https://www.coingecko.com/en/coins/polkadot"
         },
         {
-          "symbol": "UNI",
-          "name": "Uniswap",
-          "price": 3.86,
-          "changePct": -1.21982,
-          "url": "https://www.coingecko.com/en/coins/uniswap"
+          "symbol": "XAUT",
+          "name": "Tether Gold",
+          "price": 5749.27,
+          "changePct": -0.34018,
+          "url": "https://www.coingecko.com/en/coins/tether-gold"
         },
         {
-          "symbol": "AVAX",
-          "name": "Avalanche",
-          "price": 11.27,
-          "changePct": -1.12734,
-          "url": "https://www.coingecko.com/en/coins/avalanche-2"
+          "symbol": "CRO",
+          "name": "Cronos",
+          "price": 0.086611,
+          "changePct": -0.29465,
+          "url": "https://www.coingecko.com/en/coins/crypto-com-chain"
         },
         {
-          "symbol": "PI",
-          "name": "Pi Network",
-          "price": 0.182791,
-          "changePct": -1.07863,
-          "url": "https://www.coingecko.com/en/coins/pi-network"
+          "symbol": "PAXG",
+          "name": "PAX Gold",
+          "price": 5766.87,
+          "changePct": -0.29461,
+          "url": "https://www.coingecko.com/en/coins/pax-gold"
         },
         {
-          "symbol": "TON",
-          "name": "Toncoin",
-          "price": 2.24,
-          "changePct": -0.80747,
-          "url": "https://www.coingecko.com/en/coins/the-open-network"
+          "symbol": "ZEC",
+          "name": "Zcash",
+          "price": 673.79,
+          "changePct": -0.20207,
+          "url": "https://www.coingecko.com/en/coins/zcash"
         },
         {
-          "symbol": "ADA",
-          "name": "Cardano",
-          "price": 0.297661,
-          "changePct": -0.70891,
-          "url": "https://www.coingecko.com/en/coins/cardano"
+          "symbol": "USDD",
+          "name": "USDD",
+          "price": 1.28,
+          "changePct": -0.0671,
+          "url": "https://www.coingecko.com/en/coins/usdd"
         }
       ]
     },
@@ -994,15 +993,15 @@
         {
           "symbol": "HE",
           "name": "Lean hog futures · Commodity",
-          "price": 99.775,
-          "changePct": 2.887343717387245,
+          "price": 99.5,
+          "changePct": 2.603765471110301,
           "url": "https://www.cmegroup.com/search.html?q=Lean%20hog%20futures"
         },
         {
           "symbol": "GC",
           "name": "Gold futures · Commodity",
-          "price": 4569.9,
-          "changePct": 1.5691373853092945,
+          "price": 4593,
+          "changePct": 2.082550605204846,
           "url": "https://www.cmegroup.com/search.html?q=Gold%20futures"
         },
         {
@@ -1015,43 +1014,43 @@
         {
           "symbol": "PL",
           "name": "Platinum futures · Commodity",
-          "price": 1922.9,
-          "changePct": 0.06765322806929082,
+          "price": 1929.5,
+          "changePct": 0.4111170126161982,
           "url": "https://www.cmegroup.com/search.html?q=Platinum%20futures"
         },
         {
-          "symbol": "HG",
-          "name": "Copper futures · Commodity",
-          "price": 6.394,
-          "changePct": -0.03126811250613366,
-          "url": "https://www.cmegroup.com/search.html?q=Copper%20futures"
+          "symbol": "PA",
+          "name": "Palladium futures · Commodity",
+          "price": 1381.9,
+          "changePct": 0.31213882769079265,
+          "url": "https://www.cmegroup.com/search.html?q=Palladium%20futures"
         },
         {
           "symbol": "SI",
           "name": "Silver futures · Commodity",
-          "price": 75.585,
-          "changePct": -0.07931343212229724,
+          "price": 75.875,
+          "changePct": 0.3040562722460981,
           "url": "https://www.cmegroup.com/search.html?q=Silver%20futures"
         },
         {
           "symbol": "NG",
           "name": "Natural gas futures · Commodity",
-          "price": 3.273,
-          "changePct": -0.3652994069147443,
+          "price": 3.29,
+          "changePct": 0.15220438473891895,
           "url": "https://www.cmegroup.com/search.html?q=Natural%20gas%20futures"
         },
         {
-          "symbol": "PA",
-          "name": "Palladium futures · Commodity",
-          "price": 1368.5,
-          "changePct": -0.6605673451806638,
-          "url": "https://www.cmegroup.com/search.html?q=Palladium%20futures"
+          "symbol": "HG",
+          "name": "Copper futures · Commodity",
+          "price": 6.389,
+          "changePct": -0.10944197228678093,
+          "url": "https://www.cmegroup.com/search.html?q=Copper%20futures"
         },
         {
           "symbol": "ZS",
           "name": "Soybean futures · Commodity",
-          "price": 1186.5,
-          "changePct": -0.6697362913352868,
+          "price": 1186.75,
+          "changePct": -0.648807032231059,
           "url": "https://www.cmegroup.com/search.html?q=Soybean%20futures"
         },
         {
@@ -1064,37 +1063,37 @@
         {
           "symbol": "CL",
           "name": "WTI crude futures · Commodity",
-          "price": 87.76,
-          "changePct": -1.282341401925674,
+          "price": 87.36,
+          "changePct": -1.7322851512332205,
           "url": "https://www.cmegroup.com/search.html?q=WTI%20crude%20futures"
         },
         {
           "symbol": "ZC",
           "name": "Corn futures · Commodity",
-          "price": 447,
-          "changePct": -1.9199122325836533,
+          "price": 446.75,
+          "changePct": -1.9747668678003292,
           "url": "https://www.cmegroup.com/search.html?q=Corn%20futures"
-        },
-        {
-          "symbol": "BZ",
-          "name": "Brent crude futures · Commodity",
-          "price": 91.7,
-          "changePct": -2.144914207779244,
-          "url": "https://www.cmegroup.com/search.html?q=Brent%20crude%20futures"
         },
         {
           "symbol": "ZW",
           "name": "Wheat futures · Commodity",
-          "price": 610.25,
-          "changePct": -2.203525641025641,
+          "price": 610.5,
+          "changePct": -2.1634615384615383,
           "url": "https://www.cmegroup.com/search.html?q=Wheat%20futures"
         },
         {
-          "symbol": "HO",
-          "name": "Heating oil futures · Commodity",
-          "price": 3.5129,
-          "changePct": -2.9237026186973574,
-          "url": "https://www.cmegroup.com/search.html?q=Heating%20oil%20futures"
+          "symbol": "BZ",
+          "name": "Brent crude futures · Commodity",
+          "price": 91.12,
+          "changePct": -2.763844957610082,
+          "url": "https://www.cmegroup.com/search.html?q=Brent%20crude%20futures"
+        },
+        {
+          "symbol": "KC",
+          "name": "Coffee futures · Commodity",
+          "price": 265.9,
+          "changePct": -3.0446672743846936,
+          "url": "https://www.cmegroup.com/search.html?q=Coffee%20futures"
         }
       ],
       "losers": [
@@ -1108,16 +1107,23 @@
         {
           "symbol": "RB",
           "name": "RBOB gasoline futures · Commodity",
-          "price": 3.0469,
-          "changePct": -4.341955827291594,
+          "price": 3.0344,
+          "changePct": -4.7343958654152045,
           "url": "https://www.cmegroup.com/search.html?q=RBOB%20gasoline%20futures"
         },
         {
           "symbol": "LE",
           "name": "Live cattle futures · Commodity",
-          "price": 239.2,
-          "changePct": -4.224224224224229,
+          "price": 239.05,
+          "changePct": -4.284284284284279,
           "url": "https://www.cmegroup.com/search.html?q=Live%20cattle%20futures"
+        },
+        {
+          "symbol": "HO",
+          "name": "Heating oil futures · Commodity",
+          "price": 3.4886,
+          "changePct": -3.5952144825038066,
+          "url": "https://www.cmegroup.com/search.html?q=Heating%20oil%20futures"
         },
         {
           "symbol": "KC",
@@ -1127,38 +1133,31 @@
           "url": "https://www.cmegroup.com/search.html?q=Coffee%20futures"
         },
         {
-          "symbol": "HO",
-          "name": "Heating oil futures · Commodity",
-          "price": 3.5129,
-          "changePct": -2.9237026186973574,
-          "url": "https://www.cmegroup.com/search.html?q=Heating%20oil%20futures"
+          "symbol": "BZ",
+          "name": "Brent crude futures · Commodity",
+          "price": 91.12,
+          "changePct": -2.763844957610082,
+          "url": "https://www.cmegroup.com/search.html?q=Brent%20crude%20futures"
         },
         {
           "symbol": "ZW",
           "name": "Wheat futures · Commodity",
-          "price": 610.25,
-          "changePct": -2.203525641025641,
+          "price": 610.5,
+          "changePct": -2.1634615384615383,
           "url": "https://www.cmegroup.com/search.html?q=Wheat%20futures"
-        },
-        {
-          "symbol": "BZ",
-          "name": "Brent crude futures · Commodity",
-          "price": 91.7,
-          "changePct": -2.144914207779244,
-          "url": "https://www.cmegroup.com/search.html?q=Brent%20crude%20futures"
         },
         {
           "symbol": "ZC",
           "name": "Corn futures · Commodity",
-          "price": 447,
-          "changePct": -1.9199122325836533,
+          "price": 446.75,
+          "changePct": -1.9747668678003292,
           "url": "https://www.cmegroup.com/search.html?q=Corn%20futures"
         },
         {
           "symbol": "CL",
           "name": "WTI crude futures · Commodity",
-          "price": 87.76,
-          "changePct": -1.282341401925674,
+          "price": 87.36,
+          "changePct": -1.7322851512332205,
           "url": "https://www.cmegroup.com/search.html?q=WTI%20crude%20futures"
         },
         {
@@ -1171,37 +1170,37 @@
         {
           "symbol": "ZS",
           "name": "Soybean futures · Commodity",
-          "price": 1186.5,
-          "changePct": -0.6697362913352868,
+          "price": 1186.75,
+          "changePct": -0.648807032231059,
           "url": "https://www.cmegroup.com/search.html?q=Soybean%20futures"
         },
         {
-          "symbol": "PA",
-          "name": "Palladium futures · Commodity",
-          "price": 1368.5,
-          "changePct": -0.6605673451806638,
-          "url": "https://www.cmegroup.com/search.html?q=Palladium%20futures"
+          "symbol": "HG",
+          "name": "Copper futures · Commodity",
+          "price": 6.389,
+          "changePct": -0.10944197228678093,
+          "url": "https://www.cmegroup.com/search.html?q=Copper%20futures"
         },
         {
           "symbol": "NG",
           "name": "Natural gas futures · Commodity",
-          "price": 3.273,
-          "changePct": -0.3652994069147443,
+          "price": 3.29,
+          "changePct": 0.15220438473891895,
           "url": "https://www.cmegroup.com/search.html?q=Natural%20gas%20futures"
         },
         {
           "symbol": "SI",
           "name": "Silver futures · Commodity",
-          "price": 75.585,
-          "changePct": -0.07931343212229724,
+          "price": 75.875,
+          "changePct": 0.3040562722460981,
           "url": "https://www.cmegroup.com/search.html?q=Silver%20futures"
         },
         {
-          "symbol": "HG",
-          "name": "Copper futures · Commodity",
-          "price": 6.394,
-          "changePct": -0.03126811250613366,
-          "url": "https://www.cmegroup.com/search.html?q=Copper%20futures"
+          "symbol": "PA",
+          "name": "Palladium futures · Commodity",
+          "price": 1381.9,
+          "changePct": 0.31213882769079265,
+          "url": "https://www.cmegroup.com/search.html?q=Palladium%20futures"
         }
       ]
     }
