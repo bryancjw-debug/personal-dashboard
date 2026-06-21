@@ -1,10 +1,50 @@
 {
-  "generatedAt": "2026-06-20T00:18:26.323Z",
+  "generatedAt": "2026-06-21T00:13:06.668Z",
   "health": "ok",
   "errors": [],
   "summary": "Captured 173 updates across news, markets, FX, crypto, commodities, and Singapore policy sources.",
   "news": {
     "world": [
+      {
+        "title": "Why an AI company cleaned my New York City apartment for free",
+        "url": "https://www.bbc.com/news/articles/cpwerjy20kyo?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Technology",
+        "category": "World tech",
+        "date": "Sat, 20 Jun 2026 23:18:55 GMT",
+        "summary": "An AI company is sending free cleaners door-to-door in a bid to train the robots it hopes one day will replace them."
+      },
+      {
+        "title": "Why the social media ban is about so much more than social media",
+        "url": "https://www.bbc.com/news/articles/c1jy512r19ro?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Technology",
+        "category": "World tech",
+        "date": "Sat, 20 Jun 2026 23:18:12 GMT",
+        "summary": "If we are witnessing a profound shift in the online space, how will it reshape our relationship with it? Technology and AI editor Zoe Kleinman writes."
+      },
+      {
+        "title": "Lebanon central bank condemns Israeli strike on branch in south",
+        "url": "https://www.channelnewsasia.com/world/lebanon-central-bank-condemns-israeli-strike-branch-in-south-6197711",
+        "source": "CNA World",
+        "category": "World news",
+        "date": "Sun, 21 Jun 2026 05:05:17 +0800",
+        "summary": "The central bank called on the United States and allies \"to guarantee the protection of civilians and Lebanese official institutions\"."
+      },
+      {
+        "title": "Money Box",
+        "url": "https://www.bbc.co.uk/sounds/play/m002xzly?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Business",
+        "category": "World finance",
+        "date": "Sat, 20 Jun 2026 11:30:00 GMT",
+        "summary": "Civil service pensioners face further delays to payments."
+      },
+      {
+        "title": "New video game console aims to get kids moving",
+        "url": "https://www.bbc.com/news/articles/czx50rrz7zro?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Technology",
+        "category": "World tech",
+        "date": "Sat, 20 Jun 2026 01:10:51 GMT",
+        "summary": "The Nex Playground will cost £269 (€319) when it is released on 22 June in the UK and Ireland."
+      },
       {
         "title": "Exclusive-Canadian lender TD tells some employees it will use software to monitor their work",
         "url": "https://www.channelnewsasia.com/business/exclusive-canadian-lender-td-tells-some-employees-it-will-use-software-monitor-their-work-6196461",
@@ -19,46 +59,6 @@
         "source": "CNA Business",
         "category": "World finance",
         "date": "Sat, 20 Jun 2026 04:40:39 +0800",
-        "summary": null
-      },
-      {
-        "title": "UK's top data and AI regulator quits after 'inappropriate' humour",
-        "url": "https://www.bbc.com/news/articles/c0eyq7rnn22o?at_medium=RSS&at_campaign=rss",
-        "source": "BBC Technology",
-        "category": "World tech",
-        "date": "Fri, 19 Jun 2026 20:28:33 GMT",
-        "summary": "Edwards has been the boss of the data watchdog since January 2022, and said he had made inappropriate attempts at humour."
-      },
-      {
-        "title": "Trump tells Axios he no longer views Anthropic as national security threat",
-        "url": "https://www.channelnewsasia.com/business/trump-tells-axios-he-no-longer-views-anthropic-national-security-threat-6196336",
-        "source": "CNA Business",
-        "category": "World finance",
-        "date": "Sat, 20 Jun 2026 03:54:07 +0800",
-        "summary": null
-      },
-      {
-        "title": "O'Leary extends Ryanair contract in deal that could net him over £130m",
-        "url": "https://www.bbc.com/news/articles/c4gyejpy221o?at_medium=RSS&at_campaign=rss",
-        "source": "BBC Business",
-        "category": "World finance",
-        "date": "Fri, 19 Jun 2026 15:27:27 GMT",
-        "summary": "The Ryanair boss extends his contract to 2032, in a deal featuring a bonus scheme that could earn him more than €150m (£130m)."
-      },
-      {
-        "title": "Do you want to know the secret to haggling with call centres?",
-        "url": "https://www.bbc.com/news/videos/ceqdgj4x5q0o?at_medium=RSS&at_campaign=rss",
-        "source": "BBC Business",
-        "category": "World finance",
-        "date": "Fri, 19 Jun 2026 14:36:56 GMT",
-        "summary": "Martin Lewis explains how your TV, phone, breakdown cover, insurance and more could be cheaper!"
-      },
-      {
-        "title": "Brazil's Lula signs decree to freeze illegal betting platform funds",
-        "url": "https://www.channelnewsasia.com/business/brazils-lula-signs-decree-freeze-illegal-betting-platform-funds-6195956",
-        "source": "CNA Business",
-        "category": "World finance",
-        "date": "Fri, 19 Jun 2026 22:12:04 +0800",
         "summary": null
       }
     ],
@@ -269,6 +269,13 @@
           "url": "https://www.nasdaq.com/market-activity/stocks/epam"
         },
         {
+          "symbol": "NVA",
+          "name": "Nova Minerals Limited",
+          "price": 5.76,
+          "changePct": -11.3846,
+          "url": "https://www.nasdaq.com/market-activity/stocks/nva"
+        },
+        {
           "symbol": "CTSH",
           "name": "Cognizant Technology Solutions ",
           "price": 43.7,
@@ -330,13 +337,6 @@
           "price": 61.28,
           "changePct": -7.24989,
           "url": "https://www.nasdaq.com/market-activity/stocks/gib"
-        },
-        {
-          "symbol": "EXLS",
-          "name": "ExlService Holdings, Inc.",
-          "price": 25.93,
-          "changePct": -6.9275,
-          "url": "https://www.nasdaq.com/market-activity/stocks/exls"
         }
       ]
     },
@@ -594,13 +594,6 @@
           "url": "https://www.nasdaq.com/market-activity/etf/spy"
         },
         {
-          "symbol": "OVQ",
-          "name": "Lion-OCBC Securities Hang Seng TECH ETF · SG ETF",
-          "price": 1.545,
-          "changePct": 0.7170769634270681,
-          "url": "https://www.sgx.com/securities/etf/OVQ"
-        },
-        {
           "symbol": "USO",
           "name": "United States Oil Fund · US ETF",
           "price": 114.87,
@@ -636,18 +629,32 @@
           "url": "https://www.sgx.com/securities/etf/MBH"
         },
         {
-          "symbol": "ES3",
-          "name": "SPDR Straits Times Index ETF · SG ETF",
-          "price": 5.28,
-          "changePct": 0.18975368329562087,
-          "url": "https://www.sgx.com/securities/etf/ES3"
+          "symbol": "CLR",
+          "name": "Lion-OCBC Securities Singapore Low Carbon ETF · SG ETF",
+          "price": 0.822,
+          "changePct": 0.12180512199204689,
+          "url": "https://www.sgx.com/securities/etf/CLR"
         },
         {
-          "symbol": "G3B",
-          "name": "Nikko AM Singapore STI ETF · SG ETF",
-          "price": 5.378,
-          "changePct": 0.11168619358540642,
-          "url": "https://www.sgx.com/securities/etf/G3B"
+          "symbol": "HST",
+          "name": "Lion-OCBC Securities Hang Seng TECH ETF · SG ETF",
+          "price": 0.743,
+          "changePct": 0.000003914813968085858,
+          "url": "https://www.sgx.com/securities/etf/HST"
+        },
+        {
+          "symbol": "CFA",
+          "name": "NikkoAM-StraitsTrading Asia ex Japan REIT ETF · SG ETF",
+          "price": 0.785,
+          "changePct": -0.000003340897171197513,
+          "url": "https://www.sgx.com/securities/etf/CFA"
+        },
+        {
+          "symbol": "A35",
+          "name": "ABF Singapore Bond Index Fund · SG ETF",
+          "price": 1.148,
+          "changePct": -0.0870364312496065,
+          "url": "https://www.sgx.com/securities/etf/A35"
         },
         {
           "symbol": "DIA",
@@ -655,13 +662,6 @@
           "price": 515.52,
           "changePct": -0.15107259566342188,
           "url": "https://www.nasdaq.com/market-activity/etf/dia"
-        },
-        {
-          "symbol": "A35",
-          "name": "ABF Singapore Bond Index Fund · SG ETF",
-          "price": 1.148,
-          "changePct": -0.2606449025653172,
-          "url": "https://www.sgx.com/securities/etf/A35"
         }
       ],
       "losers": [
@@ -673,25 +673,25 @@
           "url": "https://www.nasdaq.com/market-activity/etf/slv"
         },
         {
-          "symbol": "CLR",
-          "name": "Lion-OCBC Securities Singapore Low Carbon ETF · SG ETF",
-          "price": 0.822,
-          "changePct": -1.3205287196714919,
-          "url": "https://www.sgx.com/securities/etf/CLR"
-        },
-        {
-          "symbol": "CFA",
-          "name": "NikkoAM-StraitsTrading Asia ex Japan REIT ETF · SG ETF",
-          "price": 0.785,
-          "changePct": -1.133504940654341,
-          "url": "https://www.sgx.com/securities/etf/CFA"
-        },
-        {
-          "symbol": "HST",
+          "symbol": "OVQ",
           "name": "Lion-OCBC Securities Hang Seng TECH ETF · SG ETF",
-          "price": 0.743,
-          "changePct": -0.8010697959237275,
-          "url": "https://www.sgx.com/securities/etf/HST"
+          "price": 1.545,
+          "changePct": -1.1516291860346857,
+          "url": "https://www.sgx.com/securities/etf/OVQ"
+        },
+        {
+          "symbol": "G3B",
+          "name": "Nikko AM Singapore STI ETF · SG ETF",
+          "price": 5.378,
+          "changePct": -0.6832864656265989,
+          "url": "https://www.sgx.com/securities/etf/G3B"
+        },
+        {
+          "symbol": "ES3",
+          "name": "SPDR Straits Times Index ETF · SG ETF",
+          "price": 5.28,
+          "changePct": -0.5649706799024404,
+          "url": "https://www.sgx.com/securities/etf/ES3"
         },
         {
           "symbol": "GLD",
@@ -701,13 +701,6 @@
           "url": "https://www.nasdaq.com/market-activity/etf/gld"
         },
         {
-          "symbol": "A35",
-          "name": "ABF Singapore Bond Index Fund · SG ETF",
-          "price": 1.148,
-          "changePct": -0.2606449025653172,
-          "url": "https://www.sgx.com/securities/etf/A35"
-        },
-        {
           "symbol": "DIA",
           "name": "SPDR Dow Jones Industrial Average ETF · US ETF",
           "price": 515.52,
@@ -715,18 +708,32 @@
           "url": "https://www.nasdaq.com/market-activity/etf/dia"
         },
         {
-          "symbol": "G3B",
-          "name": "Nikko AM Singapore STI ETF · SG ETF",
-          "price": 5.378,
-          "changePct": 0.11168619358540642,
-          "url": "https://www.sgx.com/securities/etf/G3B"
+          "symbol": "A35",
+          "name": "ABF Singapore Bond Index Fund · SG ETF",
+          "price": 1.148,
+          "changePct": -0.0870364312496065,
+          "url": "https://www.sgx.com/securities/etf/A35"
         },
         {
-          "symbol": "ES3",
-          "name": "SPDR Straits Times Index ETF · SG ETF",
-          "price": 5.28,
-          "changePct": 0.18975368329562087,
-          "url": "https://www.sgx.com/securities/etf/ES3"
+          "symbol": "CFA",
+          "name": "NikkoAM-StraitsTrading Asia ex Japan REIT ETF · SG ETF",
+          "price": 0.785,
+          "changePct": -0.000003340897171197513,
+          "url": "https://www.sgx.com/securities/etf/CFA"
+        },
+        {
+          "symbol": "HST",
+          "name": "Lion-OCBC Securities Hang Seng TECH ETF · SG ETF",
+          "price": 0.743,
+          "changePct": 0.000003914813968085858,
+          "url": "https://www.sgx.com/securities/etf/HST"
+        },
+        {
+          "symbol": "CLR",
+          "name": "Lion-OCBC Securities Singapore Low Carbon ETF · SG ETF",
+          "price": 0.822,
+          "changePct": 0.12180512199204689,
+          "url": "https://www.sgx.com/securities/etf/CLR"
         },
         {
           "symbol": "MBH",
@@ -762,229 +769,222 @@
           "price": 114.87,
           "changePct": 0.5602701779379435,
           "url": "https://www.nasdaq.com/market-activity/etf/uso"
-        },
-        {
-          "symbol": "OVQ",
-          "name": "Lion-OCBC Securities Hang Seng TECH ETF · SG ETF",
-          "price": 1.545,
-          "changePct": 0.7170769634270681,
-          "url": "https://www.sgx.com/securities/etf/OVQ"
         }
       ]
     },
     "crypto": {
       "gainers": [
         {
+          "symbol": "AVAX",
+          "name": "Avalanche",
+          "price": 8.07,
+          "changePct": 6.0113,
+          "url": "https://www.coingecko.com/en/coins/avalanche-2"
+        },
+        {
+          "symbol": "SOL",
+          "name": "Solana",
+          "price": 94.43,
+          "changePct": 4.89021,
+          "url": "https://www.coingecko.com/en/coins/solana"
+        },
+        {
+          "symbol": "LAB",
+          "name": "LAB",
+          "price": 17.26,
+          "changePct": 4.88547,
+          "url": "https://www.coingecko.com/en/coins/lab"
+        },
+        {
+          "symbol": "GRAM",
+          "name": "Gram (prev. Toncoin)",
+          "price": 2.11,
+          "changePct": 2.08128,
+          "url": "https://www.coingecko.com/en/coins/the-open-network"
+        },
+        {
+          "symbol": "ASTER",
+          "name": "Aster",
+          "price": 0.835466,
+          "changePct": 2.00303,
+          "url": "https://www.coingecko.com/en/coins/aster-2"
+        },
+        {
+          "symbol": "ETH",
+          "name": "Ethereum",
+          "price": 2243.76,
+          "changePct": 1.68237,
+          "url": "https://www.coingecko.com/en/coins/ethereum"
+        },
+        {
+          "symbol": "ICP",
+          "name": "Internet Computer",
+          "price": 2.97,
+          "changePct": 1.45165,
+          "url": "https://www.coingecko.com/en/coins/internet-computer"
+        },
+        {
+          "symbol": "XMR",
+          "name": "Monero",
+          "price": 413.87,
+          "changePct": 1.40546,
+          "url": "https://www.coingecko.com/en/coins/monero"
+        },
+        {
+          "symbol": "TAO",
+          "name": "Bittensor",
+          "price": 298.45,
+          "changePct": 1.40381,
+          "url": "https://www.coingecko.com/en/coins/bittensor"
+        },
+        {
+          "symbol": "MNT",
+          "name": "Mantle",
+          "price": 0.692733,
+          "changePct": 1.36821,
+          "url": "https://www.coingecko.com/en/coins/mantle"
+        },
+        {
+          "symbol": "BNB",
+          "name": "BNB",
+          "price": 759.7,
+          "changePct": 1.20771,
+          "url": "https://www.coingecko.com/en/coins/binancecoin"
+        },
+        {
+          "symbol": "HYPE",
+          "name": "Hyperliquid",
+          "price": 91.11,
+          "changePct": 1.20123,
+          "url": "https://www.coingecko.com/en/coins/hyperliquid"
+        },
+        {
+          "symbol": "BTC",
+          "name": "Bitcoin",
+          "price": 82948,
+          "changePct": 1.19036,
+          "url": "https://www.coingecko.com/en/coins/bitcoin"
+        },
+        {
+          "symbol": "LTC",
+          "name": "Litecoin",
+          "price": 57.43,
+          "changePct": 1.05426,
+          "url": "https://www.coingecko.com/en/coins/litecoin"
+        },
+        {
+          "symbol": "XRP",
+          "name": "XRP",
+          "price": 1.48,
+          "changePct": 1.03407,
+          "url": "https://www.coingecko.com/en/coins/ripple"
+        }
+      ],
+      "losers": [
+        {
+          "symbol": "ONDO",
+          "name": "Ondo",
+          "price": 0.441834,
+          "changePct": -3.42805,
+          "url": "https://www.coingecko.com/en/coins/ondo-finance"
+        },
+        {
           "symbol": "OKB",
           "name": "OKB",
-          "price": 99.57,
-          "changePct": 6.00695,
+          "price": 96.87,
+          "changePct": -2.81398,
           "url": "https://www.coingecko.com/en/coins/okb"
+        },
+        {
+          "symbol": "UNI",
+          "name": "Uniswap",
+          "price": 3.88,
+          "changePct": -2.33732,
+          "url": "https://www.coingecko.com/en/coins/uniswap"
+        },
+        {
+          "symbol": "WLD",
+          "name": "Worldcoin",
+          "price": 0.781711,
+          "changePct": -2.14777,
+          "url": "https://www.coingecko.com/en/coins/worldcoin-wld"
+        },
+        {
+          "symbol": "WLFI",
+          "name": "World Liberty Financial",
+          "price": 0.074877,
+          "changePct": -1.31423,
+          "url": "https://www.coingecko.com/en/coins/world-liberty-financial"
+        },
+        {
+          "symbol": "M",
+          "name": "MemeCore",
+          "price": 3.69,
+          "changePct": -0.8467,
+          "url": "https://www.coingecko.com/en/coins/memecore"
         },
         {
           "symbol": "ZEC",
           "name": "Zcash",
-          "price": 610.74,
-          "changePct": 4.17252,
+          "price": 607.02,
+          "changePct": -0.81848,
           "url": "https://www.coingecko.com/en/coins/zcash"
         },
         {
           "symbol": "PI",
           "name": "Pi Network",
-          "price": 0.174802,
-          "changePct": 3.84132,
+          "price": 0.173741,
+          "changePct": -0.57096,
           "url": "https://www.coingecko.com/en/coins/pi-network"
-        },
-        {
-          "symbol": "HYPE",
-          "name": "Hyperliquid",
-          "price": 89.9,
-          "changePct": 2.67567,
-          "url": "https://www.coingecko.com/en/coins/hyperliquid"
-        },
-        {
-          "symbol": "FIGR_HELOC",
-          "name": "Figure Heloc",
-          "price": 1.34,
-          "changePct": 2.27895,
-          "url": "https://www.coingecko.com/en/coins/figure-heloc"
-        },
-        {
-          "symbol": "BTC",
-          "name": "Bitcoin",
-          "price": 82030,
-          "changePct": 1.19078,
-          "url": "https://www.coingecko.com/en/coins/bitcoin"
-        },
-        {
-          "symbol": "HTX",
-          "name": "HTX DAO",
-          "price": 0.00000222,
-          "changePct": 1.12847,
-          "url": "https://www.coingecko.com/en/coins/htx-dao"
-        },
-        {
-          "symbol": "TRX",
-          "name": "TRON",
-          "price": 0.418027,
-          "changePct": 1.12084,
-          "url": "https://www.coingecko.com/en/coins/tron"
-        },
-        {
-          "symbol": "WBT",
-          "name": "WhiteBIT Coin",
-          "price": 67.55,
-          "changePct": 0.76904,
-          "url": "https://www.coingecko.com/en/coins/whitebit"
-        },
-        {
-          "symbol": "SKY",
-          "name": "Sky",
-          "price": 0.075333,
-          "changePct": 0.74629,
-          "url": "https://www.coingecko.com/en/coins/sky"
-        },
-        {
-          "symbol": "BNB",
-          "name": "BNB",
-          "price": 750.74,
-          "changePct": 0.66286,
-          "url": "https://www.coingecko.com/en/coins/binancecoin"
-        },
-        {
-          "symbol": "LTC",
-          "name": "Litecoin",
-          "price": 56.84,
-          "changePct": 0.55467,
-          "url": "https://www.coingecko.com/en/coins/litecoin"
-        },
-        {
-          "symbol": "USDF",
-          "name": "Falcon USD",
-          "price": 1.29,
-          "changePct": 0.35517,
-          "url": "https://www.coingecko.com/en/coins/falcon-finance"
-        },
-        {
-          "symbol": "HBAR",
-          "name": "Hedera",
-          "price": 0.103907,
-          "changePct": 0.30303,
-          "url": "https://www.coingecko.com/en/coins/hedera-hashgraph"
-        },
-        {
-          "symbol": "USDT",
-          "name": "Tether",
-          "price": 1.29,
-          "changePct": 0.26937,
-          "url": "https://www.coingecko.com/en/coins/tether"
-        }
-      ],
-      "losers": [
-        {
-          "symbol": "LAB",
-          "name": "LAB",
-          "price": 16.65,
-          "changePct": -28.45575,
-          "url": "https://www.coingecko.com/en/coins/lab"
-        },
-        {
-          "symbol": "XLM",
-          "name": "Stellar",
-          "price": 0.279476,
-          "changePct": -6.80059,
-          "url": "https://www.coingecko.com/en/coins/stellar"
-        },
-        {
-          "symbol": "AVAX",
-          "name": "Avalanche",
-          "price": 7.63,
-          "changePct": -6.118,
-          "url": "https://www.coingecko.com/en/coins/avalanche-2"
-        },
-        {
-          "symbol": "WLD",
-          "name": "Worldcoin",
-          "price": 0.800275,
-          "changePct": -4.24702,
-          "url": "https://www.coingecko.com/en/coins/worldcoin-wld"
         },
         {
           "symbol": "CC",
           "name": "Canton",
-          "price": 0.198423,
-          "changePct": -3.93787,
+          "price": 0.197316,
+          "changePct": -0.46508,
           "url": "https://www.coingecko.com/en/coins/canton-network"
-        },
-        {
-          "symbol": "GRAM",
-          "name": "Gram (prev. Toncoin)",
-          "price": 2.07,
-          "changePct": -3.46811,
-          "url": "https://www.coingecko.com/en/coins/the-open-network"
-        },
-        {
-          "symbol": "TAO",
-          "name": "Bittensor",
-          "price": 294.69,
-          "changePct": -2.87793,
-          "url": "https://www.coingecko.com/en/coins/bittensor"
-        },
-        {
-          "symbol": "ONDO",
-          "name": "Ondo",
-          "price": 0.457537,
-          "changePct": -2.61672,
-          "url": "https://www.coingecko.com/en/coins/ondo-finance"
-        },
-        {
-          "symbol": "UNI",
-          "name": "Uniswap",
-          "price": 3.97,
-          "changePct": -2.29416,
-          "url": "https://www.coingecko.com/en/coins/uniswap"
-        },
-        {
-          "symbol": "NEAR",
-          "name": "NEAR Protocol",
-          "price": 2.82,
-          "changePct": -2.07689,
-          "url": "https://www.coingecko.com/en/coins/near"
         },
         {
           "symbol": "SUI",
           "name": "Sui",
-          "price": 0.923743,
-          "changePct": -1.73215,
+          "price": 0.920186,
+          "changePct": -0.34437,
           "url": "https://www.coingecko.com/en/coins/sui"
         },
         {
-          "symbol": "M",
-          "name": "MemeCore",
-          "price": 3.72,
-          "changePct": -1.1233,
-          "url": "https://www.coingecko.com/en/coins/memecore"
+          "symbol": "SKY",
+          "name": "Sky",
+          "price": 0.07509,
+          "changePct": -0.18548,
+          "url": "https://www.coingecko.com/en/coins/sky"
         },
         {
-          "symbol": "LINK",
-          "name": "Chainlink",
-          "price": 10.2,
-          "changePct": -1.10456,
-          "url": "https://www.coingecko.com/en/coins/chainlink"
+          "symbol": "LEO",
+          "name": "LEO Token",
+          "price": 12.36,
+          "changePct": -0.17109,
+          "url": "https://www.coingecko.com/en/coins/leo-token"
         },
         {
-          "symbol": "XMR",
-          "name": "Monero",
-          "price": 407.76,
-          "changePct": -1.02132,
-          "url": "https://www.coingecko.com/en/coins/monero"
+          "symbol": "XAUT",
+          "name": "Tether Gold",
+          "price": 5350.88,
+          "changePct": -0.08661,
+          "url": "https://www.coingecko.com/en/coins/tether-gold"
         },
         {
-          "symbol": "MORPHO",
-          "name": "Morpho",
-          "price": 2.49,
-          "changePct": -1.00186,
-          "url": "https://www.coingecko.com/en/coins/morpho"
+          "symbol": "XLM",
+          "name": "Stellar",
+          "price": 0.279142,
+          "changePct": -0.08348,
+          "url": "https://www.coingecko.com/en/coins/stellar"
+        },
+        {
+          "symbol": "USD1",
+          "name": "USD1",
+          "price": 1.29,
+          "changePct": -0.03394,
+          "url": "https://www.coingecko.com/en/coins/usd1-wlfi"
         }
       ]
     },
