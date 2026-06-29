@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T00:12:39.524Z",
+  "generatedAt": "2026-06-29T00:18:07.836Z",
   "health": "ok",
   "errors": [],
   "summary": "Captured 173 updates across news, markets, FX, crypto, commodities, and Singapore policy sources.",
@@ -149,35 +149,35 @@
           "symbol": "IBRX",
           "name": "ImmunityBio, Inc.",
           "price": 8.71,
-          "changePct": 11.81,
+          "changePct": 11.810014,
           "url": "https://www.nasdaq.com/market-activity/stocks/ibrx"
         },
         {
           "symbol": "CCC",
           "name": "CCC Intelligent Solutions Holdi",
           "price": 5.01,
-          "changePct": 11.5813,
+          "changePct": 11.58129,
           "url": "https://www.nasdaq.com/market-activity/stocks/ccc"
         },
         {
           "symbol": "DKNG",
           "name": "DraftKings Inc.",
           "price": 25.7,
-          "changePct": 11.2554,
+          "changePct": 11.255412,
           "url": "https://www.nasdaq.com/market-activity/stocks/dkng"
         },
         {
           "symbol": "CHYM",
           "name": "Chime Financial, Inc.",
           "price": 20.32,
-          "changePct": 11.2206,
+          "changePct": 11.220576,
           "url": "https://www.nasdaq.com/market-activity/stocks/chym"
         },
         {
           "symbol": "FROG",
           "name": "JFrog Ltd.",
           "price": 87.58,
-          "changePct": 11.1421,
+          "changePct": 11.14213,
           "url": "https://www.nasdaq.com/market-activity/stocks/frog"
         },
         {
@@ -249,7 +249,7 @@
           "symbol": "DSC",
           "name": "DSC Holdings Ltd.",
           "price": 7.25,
-          "changePct": -19.9779,
+          "changePct": -19.97792,
           "url": "https://www.nasdaq.com/market-activity/stocks/dsc"
         },
         {
@@ -284,7 +284,7 @@
           "symbol": "FORM",
           "name": "FormFactor, Inc.",
           "price": 130.74,
-          "changePct": -12.1076,
+          "changePct": -12.107559,
           "url": "https://www.nasdaq.com/market-activity/stocks/form"
         },
         {
@@ -298,14 +298,14 @@
           "symbol": "CRDO",
           "name": "Credo Technology Group Holding ",
           "price": 238,
-          "changePct": -11.204,
+          "changePct": -11.203969,
           "url": "https://www.nasdaq.com/market-activity/stocks/crdo"
         },
         {
           "symbol": "COCO",
           "name": "The Vita Coco Company, Inc.",
           "price": 73.71,
-          "changePct": -10.7087,
+          "changePct": -10.708666,
           "url": "https://www.nasdaq.com/market-activity/stocks/coco"
         },
         {
@@ -775,214 +775,214 @@
         {
           "symbol": "GRAM",
           "name": "Gram (prev. Toncoin)",
-          "price": 2.06,
-          "changePct": 1.56173,
+          "price": 2.05,
+          "changePct": 1.37778,
           "url": "https://www.coingecko.com/en/coins/the-open-network"
         },
         {
           "symbol": "WLFI",
           "name": "World Liberty Financial",
-          "price": 0.075217,
-          "changePct": 1.21461,
+          "price": 0.075281,
+          "changePct": 1.19099,
           "url": "https://www.coingecko.com/en/coins/world-liberty-financial"
-        },
-        {
-          "symbol": "LTC",
-          "name": "Litecoin",
-          "price": 55.02,
-          "changePct": 0.84701,
-          "url": "https://www.coingecko.com/en/coins/litecoin"
         },
         {
           "symbol": "SOL",
           "name": "Solana",
-          "price": 91.93,
-          "changePct": 0.76322,
+          "price": 92.26,
+          "changePct": 1.00508,
           "url": "https://www.coingecko.com/en/coins/solana"
+        },
+        {
+          "symbol": "LTC",
+          "name": "Litecoin",
+          "price": 55.14,
+          "changePct": 0.98293,
+          "url": "https://www.coingecko.com/en/coins/litecoin"
         },
         {
           "symbol": "SKY",
           "name": "Sky",
-          "price": 0.064202,
-          "changePct": 0.5577,
+          "price": 0.064089,
+          "changePct": 0.33075,
           "url": "https://www.coingecko.com/en/coins/sky"
         },
         {
           "symbol": "LEO",
           "name": "LEO Token",
           "price": 12.21,
-          "changePct": 0.27758,
+          "changePct": 0.29255,
           "url": "https://www.coingecko.com/en/coins/leo-token"
         },
         {
           "symbol": "HTX",
           "name": "HTX DAO",
           "price": 0.00000216,
-          "changePct": 0.24224,
+          "changePct": 0.2673,
           "url": "https://www.coingecko.com/en/coins/htx-dao"
         },
         {
-          "symbol": "TRX",
-          "name": "TRON",
-          "price": 0.416261,
-          "changePct": 0.10285,
-          "url": "https://www.coingecko.com/en/coins/tron"
+          "symbol": "ASTER",
+          "name": "Aster",
+          "price": 0.805827,
+          "changePct": 0.20838,
+          "url": "https://www.coingecko.com/en/coins/aster-2"
+        },
+        {
+          "symbol": "AVAX",
+          "name": "Avalanche",
+          "price": 8.32,
+          "changePct": 0.16514,
+          "url": "https://www.coingecko.com/en/coins/avalanche-2"
         },
         {
           "symbol": "RLUSD",
           "name": "Ripple USD",
           "price": 1.3,
-          "changePct": 0.0702,
+          "changePct": 0.08118,
           "url": "https://www.coingecko.com/en/coins/ripple-usd"
         },
         {
           "symbol": "BFUSD",
           "name": "BFUSD",
           "price": 1.29,
-          "changePct": 0.05808,
+          "changePct": 0.06968,
           "url": "https://www.coingecko.com/en/coins/bfusd"
         },
         {
-          "symbol": "USDC",
-          "name": "USDC",
+          "symbol": "USD1",
+          "name": "USD1",
           "price": 1.29,
-          "changePct": 0.02466,
-          "url": "https://www.coingecko.com/en/coins/usd-coin"
+          "changePct": 0.06507,
+          "url": "https://www.coingecko.com/en/coins/usd1-wlfi"
         },
         {
           "symbol": "USDD",
           "name": "USDD",
           "price": 1.29,
-          "changePct": 0.02464,
+          "changePct": 0.06183,
           "url": "https://www.coingecko.com/en/coins/usdd"
-        },
-        {
-          "symbol": "USDE",
-          "name": "Ethena USDe",
-          "price": 1.29,
-          "changePct": 0.02353,
-          "url": "https://www.coingecko.com/en/coins/ethena-usde"
-        },
-        {
-          "symbol": "BUIDL",
-          "name": "BlackRock USD Institutional Digital Liquidity Fund",
-          "price": 1.29,
-          "changePct": 0.01623,
-          "url": "https://www.coingecko.com/en/coins/blackrock-usd-institutional-digital-liquidity-fund"
         },
         {
           "symbol": "PYUSD",
           "name": "PayPal USD",
           "price": 1.29,
-          "changePct": 0.01463,
+          "changePct": 0.0587,
           "url": "https://www.coingecko.com/en/coins/paypal-usd"
+        },
+        {
+          "symbol": "DAI",
+          "name": "Dai",
+          "price": 1.29,
+          "changePct": 0.05627,
+          "url": "https://www.coingecko.com/en/coins/dai"
         }
       ],
       "losers": [
         {
           "symbol": "LAB",
           "name": "LAB",
-          "price": 20.23,
-          "changePct": -8.4406,
+          "price": 20.15,
+          "changePct": -10.27971,
           "url": "https://www.coingecko.com/en/coins/lab"
         },
         {
           "symbol": "ZEC",
           "name": "Zcash",
-          "price": 485.34,
-          "changePct": -5.30543,
+          "price": 484.98,
+          "changePct": -5.51842,
           "url": "https://www.coingecko.com/en/coins/zcash"
         },
         {
           "symbol": "NEAR",
           "name": "NEAR Protocol",
           "price": 2.36,
-          "changePct": -4.31183,
+          "changePct": -4.91585,
           "url": "https://www.coingecko.com/en/coins/near"
         },
         {
           "symbol": "PI",
           "name": "Pi Network",
-          "price": 0.159631,
-          "changePct": -4.19436,
+          "price": 0.159909,
+          "changePct": -4.2808,
           "url": "https://www.coingecko.com/en/coins/pi-network"
         },
         {
           "symbol": "CC",
           "name": "Canton",
-          "price": 0.192009,
-          "changePct": -3.287,
+          "price": 0.192325,
+          "changePct": -3.80218,
           "url": "https://www.coingecko.com/en/coins/canton-network"
         },
         {
           "symbol": "BCH",
           "name": "Bitcoin Cash",
-          "price": 246.25,
-          "changePct": -2.77417,
+          "price": 246.46,
+          "changePct": -2.64844,
           "url": "https://www.coingecko.com/en/coins/bitcoin-cash"
         },
         {
           "symbol": "AAVE",
           "name": "Aave",
-          "price": 117.71,
-          "changePct": -2.75187,
+          "price": 117.83,
+          "changePct": -2.61838,
           "url": "https://www.coingecko.com/en/coins/aave"
         },
         {
           "symbol": "WLD",
           "name": "Worldcoin",
-          "price": 0.568137,
-          "changePct": -2.5584,
+          "price": 0.567959,
+          "changePct": -2.6011,
           "url": "https://www.coingecko.com/en/coins/worldcoin-wld"
         },
         {
           "symbol": "MNT",
           "name": "Mantle",
-          "price": 0.550925,
-          "changePct": -2.35567,
+          "price": 0.551483,
+          "changePct": -2.43344,
           "url": "https://www.coingecko.com/en/coins/mantle"
-        },
-        {
-          "symbol": "DOGE",
-          "name": "Dogecoin",
-          "price": 0.094264,
-          "changePct": -2.20322,
-          "url": "https://www.coingecko.com/en/coins/dogecoin"
         },
         {
           "symbol": "TAO",
           "name": "Bittensor",
-          "price": 265,
-          "changePct": -2.20279,
+          "price": 265.47,
+          "changePct": -2.17921,
           "url": "https://www.coingecko.com/en/coins/bittensor"
+        },
+        {
+          "symbol": "DOGE",
+          "name": "Dogecoin",
+          "price": 0.094406,
+          "changePct": -2.09381,
+          "url": "https://www.coingecko.com/en/coins/dogecoin"
         },
         {
           "symbol": "XMR",
           "name": "Monero",
-          "price": 399.74,
-          "changePct": -1.49628,
+          "price": 399.6,
+          "changePct": -1.52134,
           "url": "https://www.coingecko.com/en/coins/monero"
+        },
+        {
+          "symbol": "BNB",
+          "name": "BNB",
+          "price": 711.89,
+          "changePct": -1.26199,
+          "url": "https://www.coingecko.com/en/coins/binancecoin"
+        },
+        {
+          "symbol": "ONDO",
+          "name": "Ondo",
+          "price": 0.398548,
+          "changePct": -1.24551,
+          "url": "https://www.coingecko.com/en/coins/ondo-finance"
         },
         {
           "symbol": "ADA",
           "name": "Cardano",
-          "price": 0.185399,
-          "changePct": -1.35716,
+          "price": 0.185783,
+          "changePct": -1.21836,
           "url": "https://www.coingecko.com/en/coins/cardano"
-        },
-        {
-          "symbol": "SHIB",
-          "name": "Shiba Inu",
-          "price": 0.00000538,
-          "changePct": -1.33455,
-          "url": "https://www.coingecko.com/en/coins/shiba-inu"
-        },
-        {
-          "symbol": "HYPE",
-          "name": "Hyperliquid",
-          "price": 79.03,
-          "changePct": -1.20967,
-          "url": "https://www.coingecko.com/en/coins/hyperliquid"
         }
       ]
     },
@@ -1012,36 +1012,36 @@
         {
           "symbol": "ZS",
           "name": "Soybean futures · Commodity",
-          "price": 1151,
-          "changePct": 2.1975582685904547,
+          "price": 1150.5,
+          "changePct": 2.153163152053274,
           "url": "https://www.cmegroup.com/search.html?q=Soybean%20futures"
         },
         {
           "symbol": "NG",
           "name": "Natural gas futures · Commodity",
-          "price": 3.296,
-          "changePct": 2.011762750856043,
+          "price": 3.295,
+          "changePct": 1.98081258011853,
           "url": "https://www.cmegroup.com/search.html?q=Natural%20gas%20futures"
         },
         {
           "symbol": "ZW",
           "name": "Wheat futures · Commodity",
-          "price": 587.75,
-          "changePct": 1.6428880242109816,
+          "price": 588.25,
+          "changePct": 1.7293558149589279,
           "url": "https://www.cmegroup.com/search.html?q=Wheat%20futures"
         },
         {
           "symbol": "ZC",
           "name": "Corn futures · Commodity",
-          "price": 418,
-          "changePct": 1.2719563900666264,
+          "price": 417.75,
+          "changePct": 1.2113870381586918,
           "url": "https://www.cmegroup.com/search.html?q=Corn%20futures"
         },
         {
           "symbol": "BZ",
           "name": "Brent crude futures · Commodity",
-          "price": 72.81,
-          "changePct": 1.1390500910726575,
+          "price": 72.85,
+          "changePct": 1.1946133653981912,
           "url": "https://www.cmegroup.com/search.html?q=Brent%20crude%20futures"
         },
         {
@@ -1054,44 +1054,44 @@
         {
           "symbol": "HG",
           "name": "Copper futures · Commodity",
-          "price": 6.179,
-          "changePct": 0.6106000787753819,
+          "price": 6.182,
+          "changePct": 0.6594480801083383,
           "url": "https://www.cmegroup.com/search.html?q=Copper%20futures"
         },
         {
           "symbol": "CL",
           "name": "WTI crude futures · Commodity",
-          "price": 69.58,
-          "changePct": 0.5055562994297491,
+          "price": 69.6,
+          "changePct": 0.5344455079090276,
           "url": "https://www.cmegroup.com/search.html?q=WTI%20crude%20futures"
         },
         {
           "symbol": "PA",
           "name": "Palladium futures · Commodity",
-          "price": 1208.5,
-          "changePct": -0.0413564929693962,
+          "price": 1209.5,
+          "changePct": 0.0413564929693962,
           "url": "https://www.cmegroup.com/search.html?q=Palladium%20futures"
         },
         {
           "symbol": "GC",
           "name": "Gold futures · Commodity",
-          "price": 4075.6,
-          "changePct": -0.0760034130724528,
+          "price": 4070,
+          "changePct": -0.2133020637954838,
           "url": "https://www.cmegroup.com/search.html?q=Gold%20futures"
-        },
-        {
-          "symbol": "PL",
-          "name": "Platinum futures · Commodity",
-          "price": 1627.1,
-          "changePct": -0.23300167742825528,
-          "url": "https://www.cmegroup.com/search.html?q=Platinum%20futures"
         },
         {
           "symbol": "SI",
           "name": "Silver futures · Commodity",
-          "price": 58.985,
-          "changePct": -0.3917777963447534,
+          "price": 59.025,
+          "changePct": -0.3242296249766747,
           "url": "https://www.cmegroup.com/search.html?q=Silver%20futures"
+        },
+        {
+          "symbol": "PL",
+          "name": "Platinum futures · Commodity",
+          "price": 1625.6,
+          "changePct": -0.32497543287282393,
+          "url": "https://www.cmegroup.com/search.html?q=Platinum%20futures"
         }
       ],
       "losers": [
@@ -1112,57 +1112,57 @@
         {
           "symbol": "RB",
           "name": "RBOB gasoline futures · Commodity",
-          "price": 2.8366,
-          "changePct": -4.074935512251261,
+          "price": 2.8385,
+          "changePct": -4.010683371474723,
           "url": "https://www.cmegroup.com/search.html?q=RBOB%20gasoline%20futures"
         },
         {
           "symbol": "HO",
           "name": "Heating oil futures · Commodity",
-          "price": 3.131,
-          "changePct": -2.406333096663648,
+          "price": 3.1327,
+          "changePct": -2.3533438811619947,
           "url": "https://www.cmegroup.com/search.html?q=Heating%20oil%20futures"
-        },
-        {
-          "symbol": "SI",
-          "name": "Silver futures · Commodity",
-          "price": 58.985,
-          "changePct": -0.3917777963447534,
-          "url": "https://www.cmegroup.com/search.html?q=Silver%20futures"
         },
         {
           "symbol": "PL",
           "name": "Platinum futures · Commodity",
-          "price": 1627.1,
-          "changePct": -0.23300167742825528,
+          "price": 1625.6,
+          "changePct": -0.32497543287282393,
           "url": "https://www.cmegroup.com/search.html?q=Platinum%20futures"
+        },
+        {
+          "symbol": "SI",
+          "name": "Silver futures · Commodity",
+          "price": 59.025,
+          "changePct": -0.3242296249766747,
+          "url": "https://www.cmegroup.com/search.html?q=Silver%20futures"
         },
         {
           "symbol": "GC",
           "name": "Gold futures · Commodity",
-          "price": 4075.6,
-          "changePct": -0.0760034130724528,
+          "price": 4070,
+          "changePct": -0.2133020637954838,
           "url": "https://www.cmegroup.com/search.html?q=Gold%20futures"
         },
         {
           "symbol": "PA",
           "name": "Palladium futures · Commodity",
-          "price": 1208.5,
-          "changePct": -0.0413564929693962,
+          "price": 1209.5,
+          "changePct": 0.0413564929693962,
           "url": "https://www.cmegroup.com/search.html?q=Palladium%20futures"
         },
         {
           "symbol": "CL",
           "name": "WTI crude futures · Commodity",
-          "price": 69.58,
-          "changePct": 0.5055562994297491,
+          "price": 69.6,
+          "changePct": 0.5344455079090276,
           "url": "https://www.cmegroup.com/search.html?q=WTI%20crude%20futures"
         },
         {
           "symbol": "HG",
           "name": "Copper futures · Commodity",
-          "price": 6.179,
-          "changePct": 0.6106000787753819,
+          "price": 6.182,
+          "changePct": 0.6594480801083383,
           "url": "https://www.cmegroup.com/search.html?q=Copper%20futures"
         },
         {
@@ -1175,29 +1175,29 @@
         {
           "symbol": "BZ",
           "name": "Brent crude futures · Commodity",
-          "price": 72.81,
-          "changePct": 1.1390500910726575,
+          "price": 72.85,
+          "changePct": 1.1946133653981912,
           "url": "https://www.cmegroup.com/search.html?q=Brent%20crude%20futures"
         },
         {
           "symbol": "ZC",
           "name": "Corn futures · Commodity",
-          "price": 418,
-          "changePct": 1.2719563900666264,
+          "price": 417.75,
+          "changePct": 1.2113870381586918,
           "url": "https://www.cmegroup.com/search.html?q=Corn%20futures"
         },
         {
           "symbol": "ZW",
           "name": "Wheat futures · Commodity",
-          "price": 587.75,
-          "changePct": 1.6428880242109816,
+          "price": 588.25,
+          "changePct": 1.7293558149589279,
           "url": "https://www.cmegroup.com/search.html?q=Wheat%20futures"
         },
         {
           "symbol": "NG",
           "name": "Natural gas futures · Commodity",
-          "price": 3.296,
-          "changePct": 2.011762750856043,
+          "price": 3.295,
+          "changePct": 1.98081258011853,
           "url": "https://www.cmegroup.com/search.html?q=Natural%20gas%20futures"
         }
       ]
