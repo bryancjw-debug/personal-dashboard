@@ -1,10 +1,18 @@
 {
-  "generatedAt": "2026-07-11T00:02:54.665Z",
+  "generatedAt": "2026-07-11T00:07:14.977Z",
   "health": "ok",
   "errors": [],
   "summary": "Captured 173 updates across news, markets, FX, crypto, commodities, and Singapore policy sources.",
   "news": {
     "world": [
+      {
+        "title": "Apple sues OpenAI for stealing trade secrets",
+        "url": "https://www.channelnewsasia.com/world/apple-sues-openai-trade-secrets-6247591",
+        "source": "CNA Business",
+        "category": "World finance",
+        "date": "Sat, 11 Jul 2026 08:02:50 +0800",
+        "summary": "The lawsuit paints a picture of an aggressive effort by OpenAI to poach Apple employees and extract confidential information to build its own device."
+      },
       {
         "title": "Meta discontinues AI image feature days after launch",
         "url": "https://www.channelnewsasia.com/business/meta-discontinues-ai-image-feature-days-after-launch-6247581",
@@ -31,7 +39,7 @@
       },
       {
         "title": "South Korean chip giant SK hynix surges on first day of trading on Wall Street",
-        "url": "https://www.channelnewsasia.com/world/south-korean-chip-giant-sk-hynix-surges-first-day-trading-wall-street-6247311",
+        "url": "https://www.channelnewsasia.com/world/sk-hynix-wall-street-shares-surge-6247311",
         "source": "CNA Business",
         "category": "World finance",
         "date": "Sat, 11 Jul 2026 04:58:00 +0800",
@@ -52,14 +60,6 @@
         "category": "World finance",
         "date": "Sat, 11 Jul 2026 02:23:28 +0800",
         "summary": null
-      },
-      {
-        "title": "Chip giant SK Hynix raises $26.5bn as shares surge in bumper US listing",
-        "url": "https://www.bbc.co.uk/news/articles/c4gym70r0y4o?at_medium=RSS&at_campaign=rss",
-        "source": "BBC Business",
-        "category": "World finance",
-        "date": "Fri, 10 Jul 2026 16:42:35 GMT",
-        "summary": "The shares surged as much as 17% in their Nasdaq trading debut on Friday following the record-breaking foreign listing."
       }
     ],
     "singapore": [
@@ -128,14 +128,14 @@
           "symbol": "PLBL",
           "name": "Polibeli Group Ltd",
           "price": 8.12,
-          "changePct": 26.479748,
+          "changePct": 26.4797,
           "url": "https://www.nasdaq.com/market-activity/stocks/plbl"
         },
         {
           "symbol": "EQPT",
           "name": "EquipmentShare.com Inc",
           "price": 18.65,
-          "changePct": 16.562498,
+          "changePct": 16.5625,
           "url": "https://www.nasdaq.com/market-activity/stocks/eqpt"
         },
         {
@@ -184,7 +184,7 @@
           "symbol": "GGAL",
           "name": "Grupo Financiero Galicia S.A.",
           "price": 53.73,
-          "changePct": 8.787205,
+          "changePct": 8.7872,
           "url": "https://www.nasdaq.com/market-activity/stocks/ggal"
         },
         {
@@ -226,7 +226,7 @@
           "symbol": "META",
           "name": "Meta Platforms, Inc.",
           "price": 669.21,
-          "changePct": 5.974859,
+          "changePct": 5.97486,
           "url": "https://www.nasdaq.com/market-activity/stocks/meta"
         }
       ],
@@ -235,21 +235,21 @@
           "symbol": "MRNA",
           "name": "Moderna, Inc.",
           "price": 68.27,
-          "changePct": -10.828111,
+          "changePct": -10.8281,
           "url": "https://www.nasdaq.com/market-activity/stocks/mrna"
         },
         {
           "symbol": "FRMI",
           "name": "Fermi Inc.",
           "price": 6.59,
-          "changePct": -9.972677,
+          "changePct": -9.97268,
           "url": "https://www.nasdaq.com/market-activity/stocks/frmi"
         },
         {
           "symbol": "IONS",
           "name": "Ionis Pharmaceuticals, Inc.",
           "price": 58.25,
-          "changePct": -9.366729,
+          "changePct": -9.36673,
           "url": "https://www.nasdaq.com/market-activity/stocks/ions"
         },
         {
@@ -270,7 +270,7 @@
           "symbol": "OUST",
           "name": "Ouster, Inc.",
           "price": 43.28,
-          "changePct": -8.941721,
+          "changePct": -8.94172,
           "url": "https://www.nasdaq.com/market-activity/stocks/oust"
         },
         {
@@ -298,14 +298,14 @@
           "symbol": "SAIL",
           "name": "SailPoint, Inc.",
           "price": 13.71,
-          "changePct": -7.6767697,
+          "changePct": -7.67677,
           "url": "https://www.nasdaq.com/market-activity/stocks/sail"
         },
         {
           "symbol": "SRPT",
           "name": "Sarepta Therapeutics, Inc.",
           "price": 18.95,
-          "changePct": -7.6510706,
+          "changePct": -7.65107,
           "url": "https://www.nasdaq.com/market-activity/stocks/srpt"
         },
         {
@@ -326,7 +326,7 @@
           "symbol": "IBRX",
           "name": "ImmunityBio, Inc.",
           "price": 8.22,
-          "changePct": -7.328068,
+          "changePct": -7.32807,
           "url": "https://www.nasdaq.com/market-activity/stocks/ibrx"
         },
         {
@@ -775,214 +775,214 @@
         {
           "symbol": "DEXE",
           "name": "DeXe",
-          "price": 45.26,
-          "changePct": 21.96491,
+          "price": 45.3,
+          "changePct": 16.36302,
           "url": "https://www.coingecko.com/en/coins/dexe"
         },
         {
           "symbol": "M",
           "name": "MemeCore",
           "price": 1.72,
-          "changePct": 9.99415,
+          "changePct": 9.96479,
           "url": "https://www.coingecko.com/en/coins/memecore"
         },
         {
           "symbol": "DOT",
           "name": "Polkadot",
           "price": 1.13,
-          "changePct": 6.34044,
+          "changePct": 6.47234,
           "url": "https://www.coingecko.com/en/coins/polkadot"
         },
         {
           "symbol": "SKY",
           "name": "Sky",
           "price": 0.077388,
-          "changePct": 6.26034,
+          "changePct": 6.40132,
           "url": "https://www.coingecko.com/en/coins/sky"
         },
         {
           "symbol": "AAVE",
           "name": "Aave",
-          "price": 123.65,
-          "changePct": 4.82037,
+          "price": 123.57,
+          "changePct": 4.63772,
           "url": "https://www.coingecko.com/en/coins/aave"
-        },
-        {
-          "symbol": "UNI",
-          "name": "Uniswap",
-          "price": 4.55,
-          "changePct": 3.81238,
-          "url": "https://www.coingecko.com/en/coins/uniswap"
-        },
-        {
-          "symbol": "ZEC",
-          "name": "Zcash",
-          "price": 644.41,
-          "changePct": 3.8022,
-          "url": "https://www.coingecko.com/en/coins/zcash"
         },
         {
           "symbol": "ONDO",
           "name": "Ondo",
-          "price": 0.423886,
-          "changePct": 3.7995,
+          "price": 0.424187,
+          "changePct": 4.0619,
           "url": "https://www.coingecko.com/en/coins/ondo-finance"
         },
         {
-          "symbol": "BCH",
-          "name": "Bitcoin Cash",
-          "price": 316.77,
-          "changePct": 3.19343,
-          "url": "https://www.coingecko.com/en/coins/bitcoin-cash"
+          "symbol": "ZEC",
+          "name": "Zcash",
+          "price": 644.57,
+          "changePct": 3.80384,
+          "url": "https://www.coingecko.com/en/coins/zcash"
+        },
+        {
+          "symbol": "UNI",
+          "name": "Uniswap",
+          "price": 4.54,
+          "changePct": 3.72182,
+          "url": "https://www.coingecko.com/en/coins/uniswap"
         },
         {
           "symbol": "FIGR_HELOC",
           "name": "Figure Heloc",
           "price": 1.34,
-          "changePct": 3.10396,
+          "changePct": 3.09295,
           "url": "https://www.coingecko.com/en/coins/figure-heloc"
         },
         {
-          "symbol": "SUI",
-          "name": "Sui",
-          "price": 0.954063,
-          "changePct": 3.06256,
-          "url": "https://www.coingecko.com/en/coins/sui"
+          "symbol": "ETH",
+          "name": "Ethereum",
+          "price": 2319.87,
+          "changePct": 3.07135,
+          "url": "https://www.coingecko.com/en/coins/ethereum"
         },
         {
           "symbol": "LINK",
           "name": "Chainlink",
           "price": 10.29,
-          "changePct": 3.05781,
+          "changePct": 3.04166,
           "url": "https://www.coingecko.com/en/coins/chainlink"
         },
         {
-          "symbol": "ETH",
-          "name": "Ethereum",
-          "price": 2320.31,
-          "changePct": 3.03404,
-          "url": "https://www.coingecko.com/en/coins/ethereum"
+          "symbol": "SUI",
+          "name": "Sui",
+          "price": 0.95382,
+          "changePct": 3.02023,
+          "url": "https://www.coingecko.com/en/coins/sui"
         },
         {
-          "symbol": "GRAM",
-          "name": "Gram (prev. Toncoin)",
-          "price": 2.13,
-          "changePct": 2.71281,
-          "url": "https://www.coingecko.com/en/coins/the-open-network"
+          "symbol": "BCH",
+          "name": "Bitcoin Cash",
+          "price": 316.53,
+          "changePct": 3.00687,
+          "url": "https://www.coingecko.com/en/coins/bitcoin-cash"
         },
         {
-          "symbol": "SHIB",
-          "name": "Shiba Inu",
-          "price": 0.00000568,
-          "changePct": 2.63916,
-          "url": "https://www.coingecko.com/en/coins/shiba-inu"
+          "symbol": "XLM",
+          "name": "Stellar",
+          "price": 0.246311,
+          "changePct": 2.79585,
+          "url": "https://www.coingecko.com/en/coins/stellar"
+        },
+        {
+          "symbol": "XMR",
+          "name": "Monero",
+          "price": 416.69,
+          "changePct": 2.69112,
+          "url": "https://www.coingecko.com/en/coins/monero"
         }
       ],
       "losers": [
         {
-          "symbol": "ICP",
-          "name": "Internet Computer",
-          "price": 2.97,
-          "changePct": -2.41857,
-          "url": "https://www.coingecko.com/en/coins/internet-computer"
-        },
-        {
           "symbol": "MORPHO",
           "name": "Morpho",
           "price": 2.83,
-          "changePct": -2.29834,
+          "changePct": -2.4511,
           "url": "https://www.coingecko.com/en/coins/morpho"
         },
         {
-          "symbol": "NEAR",
-          "name": "NEAR Protocol",
-          "price": 2.45,
-          "changePct": -1.38091,
-          "url": "https://www.coingecko.com/en/coins/near"
+          "symbol": "ICP",
+          "name": "Internet Computer",
+          "price": 2.97,
+          "changePct": -2.2718,
+          "url": "https://www.coingecko.com/en/coins/internet-computer"
         },
         {
           "symbol": "LEO",
           "name": "LEO Token",
           "price": 12.19,
-          "changePct": -1.3764,
+          "changePct": -1.40551,
           "url": "https://www.coingecko.com/en/coins/leo-token"
+        },
+        {
+          "symbol": "NEAR",
+          "name": "NEAR Protocol",
+          "price": 2.45,
+          "changePct": -1.22541,
+          "url": "https://www.coingecko.com/en/coins/near"
         },
         {
           "symbol": "CRO",
           "name": "Cronos",
-          "price": 0.072026,
-          "changePct": -0.73825,
+          "price": 0.071966,
+          "changePct": -0.78247,
           "url": "https://www.coingecko.com/en/coins/crypto-com-chain"
-        },
-        {
-          "symbol": "TRX",
-          "name": "TRON",
-          "price": 0.42684,
-          "changePct": -0.49494,
-          "url": "https://www.coingecko.com/en/coins/tron"
         },
         {
           "symbol": "HTX",
           "name": "HTX DAO",
           "price": 0.00000238,
-          "changePct": -0.48219,
+          "changePct": -0.51703,
           "url": "https://www.coingecko.com/en/coins/htx-dao"
+        },
+        {
+          "symbol": "TRX",
+          "name": "TRON",
+          "price": 0.42681,
+          "changePct": -0.49603,
+          "url": "https://www.coingecko.com/en/coins/tron"
+        },
+        {
+          "symbol": "WLFI",
+          "name": "World Liberty Financial",
+          "price": 0.07512,
+          "changePct": -0.39454,
+          "url": "https://www.coingecko.com/en/coins/world-liberty-financial"
         },
         {
           "symbol": "WLD",
           "name": "Worldcoin",
-          "price": 0.492228,
-          "changePct": -0.4355,
+          "price": 0.491789,
+          "changePct": -0.19579,
           "url": "https://www.coingecko.com/en/coins/worldcoin-wld"
         },
         {
           "symbol": "TAO",
           "name": "Bittensor",
-          "price": 275.26,
-          "changePct": -0.33621,
+          "price": 275.14,
+          "changePct": -0.09756,
           "url": "https://www.coingecko.com/en/coins/bittensor"
         },
         {
-          "symbol": "WLFI",
-          "name": "World Liberty Financial",
-          "price": 0.075135,
-          "changePct": -0.19358,
-          "url": "https://www.coingecko.com/en/coins/world-liberty-financial"
-        },
-        {
-          "symbol": "USDY",
-          "name": "Ondo US Dollar Yield",
-          "price": 1.47,
-          "changePct": -0.05126,
-          "url": "https://www.coingecko.com/en/coins/ondo-us-dollar-yield"
+          "symbol": "CC",
+          "name": "Canton",
+          "price": 0.172817,
+          "changePct": -0.08384,
+          "url": "https://www.coingecko.com/en/coins/canton-network"
         },
         {
           "symbol": "PAXG",
           "name": "PAX Gold",
-          "price": 5314.45,
-          "changePct": -0.01679,
+          "price": 5315.29,
+          "changePct": -0.0004,
           "url": "https://www.coingecko.com/en/coins/pax-gold"
         },
         {
           "symbol": "XAUT",
           "name": "Tether Gold",
-          "price": 5309.02,
-          "changePct": 0.0135,
+          "price": 5309.12,
+          "changePct": 0.00392,
           "url": "https://www.coingecko.com/en/coins/tether-gold"
         },
         {
-          "symbol": "DAI",
-          "name": "Dai",
+          "symbol": "BUIDL",
+          "name": "BlackRock USD Institutional Digital Liquidity Fund",
           "price": 1.29,
-          "changePct": 0.03069,
-          "url": "https://www.coingecko.com/en/coins/dai"
+          "changePct": 0.0366,
+          "url": "https://www.coingecko.com/en/coins/blackrock-usd-institutional-digital-liquidity-fund"
         },
         {
-          "symbol": "PYUSD",
-          "name": "PayPal USD",
+          "symbol": "USDG",
+          "name": "Global Dollar",
           "price": 1.29,
-          "changePct": 0.03425,
-          "url": "https://www.coingecko.com/en/coins/paypal-usd"
+          "changePct": 0.03785,
+          "url": "https://www.coingecko.com/en/coins/global-dollar"
         }
       ]
     },
