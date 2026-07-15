@@ -1,10 +1,28 @@
 {
-  "generatedAt": "2026-07-14T23:55:45.590Z",
-  "health": "ok",
-  "errors": [],
-  "summary": "Captured 173 updates across news, markets, FX, crypto, commodities, and Singapore policy sources.",
+  "generatedAt": "2026-07-15T00:02:15.784Z",
+  "health": "partial",
+  "errors": [
+    "FX: https://api.frankfurter.app/latest?from=SGD&to=USD,EUR,GBP,AUD,JPY,CNY,MYR,HKD returned 521"
+  ],
+  "summary": "Captured 165 updates. 1 source needs manual verification.",
   "news": {
     "world": [
+      {
+        "title": "Kuroda's negative rate surprise shocked his own BOJ board, minutes show",
+        "url": "https://www.channelnewsasia.com/business/kurodas-negative-rate-surprise-shocked-his-own-boj-board-minutes-show-6254791",
+        "source": "CNA Business",
+        "category": "World finance",
+        "date": "Wed, 15 Jul 2026 07:54:01 +0800",
+        "summary": null
+      },
+      {
+        "title": "Exclusive-AI cloud company CoreWeave explores Wall Street playbook to hedge memory-chip price risk",
+        "url": "https://www.channelnewsasia.com/business/exclusive-ai-cloud-company-coreweave-explores-wall-street-playbook-hedge-memory-chip-price-risk-6254781",
+        "source": "CNA Business",
+        "category": "World finance",
+        "date": "Wed, 15 Jul 2026 07:50:16 +0800",
+        "summary": null
+      },
       {
         "title": "Midnight social media curfew proposed for older UK teens",
         "url": "https://www.bbc.co.uk/news/articles/c982857nlrlo?at_medium=RSS&at_campaign=rss",
@@ -44,22 +62,6 @@
         "category": "World finance",
         "date": "Tue, 14 Jul 2026 23:00:41 GMT",
         "summary": "The cost of hearing oil spike following the US-Israel war with Iran which forced up crude prices."
-      },
-      {
-        "title": "UK plans default midnight social media curfew for 16- and 17-year-olds",
-        "url": "https://www.channelnewsasia.com/business/uk-plans-default-midnight-social-media-curfew-16-and-17-year-olds-6254556",
-        "source": "CNA Business",
-        "category": "World finance",
-        "date": "Wed, 15 Jul 2026 05:33:02 +0800",
-        "summary": null
-      },
-      {
-        "title": "OpenAI's first hardware device will be a speaker, Bloomberg News reports",
-        "url": "https://www.channelnewsasia.com/business/openais-first-hardware-device-will-be-speaker-bloomberg-news-reports-6254471",
-        "source": "CNA Business",
-        "category": "World finance",
-        "date": "Wed, 15 Jul 2026 04:53:25 +0800",
-        "summary": null
       }
     ],
     "singapore": [
@@ -130,14 +132,14 @@
           "symbol": "SKHY",
           "name": "SK Hynix Inc. American Depositary Shares",
           "price": 193.92,
-          "changePct": 27.28585,
+          "changePct": 27.285852,
           "url": "https://www.nasdaq.com/market-activity/stocks/skhy"
         },
         {
           "symbol": "CHRN",
           "name": "ChronoScale Holdings Corporatio",
           "price": 23.01,
-          "changePct": 16.683575,
+          "changePct": 16.683569,
           "url": "https://www.nasdaq.com/market-activity/stocks/chrn"
         },
         {
@@ -151,14 +153,14 @@
           "symbol": "ATAI",
           "name": "AtaiBeckley Inc.",
           "price": 5.67,
-          "changePct": 14.084514,
+          "changePct": 14.084506,
           "url": "https://www.nasdaq.com/market-activity/stocks/atai"
         },
         {
           "symbol": "SEZL",
           "name": "Sezzle Inc.",
           "price": 182.39,
-          "changePct": 13.8159,
+          "changePct": 13.815912,
           "url": "https://www.nasdaq.com/market-activity/stocks/sezl"
         },
         {
@@ -172,7 +174,7 @@
           "symbol": "CRWD",
           "name": "CrowdStrike Holdings, Inc.",
           "price": 210.73,
-          "changePct": 12.144108,
+          "changePct": 12.144111,
           "url": "https://www.nasdaq.com/market-activity/stocks/crwd"
         },
         {
@@ -186,7 +188,7 @@
           "symbol": "RGC",
           "name": "Regencell Bioscience Holdings L",
           "price": 5.65,
-          "changePct": 11.8812,
+          "changePct": 11.881188,
           "url": "https://www.nasdaq.com/market-activity/stocks/rgc"
         },
         {
@@ -200,14 +202,14 @@
           "symbol": "NTSK",
           "name": "Netskope, Inc.",
           "price": 14.27,
-          "changePct": 11.4844,
+          "changePct": 11.484377,
           "url": "https://www.nasdaq.com/market-activity/stocks/ntsk"
         },
         {
           "symbol": "TSEM",
           "name": "Tower Semiconductor Ltd.",
           "price": 255.49,
-          "changePct": 11.2374,
+          "changePct": 11.237373,
           "url": "https://www.nasdaq.com/market-activity/stocks/tsem"
         },
         {
@@ -221,14 +223,14 @@
           "symbol": "OKTA",
           "name": "Okta, Inc.",
           "price": 154.62,
-          "changePct": 10.8149,
+          "changePct": 10.814877,
           "url": "https://www.nasdaq.com/market-activity/stocks/okta"
         },
         {
           "symbol": "TXG",
           "name": "10x Genomics, Inc.",
           "price": 45.79,
-          "changePct": 9.62413,
+          "changePct": 9.624132,
           "url": "https://www.nasdaq.com/market-activity/stocks/txg"
         }
       ],
@@ -244,7 +246,7 @@
           "symbol": "PSNY",
           "name": "Polestar Automotive Holding UK ",
           "price": 15.31,
-          "changePct": -14.9917,
+          "changePct": -14.99167,
           "url": "https://www.nasdaq.com/market-activity/stocks/psny"
         },
         {
@@ -258,15 +260,22 @@
           "symbol": "ERIC",
           "name": "Ericsson",
           "price": 10.14,
-          "changePct": -13.4812,
+          "changePct": -13.481228,
           "url": "https://www.nasdaq.com/market-activity/stocks/eric"
         },
         {
           "symbol": "BIIB",
           "name": "Biogen Inc.",
           "price": 191.95,
-          "changePct": -8.171077,
+          "changePct": -8.171076,
           "url": "https://www.nasdaq.com/market-activity/stocks/biib"
+        },
+        {
+          "symbol": "NBIS",
+          "name": "Nebius Group N.V.",
+          "price": 194.09,
+          "changePct": -7.8001037,
+          "url": "https://www.nasdaq.com/market-activity/stocks/nbis"
         },
         {
           "symbol": "VIRT",
@@ -274,13 +283,6 @@
           "price": 59.57,
           "changePct": -7.88619,
           "url": "https://www.nasdaq.com/market-activity/stocks/virt"
-        },
-        {
-          "symbol": "NBIS",
-          "name": "Nebius Group N.V.",
-          "price": 194.09,
-          "changePct": -7.8001,
-          "url": "https://www.nasdaq.com/market-activity/stocks/nbis"
         },
         {
           "symbol": "TDC",
@@ -293,21 +295,21 @@
           "symbol": "FRHC",
           "name": "Freedom Holding Corp.",
           "price": 148.91,
-          "changePct": -7.4058,
+          "changePct": -7.4057975,
           "url": "https://www.nasdaq.com/market-activity/stocks/frhc"
         },
         {
           "symbol": "TEAM",
           "name": "Atlassian Corporation",
           "price": 89.08,
-          "changePct": -7.36273,
+          "changePct": -7.3627286,
           "url": "https://www.nasdaq.com/market-activity/stocks/team"
         },
         {
           "symbol": "WULF",
           "name": "TeraWulf Inc.",
           "price": 19.41,
-          "changePct": -7.0847273,
+          "changePct": -7.0847297,
           "url": "https://www.nasdaq.com/market-activity/stocks/wulf"
         },
         {
@@ -321,21 +323,21 @@
           "symbol": "ISRG",
           "name": "Intuitive Surgical, Inc.",
           "price": 379.5,
-          "changePct": -6.78424,
+          "changePct": -6.7842393,
           "url": "https://www.nasdaq.com/market-activity/stocks/isrg"
         },
         {
           "symbol": "IMOS",
           "name": "ChipMOS TECHNOLOGIES INC.",
           "price": 64.47,
-          "changePct": -6.75441,
+          "changePct": -6.754409,
           "url": "https://www.nasdaq.com/market-activity/stocks/imos"
         },
         {
           "symbol": "KRYS",
           "name": "Krystal Biotech, Inc.",
           "price": 339.43,
-          "changePct": -6.60632,
+          "changePct": -6.6063204,
           "url": "https://www.nasdaq.com/market-activity/stocks/krys"
         }
       ]
@@ -777,214 +779,214 @@
         {
           "symbol": "ZEC",
           "name": "Zcash",
-          "price": 730.89,
-          "changePct": 14.07999,
+          "price": 727.62,
+          "changePct": 13.03744,
           "url": "https://www.coingecko.com/en/coins/zcash"
-        },
-        {
-          "symbol": "ETH",
-          "name": "Ethereum",
-          "price": 2440.02,
-          "changePct": 6.27762,
-          "url": "https://www.coingecko.com/en/coins/ethereum"
         },
         {
           "symbol": "CC",
           "name": "Canton",
-          "price": 0.178346,
-          "changePct": 5.98207,
+          "price": 0.179196,
+          "changePct": 6.49298,
           "url": "https://www.coingecko.com/en/coins/canton-network"
+        },
+        {
+          "symbol": "ETH",
+          "name": "Ethereum",
+          "price": 2439.23,
+          "changePct": 6.26617,
+          "url": "https://www.coingecko.com/en/coins/ethereum"
+        },
+        {
+          "symbol": "WLD",
+          "name": "Worldcoin",
+          "price": 0.53447,
+          "changePct": 5.73951,
+          "url": "https://www.coingecko.com/en/coins/worldcoin-wld"
         },
         {
           "symbol": "LINK",
           "name": "Chainlink",
           "price": 10.77,
-          "changePct": 5.77303,
+          "changePct": 5.56411,
           "url": "https://www.coingecko.com/en/coins/chainlink"
-        },
-        {
-          "symbol": "WLD",
-          "name": "Worldcoin",
-          "price": 0.534898,
-          "changePct": 5.55038,
-          "url": "https://www.coingecko.com/en/coins/worldcoin-wld"
         },
         {
           "symbol": "SUI",
           "name": "Sui",
-          "price": 0.982592,
-          "changePct": 5.4181,
+          "price": 0.983416,
+          "changePct": 5.42495,
           "url": "https://www.coingecko.com/en/coins/sui"
         },
         {
           "symbol": "ADA",
           "name": "Cardano",
-          "price": 0.212936,
-          "changePct": 4.73977,
+          "price": 0.213474,
+          "changePct": 4.97312,
           "url": "https://www.coingecko.com/en/coins/cardano"
         },
         {
           "symbol": "AAVE",
           "name": "Aave",
-          "price": 127.65,
-          "changePct": 4.56793,
+          "price": 127.63,
+          "changePct": 4.41202,
           "url": "https://www.coingecko.com/en/coins/aave"
         },
         {
           "symbol": "NEAR",
           "name": "NEAR Protocol",
           "price": 2.59,
-          "changePct": 4.46289,
+          "changePct": 4.41117,
           "url": "https://www.coingecko.com/en/coins/near"
+        },
+        {
+          "symbol": "BTC",
+          "name": "Bitcoin",
+          "price": 83874,
+          "changePct": 4.10848,
+          "url": "https://www.coingecko.com/en/coins/bitcoin"
         },
         {
           "symbol": "LTC",
           "name": "Litecoin",
           "price": 58.61,
-          "changePct": 4.40356,
+          "changePct": 4.09333,
           "url": "https://www.coingecko.com/en/coins/litecoin"
-        },
-        {
-          "symbol": "BTC",
-          "name": "Bitcoin",
-          "price": 83871,
-          "changePct": 4.09946,
-          "url": "https://www.coingecko.com/en/coins/bitcoin"
         },
         {
           "symbol": "XRP",
           "name": "XRP",
           "price": 1.43,
-          "changePct": 4.05988,
+          "changePct": 3.90235,
           "url": "https://www.coingecko.com/en/coins/ripple"
+        },
+        {
+          "symbol": "AVAX",
+          "name": "Avalanche",
+          "price": 8.66,
+          "changePct": 3.79582,
+          "url": "https://www.coingecko.com/en/coins/avalanche-2"
+        },
+        {
+          "symbol": "SOL",
+          "name": "Solana",
+          "price": 100.39,
+          "changePct": 3.60991,
+          "url": "https://www.coingecko.com/en/coins/solana"
         },
         {
           "symbol": "WBT",
           "name": "WhiteBIT Coin",
           "price": 73.28,
-          "changePct": 3.70225,
+          "changePct": 3.59086,
           "url": "https://www.coingecko.com/en/coins/whitebit"
-        },
-        {
-          "symbol": "SOL",
-          "name": "Solana",
-          "price": 100.33,
-          "changePct": 3.62868,
-          "url": "https://www.coingecko.com/en/coins/solana"
-        },
-        {
-          "symbol": "AVAX",
-          "name": "Avalanche",
-          "price": 8.64,
-          "changePct": 3.61814,
-          "url": "https://www.coingecko.com/en/coins/avalanche-2"
         }
       ],
       "losers": [
         {
           "symbol": "DEXE",
           "name": "DeXe",
-          "price": 53.61,
-          "changePct": -3.12023,
+          "price": 53.53,
+          "changePct": -3.69105,
           "url": "https://www.coingecko.com/en/coins/dexe"
+        },
+        {
+          "symbol": "WLFI",
+          "name": "World Liberty Financial",
+          "price": 0.074001,
+          "changePct": -0.83295,
+          "url": "https://www.coingecko.com/en/coins/world-liberty-financial"
         },
         {
           "symbol": "USDY",
           "name": "Ondo US Dollar Yield",
           "price": 1.46,
-          "changePct": -0.94058,
+          "changePct": -0.80394,
           "url": "https://www.coingecko.com/en/coins/ondo-us-dollar-yield"
-        },
-        {
-          "symbol": "WLFI",
-          "name": "World Liberty Financial",
-          "price": 0.074069,
-          "changePct": -0.64131,
-          "url": "https://www.coingecko.com/en/coins/world-liberty-financial"
         },
         {
           "symbol": "RLUSD",
           "name": "Ripple USD",
           "price": 1.29,
-          "changePct": -0.32398,
+          "changePct": -0.32072,
           "url": "https://www.coingecko.com/en/coins/ripple-usd"
-        },
-        {
-          "symbol": "USDC",
-          "name": "USDC",
-          "price": 1.29,
-          "changePct": -0.30572,
-          "url": "https://www.coingecko.com/en/coins/usd-coin"
-        },
-        {
-          "symbol": "USDF",
-          "name": "Falcon USD",
-          "price": 1.29,
-          "changePct": -0.29042,
-          "url": "https://www.coingecko.com/en/coins/falcon-finance"
-        },
-        {
-          "symbol": "BUIDL",
-          "name": "BlackRock USD Institutional Digital Liquidity Fund",
-          "price": 1.29,
-          "changePct": -0.2862,
-          "url": "https://www.coingecko.com/en/coins/blackrock-usd-institutional-digital-liquidity-fund"
-        },
-        {
-          "symbol": "USDS",
-          "name": "USDS",
-          "price": 1.29,
-          "changePct": -0.27749,
-          "url": "https://www.coingecko.com/en/coins/usds"
-        },
-        {
-          "symbol": "PYUSD",
-          "name": "PayPal USD",
-          "price": 1.29,
-          "changePct": -0.27409,
-          "url": "https://www.coingecko.com/en/coins/paypal-usd"
-        },
-        {
-          "symbol": "USDE",
-          "name": "Ethena USDe",
-          "price": 1.29,
-          "changePct": -0.27326,
-          "url": "https://www.coingecko.com/en/coins/ethena-usde"
-        },
-        {
-          "symbol": "DAI",
-          "name": "Dai",
-          "price": 1.29,
-          "changePct": -0.26523,
-          "url": "https://www.coingecko.com/en/coins/dai"
         },
         {
           "symbol": "USD1",
           "name": "USD1",
           "price": 1.29,
-          "changePct": -0.24114,
+          "changePct": -0.29882,
           "url": "https://www.coingecko.com/en/coins/usd1-wlfi"
+        },
+        {
+          "symbol": "USDC",
+          "name": "USDC",
+          "price": 1.29,
+          "changePct": -0.29565,
+          "url": "https://www.coingecko.com/en/coins/usd-coin"
+        },
+        {
+          "symbol": "USDS",
+          "name": "USDS",
+          "price": 1.29,
+          "changePct": -0.28931,
+          "url": "https://www.coingecko.com/en/coins/usds"
+        },
+        {
+          "symbol": "DAI",
+          "name": "Dai",
+          "price": 1.29,
+          "changePct": -0.28844,
+          "url": "https://www.coingecko.com/en/coins/dai"
+        },
+        {
+          "symbol": "PYUSD",
+          "name": "PayPal USD",
+          "price": 1.29,
+          "changePct": -0.2859,
+          "url": "https://www.coingecko.com/en/coins/paypal-usd"
+        },
+        {
+          "symbol": "USDG",
+          "name": "Global Dollar",
+          "price": 1.29,
+          "changePct": -0.28241,
+          "url": "https://www.coingecko.com/en/coins/global-dollar"
+        },
+        {
+          "symbol": "BUIDL",
+          "name": "BlackRock USD Institutional Digital Liquidity Fund",
+          "price": 1.29,
+          "changePct": -0.27426,
+          "url": "https://www.coingecko.com/en/coins/blackrock-usd-institutional-digital-liquidity-fund"
+        },
+        {
+          "symbol": "USDE",
+          "name": "Ethena USDe",
+          "price": 1.29,
+          "changePct": -0.26383,
+          "url": "https://www.coingecko.com/en/coins/ethena-usde"
+        },
+        {
+          "symbol": "USDF",
+          "name": "Falcon USD",
+          "price": 1.29,
+          "changePct": -0.26013,
+          "url": "https://www.coingecko.com/en/coins/falcon-finance"
         },
         {
           "symbol": "BFUSD",
           "name": "BFUSD",
           "price": 1.29,
-          "changePct": -0.23826,
+          "changePct": -0.24398,
           "url": "https://www.coingecko.com/en/coins/bfusd"
         },
         {
           "symbol": "USDT",
           "name": "Tether",
           "price": 1.29,
-          "changePct": -0.22495,
+          "changePct": -0.24267,
           "url": "https://www.coingecko.com/en/coins/tether"
-        },
-        {
-          "symbol": "USDG",
-          "name": "Global Dollar",
-          "price": 1.29,
-          "changePct": -0.19874,
-          "url": "https://www.coingecko.com/en/coins/global-dollar"
         }
       ]
     },
@@ -1028,15 +1030,15 @@
         {
           "symbol": "SI",
           "name": "Silver futures · Commodity",
-          "price": 59.18,
-          "changePct": 2.6824464021918386,
+          "price": 59.105,
+          "changePct": 2.552314880053199,
           "url": "https://www.cmegroup.com/search.html?q=Silver%20futures"
         },
         {
           "symbol": "PL",
           "name": "Platinum futures · Commodity",
-          "price": 1643.7,
-          "changePct": 2.590191617330361,
+          "price": 1642.4,
+          "changePct": 2.5090531802052625,
           "url": "https://www.cmegroup.com/search.html?q=Platinum%20futures"
         },
         {
@@ -1056,22 +1058,22 @@
         {
           "symbol": "CL",
           "name": "WTI crude futures · Commodity",
-          "price": 79.9,
-          "changePct": 2.2523683441245628,
+          "price": 79.86,
+          "changePct": 2.201178172237634,
           "url": "https://www.cmegroup.com/search.html?q=WTI%20crude%20futures"
         },
         {
           "symbol": "HG",
           "name": "Copper futures · Commodity",
-          "price": 6.37,
-          "changePct": 2.1979817539590583,
+          "price": 6.368,
+          "changePct": 2.1658944755433764,
           "url": "https://www.cmegroup.com/search.html?q=Copper%20futures"
         },
         {
           "symbol": "GC",
           "name": "Gold futures · Commodity",
-          "price": 4060.6,
-          "changePct": 1.5911933950462822,
+          "price": 4058.8,
+          "changePct": 1.5461596197147907,
           "url": "https://www.cmegroup.com/search.html?q=Gold%20futures"
         },
         {
@@ -1084,15 +1086,15 @@
         {
           "symbol": "HO",
           "name": "Heating oil futures · Commodity",
-          "price": 3.8546,
-          "changePct": 0.8107528448762179,
+          "price": 3.8583,
+          "changePct": 0.9075202878083052,
           "url": "https://www.cmegroup.com/search.html?q=Heating%20oil%20futures"
         },
         {
           "symbol": "NG",
           "name": "Natural gas futures · Commodity",
-          "price": 2.907,
-          "changePct": 0.3451820972258935,
+          "price": 2.906,
+          "changePct": 0.31066363073218356,
           "url": "https://www.cmegroup.com/search.html?q=Natural%20gas%20futures"
         }
       ],
@@ -1107,8 +1109,8 @@
         {
           "symbol": "RB",
           "name": "RBOB gasoline futures · Commodity",
-          "price": 3.0455,
-          "changePct": -3.8151803726160844,
+          "price": 3.0429,
+          "changePct": -3.897295142286487,
           "url": "https://www.cmegroup.com/search.html?q=RBOB%20gasoline%20futures"
         },
         {
@@ -1128,15 +1130,15 @@
         {
           "symbol": "NG",
           "name": "Natural gas futures · Commodity",
-          "price": 2.907,
-          "changePct": 0.3451820972258935,
+          "price": 2.906,
+          "changePct": 0.31066363073218356,
           "url": "https://www.cmegroup.com/search.html?q=Natural%20gas%20futures"
         },
         {
           "symbol": "HO",
           "name": "Heating oil futures · Commodity",
-          "price": 3.8546,
-          "changePct": 0.8107528448762179,
+          "price": 3.8583,
+          "changePct": 0.9075202878083052,
           "url": "https://www.cmegroup.com/search.html?q=Heating%20oil%20futures"
         },
         {
@@ -1149,22 +1151,22 @@
         {
           "symbol": "GC",
           "name": "Gold futures · Commodity",
-          "price": 4060.6,
-          "changePct": 1.5911933950462822,
+          "price": 4058.8,
+          "changePct": 1.5461596197147907,
           "url": "https://www.cmegroup.com/search.html?q=Gold%20futures"
         },
         {
           "symbol": "HG",
           "name": "Copper futures · Commodity",
-          "price": 6.37,
-          "changePct": 2.1979817539590583,
+          "price": 6.368,
+          "changePct": 2.1658944755433764,
           "url": "https://www.cmegroup.com/search.html?q=Copper%20futures"
         },
         {
           "symbol": "CL",
           "name": "WTI crude futures · Commodity",
-          "price": 79.9,
-          "changePct": 2.2523683441245628,
+          "price": 79.86,
+          "changePct": 2.201178172237634,
           "url": "https://www.cmegroup.com/search.html?q=WTI%20crude%20futures"
         },
         {
@@ -1184,15 +1186,15 @@
         {
           "symbol": "PL",
           "name": "Platinum futures · Commodity",
-          "price": 1643.7,
-          "changePct": 2.590191617330361,
+          "price": 1642.4,
+          "changePct": 2.5090531802052625,
           "url": "https://www.cmegroup.com/search.html?q=Platinum%20futures"
         },
         {
           "symbol": "SI",
           "name": "Silver futures · Commodity",
-          "price": 59.18,
-          "changePct": 2.6824464021918386,
+          "price": 59.105,
+          "changePct": 2.552314880053199,
           "url": "https://www.cmegroup.com/search.html?q=Silver%20futures"
         },
         {
@@ -1205,72 +1207,7 @@
       ]
     }
   },
-  "fx": [
-    {
-      "code": "USD",
-      "pair": "SGD/USD",
-      "label": "1 SGD buys USD",
-      "rate": 0.77359,
-      "changePct": -0.01680194385565366,
-      "url": "https://eservices.mas.gov.sg/Statistics/msb/ExchangeRates.aspx"
-    },
-    {
-      "code": "EUR",
-      "pair": "SGD/EUR",
-      "label": "1 SGD buys EUR",
-      "rate": 0.67829,
-      "changePct": 0.14912591542640494,
-      "url": "https://eservices.mas.gov.sg/Statistics/msb/ExchangeRates.aspx"
-    },
-    {
-      "code": "GBP",
-      "pair": "SGD/GBP",
-      "label": "1 SGD buys GBP",
-      "rate": 0.578,
-      "changePct": 0.013842746400880568,
-      "url": "https://eservices.mas.gov.sg/Statistics/msb/ExchangeRates.aspx"
-    },
-    {
-      "code": "AUD",
-      "pair": "SGD/AUD",
-      "label": "1 SGD buys AUD",
-      "rate": 1.1143,
-      "changePct": -0.008973438621678839,
-      "url": "https://eservices.mas.gov.sg/Statistics/msb/ExchangeRates.aspx"
-    },
-    {
-      "code": "JPY",
-      "pair": "SGD/JPY",
-      "label": "1 SGD buys JPY",
-      "rate": 125.49,
-      "changePct": 0.03188521323235715,
-      "url": "https://eservices.mas.gov.sg/Statistics/msb/ExchangeRates.aspx"
-    },
-    {
-      "code": "CNY",
-      "pair": "SGD/CNY",
-      "label": "1 SGD buys CNY",
-      "rate": 5.245,
-      "changePct": 0.019069412662096375,
-      "url": "https://eservices.mas.gov.sg/Statistics/msb/ExchangeRates.aspx"
-    },
-    {
-      "code": "MYR",
-      "pair": "SGD/MYR",
-      "label": "1 SGD buys MYR",
-      "rate": 3.1547,
-      "changePct": 0.15556543272589138,
-      "url": "https://eservices.mas.gov.sg/Statistics/msb/ExchangeRates.aspx"
-    },
-    {
-      "code": "HKD",
-      "pair": "SGD/HKD",
-      "label": "1 SGD buys HKD",
-      "rate": 6.063,
-      "changePct": -0.031327804250688596,
-      "url": "https://eservices.mas.gov.sg/Statistics/msb/ExchangeRates.aspx"
-    }
-  ],
+  "fx": [],
   "officialLinks": {
     "sgx": "https://www.sgx.com/securities/stock-screener",
     "us": "https://www.nasdaq.com/market-activity/stocks/screener",
