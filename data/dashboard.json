@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T23:56:01.227Z",
+  "generatedAt": "2026-07-18T00:05:09.533Z",
   "health": "ok",
   "errors": [],
   "summary": "Captured 173 updates across news, markets, FX, crypto, commodities, and Singapore policy sources.",
@@ -129,7 +129,7 @@
           "symbol": "LCID",
           "name": "Lucid Group, Inc.",
           "price": 7.36,
-          "changePct": 13.93189,
+          "changePct": 13.9319,
           "url": "https://www.nasdaq.com/market-activity/stocks/lcid"
         },
         {
@@ -150,14 +150,14 @@
           "symbol": "DNTH",
           "name": "Dianthus Therapeutics, Inc.",
           "price": 105.6,
-          "changePct": 10.749869,
+          "changePct": 10.7499,
           "url": "https://www.nasdaq.com/market-activity/stocks/dnth"
         },
         {
           "symbol": "COAG",
           "name": "Hemab Therapeutics Holdings, In",
           "price": 49.29,
-          "changePct": 10.689427,
+          "changePct": 10.6894,
           "url": "https://www.nasdaq.com/market-activity/stocks/coag"
         },
         {
@@ -199,14 +199,14 @@
           "symbol": "MBX",
           "name": "MBX Biosciences, Inc.",
           "price": 62.92,
-          "changePct": 7.8875146,
+          "changePct": 7.88751,
           "url": "https://www.nasdaq.com/market-activity/stocks/mbx"
         },
         {
           "symbol": "IOVA",
           "name": "Iovance Biotherapeutics, Inc.",
           "price": 5,
-          "changePct": 7.2961407,
+          "changePct": 7.29614,
           "url": "https://www.nasdaq.com/market-activity/stocks/iova"
         },
         {
@@ -227,7 +227,7 @@
           "symbol": "FRVO",
           "name": "Fervo Energy Company",
           "price": 24.65,
-          "changePct": 6.663778,
+          "changePct": 6.66378,
           "url": "https://www.nasdaq.com/market-activity/stocks/frvo"
         }
       ],
@@ -236,7 +236,7 @@
           "symbol": "ISRG",
           "name": "Intuitive Surgical, Inc.",
           "price": 345.42,
-          "changePct": -14.145099,
+          "changePct": -14.1451,
           "url": "https://www.nasdaq.com/market-activity/stocks/isrg"
         },
         {
@@ -292,14 +292,14 @@
           "symbol": "MARA",
           "name": "MARA Holdings, Inc.",
           "price": 10.69,
-          "changePct": -6.3922987,
+          "changePct": -6.3923,
           "url": "https://www.nasdaq.com/market-activity/stocks/mara"
         },
         {
           "symbol": "FIGR",
           "name": "Figure Technology Solutions, In",
           "price": 28.97,
-          "changePct": -6.1548476,
+          "changePct": -6.15485,
           "url": "https://www.nasdaq.com/market-activity/stocks/figr"
         },
         {
@@ -320,7 +320,7 @@
           "symbol": "HOOD",
           "name": "Robinhood Markets, Inc.",
           "price": 99.96,
-          "changePct": -5.7159004,
+          "changePct": -5.7159,
           "url": "https://www.nasdaq.com/market-activity/stocks/hood"
         },
         {
@@ -334,7 +334,7 @@
           "symbol": "MAAS",
           "name": "Maase Inc.",
           "price": 19.76,
-          "changePct": -5.6801934,
+          "changePct": -5.68019,
           "url": "https://www.nasdaq.com/market-activity/stocks/maas"
         }
       ]
@@ -776,106 +776,106 @@
         {
           "symbol": "ZEC",
           "name": "Zcash",
-          "price": 705.73,
-          "changePct": 4.06708,
+          "price": 705.38,
+          "changePct": 4.016,
           "url": "https://www.coingecko.com/en/coins/zcash"
         },
         {
           "symbol": "ADA",
           "name": "Cardano",
-          "price": 0.215223,
-          "changePct": 3.77661,
+          "price": 0.21524,
+          "changePct": 3.82868,
           "url": "https://www.coingecko.com/en/coins/cardano"
         },
         {
           "symbol": "M",
           "name": "MemeCore",
-          "price": 1.61,
-          "changePct": 2.78051,
+          "price": 1.62,
+          "changePct": 3.05216,
           "url": "https://www.coingecko.com/en/coins/memecore"
-        },
-        {
-          "symbol": "FIGR_HELOC",
-          "name": "Figure Heloc",
-          "price": 1.33,
-          "changePct": 2.58414,
-          "url": "https://www.coingecko.com/en/coins/figure-heloc"
-        },
-        {
-          "symbol": "ONDO",
-          "name": "Ondo",
-          "price": 0.481016,
-          "changePct": 2.55217,
-          "url": "https://www.coingecko.com/en/coins/ondo-finance"
         },
         {
           "symbol": "UNI",
           "name": "Uniswap",
           "price": 4.69,
-          "changePct": 2.44346,
+          "changePct": 2.82142,
           "url": "https://www.coingecko.com/en/coins/uniswap"
         },
         {
           "symbol": "DEXE",
           "name": "DeXe",
-          "price": 46.83,
-          "changePct": 2.08456,
+          "price": 46.98,
+          "changePct": 2.65786,
           "url": "https://www.coingecko.com/en/coins/dexe"
+        },
+        {
+          "symbol": "FIGR_HELOC",
+          "name": "Figure Heloc",
+          "price": 1.33,
+          "changePct": 2.59774,
+          "url": "https://www.coingecko.com/en/coins/figure-heloc"
+        },
+        {
+          "symbol": "ONDO",
+          "name": "Ondo",
+          "price": 0.48103,
+          "changePct": 2.55507,
+          "url": "https://www.coingecko.com/en/coins/ondo-finance"
         },
         {
           "symbol": "TAO",
           "name": "Bittensor",
-          "price": 251.49,
-          "changePct": 1.73072,
+          "price": 251.68,
+          "changePct": 2.0042,
           "url": "https://www.coingecko.com/en/coins/bittensor"
         },
         {
           "symbol": "OKB",
           "name": "OKB",
-          "price": 104.92,
-          "changePct": 1.40006,
+          "price": 104.99,
+          "changePct": 1.47214,
           "url": "https://www.coingecko.com/en/coins/okb"
+        },
+        {
+          "symbol": "AVAX",
+          "name": "Avalanche",
+          "price": 8.5,
+          "changePct": 1.22756,
+          "url": "https://www.coingecko.com/en/coins/avalanche-2"
         },
         {
           "symbol": "ICP",
           "name": "Internet Computer",
           "price": 2.77,
-          "changePct": 1.2581,
+          "changePct": 1.19786,
           "url": "https://www.coingecko.com/en/coins/internet-computer"
-        },
-        {
-          "symbol": "AVAX",
-          "name": "Avalanche",
-          "price": 8.49,
-          "changePct": 1.08917,
-          "url": "https://www.coingecko.com/en/coins/avalanche-2"
         },
         {
           "symbol": "ASTER",
           "name": "Aster",
-          "price": 0.804004,
-          "changePct": 0.89558,
+          "price": 0.804528,
+          "changePct": 0.97671,
           "url": "https://www.coingecko.com/en/coins/aster-2"
-        },
-        {
-          "symbol": "HTX",
-          "name": "HTX DAO",
-          "price": 0.00000235,
-          "changePct": 0.84403,
-          "url": "https://www.coingecko.com/en/coins/htx-dao"
         },
         {
           "symbol": "SHIB",
           "name": "Shiba Inu",
           "price": 0.00000535,
-          "changePct": 0.78633,
+          "changePct": 0.90299,
           "url": "https://www.coingecko.com/en/coins/shiba-inu"
+        },
+        {
+          "symbol": "HTX",
+          "name": "HTX DAO",
+          "price": 0.00000235,
+          "changePct": 0.8753,
+          "url": "https://www.coingecko.com/en/coins/htx-dao"
         },
         {
           "symbol": "PAXG",
           "name": "PAX Gold",
-          "price": 5169.31,
-          "changePct": 0.75329,
+          "price": 5169.28,
+          "changePct": 0.70183,
           "url": "https://www.coingecko.com/en/coins/pax-gold"
         }
       ],
@@ -883,106 +883,106 @@
         {
           "symbol": "MORPHO",
           "name": "Morpho",
-          "price": 2.53,
-          "changePct": -5.44706,
+          "price": 2.54,
+          "changePct": -5.30179,
           "url": "https://www.coingecko.com/en/coins/morpho"
         },
         {
           "symbol": "MNT",
           "name": "Mantle",
-          "price": 0.550109,
-          "changePct": -3.37834,
+          "price": 0.550397,
+          "changePct": -3.32768,
           "url": "https://www.coingecko.com/en/coins/mantle"
-        },
-        {
-          "symbol": "SKY",
-          "name": "Sky",
-          "price": 0.076743,
-          "changePct": -2.84105,
-          "url": "https://www.coingecko.com/en/coins/sky"
         },
         {
           "symbol": "RAIN",
           "name": "Rain",
-          "price": 0.01825285,
-          "changePct": -2.76331,
+          "price": 0.01824934,
+          "changePct": -2.782,
           "url": "https://www.coingecko.com/en/coins/rain"
+        },
+        {
+          "symbol": "SKY",
+          "name": "Sky",
+          "price": 0.076841,
+          "changePct": -2.71715,
+          "url": "https://www.coingecko.com/en/coins/sky"
+        },
+        {
+          "symbol": "CC",
+          "name": "Canton",
+          "price": 0.165317,
+          "changePct": -1.87611,
+          "url": "https://www.coingecko.com/en/coins/canton-network"
         },
         {
           "symbol": "NEAR",
           "name": "NEAR Protocol",
           "price": 2.49,
-          "changePct": -1.98169,
+          "changePct": -1.83625,
           "url": "https://www.coingecko.com/en/coins/near"
-        },
-        {
-          "symbol": "CC",
-          "name": "Canton",
-          "price": 0.165441,
-          "changePct": -1.71423,
-          "url": "https://www.coingecko.com/en/coins/canton-network"
         },
         {
           "symbol": "HYPE",
           "name": "Hyperliquid",
-          "price": 77.04,
-          "changePct": -1.59723,
+          "price": 77.14,
+          "changePct": -1.42548,
           "url": "https://www.coingecko.com/en/coins/hyperliquid"
+        },
+        {
+          "symbol": "AAVE",
+          "name": "Aave",
+          "price": 115.97,
+          "changePct": -1.35195,
+          "url": "https://www.coingecko.com/en/coins/aave"
         },
         {
           "symbol": "XMR",
           "name": "Monero",
-          "price": 426.51,
-          "changePct": -1.25465,
+          "price": 426.68,
+          "changePct": -1.32491,
           "url": "https://www.coingecko.com/en/coins/monero"
         },
         {
           "symbol": "GRAM",
           "name": "Gram (prev. Toncoin)",
           "price": 1.93,
-          "changePct": -1.25162,
+          "changePct": -1.28469,
           "url": "https://www.coingecko.com/en/coins/the-open-network"
-        },
-        {
-          "symbol": "AAVE",
-          "name": "Aave",
-          "price": 116.17,
-          "changePct": -1.2357,
-          "url": "https://www.coingecko.com/en/coins/aave"
         },
         {
           "symbol": "ETH",
           "name": "Ethereum",
-          "price": 2377.36,
-          "changePct": -1.10866,
+          "price": 2375.38,
+          "changePct": -1.13483,
           "url": "https://www.coingecko.com/en/coins/ethereum"
-        },
-        {
-          "symbol": "HBAR",
-          "name": "Hedera",
-          "price": 0.08506,
-          "changePct": -0.97945,
-          "url": "https://www.coingecko.com/en/coins/hedera-hashgraph"
         },
         {
           "symbol": "DOT",
           "name": "Polkadot",
           "price": 1.096,
-          "changePct": -0.93169,
+          "changePct": -0.96651,
           "url": "https://www.coingecko.com/en/coins/polkadot"
         },
         {
-          "symbol": "WLFI",
-          "name": "World Liberty Financial",
-          "price": 0.073709,
-          "changePct": -0.92846,
-          "url": "https://www.coingecko.com/en/coins/world-liberty-financial"
+          "symbol": "LINK",
+          "name": "Chainlink",
+          "price": 10.65,
+          "changePct": -0.91931,
+          "url": "https://www.coingecko.com/en/coins/chainlink"
+        },
+        {
+          "symbol": "HBAR",
+          "name": "Hedera",
+          "price": 0.085104,
+          "changePct": -0.81377,
+          "url": "https://www.coingecko.com/en/coins/hedera-hashgraph"
         },
         {
           "symbol": "BCH",
           "name": "Bitcoin Cash",
-          "price": 283.64,
-          "changePct": -0.8202,
+          "price": 283.84,
+          "changePct": -0.78285,
           "url": "https://www.coingecko.com/en/coins/bitcoin-cash"
         }
       ]
@@ -1210,7 +1210,7 @@
       "pair": "SGD/USD",
       "label": "1 SGD buys USD",
       "rate": 0.77447,
-      "changePct": -0.16371464665996255,
+      "changePct": 0,
       "url": "https://eservices.mas.gov.sg/Statistics/msb/ExchangeRates.aspx"
     },
     {
@@ -1218,7 +1218,7 @@
       "pair": "SGD/EUR",
       "label": "1 SGD buys EUR",
       "rate": 0.67728,
-      "changePct": 0.11529933481153037,
+      "changePct": 0,
       "url": "https://eservices.mas.gov.sg/Statistics/msb/ExchangeRates.aspx"
     },
     {
@@ -1226,7 +1226,7 @@
       "pair": "SGD/GBP",
       "label": "1 SGD buys GBP",
       "rate": 0.57635,
-      "changePct": 0.38142677999164437,
+      "changePct": 0,
       "url": "https://eservices.mas.gov.sg/Statistics/msb/ExchangeRates.aspx"
     },
     {
@@ -1234,7 +1234,7 @@
       "pair": "SGD/AUD",
       "label": "1 SGD buys AUD",
       "rate": 1.1103,
-      "changePct": 0.30716415213660403,
+      "changePct": 0,
       "url": "https://eservices.mas.gov.sg/Statistics/msb/ExchangeRates.aspx"
     },
     {
@@ -1242,7 +1242,7 @@
       "pair": "SGD/JPY",
       "label": "1 SGD buys JPY",
       "rate": 125.74,
-      "changePct": -0.0635828962009206,
+      "changePct": 0,
       "url": "https://eservices.mas.gov.sg/Statistics/msb/ExchangeRates.aspx"
     },
     {
@@ -1250,7 +1250,7 @@
       "pair": "SGD/CNY",
       "label": "1 SGD buys CNY",
       "rate": 5.249,
-      "changePct": -0.0076199184668715655,
+      "changePct": 0,
       "url": "https://eservices.mas.gov.sg/Statistics/msb/ExchangeRates.aspx"
     },
     {
@@ -1258,7 +1258,7 @@
       "pair": "SGD/MYR",
       "label": "1 SGD buys MYR",
       "rate": 3.1714,
-      "changePct": 0.3861737148645364,
+      "changePct": 0,
       "url": "https://eservices.mas.gov.sg/Statistics/msb/ExchangeRates.aspx"
     },
     {
@@ -1266,7 +1266,7 @@
       "pair": "SGD/HKD",
       "label": "1 SGD buys HKD",
       "rate": 6.072,
-      "changePct": -0.1578531965272269,
+      "changePct": 0,
       "url": "https://eservices.mas.gov.sg/Statistics/msb/ExchangeRates.aspx"
     }
   ],
