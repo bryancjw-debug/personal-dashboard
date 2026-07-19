@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T23:57:57.093Z",
+  "generatedAt": "2026-07-19T00:04:51.830Z",
   "health": "ok",
   "errors": [],
   "summary": "Captured 173 updates across news, markets, FX, crypto, commodities, and Singapore policy sources.",
@@ -775,64 +775,64 @@
         {
           "symbol": "SKY",
           "name": "Sky",
-          "price": 0.080524,
-          "changePct": 4.79943,
+          "price": 0.080391,
+          "changePct": 4.64355,
           "url": "https://www.coingecko.com/en/coins/sky"
         },
         {
           "symbol": "LTC",
           "name": "Litecoin",
-          "price": 60.63,
-          "changePct": 4.0345,
+          "price": 60.68,
+          "changePct": 4.06723,
           "url": "https://www.coingecko.com/en/coins/litecoin"
         },
         {
           "symbol": "RAIN",
           "name": "Rain",
-          "price": 0.01885047,
-          "changePct": 3.2741,
+          "price": 0.01886894,
+          "changePct": 3.37586,
           "url": "https://www.coingecko.com/en/coins/rain"
         },
         {
           "symbol": "MORPHO",
           "name": "Morpho",
           "price": 2.6,
-          "changePct": 2.41608,
+          "changePct": 2.43733,
           "url": "https://www.coingecko.com/en/coins/morpho"
         },
         {
           "symbol": "ZEC",
           "name": "Zcash",
-          "price": 721.42,
-          "changePct": 2.11777,
+          "price": 720.9,
+          "changePct": 2.36139,
           "url": "https://www.coingecko.com/en/coins/zcash"
         },
         {
           "symbol": "HBAR",
           "name": "Hedera",
-          "price": 0.086589,
-          "changePct": 1.79834,
+          "price": 0.08672,
+          "changePct": 1.94979,
           "url": "https://www.coingecko.com/en/coins/hedera-hashgraph"
         },
         {
           "symbol": "XMR",
           "name": "Monero",
-          "price": 433.87,
-          "changePct": 1.65053,
+          "price": 433.63,
+          "changePct": 1.60166,
           "url": "https://www.coingecko.com/en/coins/monero"
         },
         {
           "symbol": "ICP",
           "name": "Internet Computer",
           "price": 2.81,
-          "changePct": 1.44703,
+          "changePct": 1.49031,
           "url": "https://www.coingecko.com/en/coins/internet-computer"
         },
         {
           "symbol": "BTC",
           "name": "Bitcoin",
-          "price": 83678,
-          "changePct": 1.4318,
+          "price": 83692,
+          "changePct": 1.44938,
           "url": "https://www.coingecko.com/en/coins/bitcoin"
         },
         {
@@ -846,143 +846,143 @@
           "symbol": "WBT",
           "name": "WhiteBIT Coin",
           "price": 72.88,
-          "changePct": 1.30585,
+          "changePct": 1.30506,
           "url": "https://www.coingecko.com/en/coins/whitebit"
         },
         {
           "symbol": "XLM",
           "name": "Stellar",
-          "price": 0.242474,
-          "changePct": 1.24061,
+          "price": 0.242515,
+          "changePct": 1.21112,
           "url": "https://www.coingecko.com/en/coins/stellar"
-        },
-        {
-          "symbol": "LINK",
-          "name": "Chainlink",
-          "price": 10.78,
-          "changePct": 1.16096,
-          "url": "https://www.coingecko.com/en/coins/chainlink"
-        },
-        {
-          "symbol": "HYPE",
-          "name": "Hyperliquid",
-          "price": 77.84,
-          "changePct": 1.13432,
-          "url": "https://www.coingecko.com/en/coins/hyperliquid"
         },
         {
           "symbol": "ETH",
           "name": "Ethereum",
-          "price": 2403.46,
-          "changePct": 1.11529,
+          "price": 2404.23,
+          "changePct": 1.14785,
           "url": "https://www.coingecko.com/en/coins/ethereum"
+        },
+        {
+          "symbol": "LINK",
+          "name": "Chainlink",
+          "price": 10.77,
+          "changePct": 1.14356,
+          "url": "https://www.coingecko.com/en/coins/chainlink"
+        },
+        {
+          "symbol": "TRX",
+          "name": "TRON",
+          "price": 0.42071,
+          "changePct": 1.0192,
+          "url": "https://www.coingecko.com/en/coins/tron"
         }
       ],
       "losers": [
         {
           "symbol": "ONDO",
           "name": "Ondo",
-          "price": 0.448231,
-          "changePct": -6.85539,
+          "price": 0.447241,
+          "changePct": -6.94523,
           "url": "https://www.coingecko.com/en/coins/ondo-finance"
         },
         {
           "symbol": "CRO",
           "name": "Cronos",
-          "price": 0.076744,
-          "changePct": -3.26388,
+          "price": 0.076728,
+          "changePct": -3.11764,
           "url": "https://www.coingecko.com/en/coins/crypto-com-chain"
         },
         {
           "symbol": "WLD",
           "name": "Worldcoin",
-          "price": 0.486389,
-          "changePct": -3.01023,
+          "price": 0.485559,
+          "changePct": -3.03665,
           "url": "https://www.coingecko.com/en/coins/worldcoin-wld"
         },
         {
           "symbol": "DEXE",
           "name": "DeXe",
-          "price": 45.51,
-          "changePct": -2.95,
+          "price": 45.66,
+          "changePct": -2.68827,
           "url": "https://www.coingecko.com/en/coins/dexe"
         },
         {
           "symbol": "CC",
           "name": "Canton",
-          "price": 0.161332,
-          "changePct": -2.43659,
+          "price": 0.161269,
+          "changePct": -2.44735,
           "url": "https://www.coingecko.com/en/coins/canton-network"
         },
         {
           "symbol": "UNI",
           "name": "Uniswap",
           "price": 4.61,
-          "changePct": -1.91583,
+          "changePct": -1.83936,
           "url": "https://www.coingecko.com/en/coins/uniswap"
-        },
-        {
-          "symbol": "GRAM",
-          "name": "Gram (prev. Toncoin)",
-          "price": 1.9,
-          "changePct": -1.50506,
-          "url": "https://www.coingecko.com/en/coins/the-open-network"
-        },
-        {
-          "symbol": "MNT",
-          "name": "Mantle",
-          "price": 0.542014,
-          "changePct": -1.4895,
-          "url": "https://www.coingecko.com/en/coins/mantle"
-        },
-        {
-          "symbol": "DOT",
-          "name": "Polkadot",
-          "price": 1.08,
-          "changePct": -1.47673,
-          "url": "https://www.coingecko.com/en/coins/polkadot"
         },
         {
           "symbol": "M",
           "name": "MemeCore",
           "price": 1.59,
-          "changePct": -1.35149,
+          "changePct": -1.733,
           "url": "https://www.coingecko.com/en/coins/memecore"
+        },
+        {
+          "symbol": "MNT",
+          "name": "Mantle",
+          "price": 0.542332,
+          "changePct": -1.45554,
+          "url": "https://www.coingecko.com/en/coins/mantle"
+        },
+        {
+          "symbol": "GRAM",
+          "name": "Gram (prev. Toncoin)",
+          "price": 1.91,
+          "changePct": -1.39837,
+          "url": "https://www.coingecko.com/en/coins/the-open-network"
+        },
+        {
+          "symbol": "DOT",
+          "name": "Polkadot",
+          "price": 1.082,
+          "changePct": -1.2839,
+          "url": "https://www.coingecko.com/en/coins/polkadot"
         },
         {
           "symbol": "ASTER",
           "name": "Aster",
-          "price": 0.800662,
-          "changePct": -0.46504,
+          "price": 0.800876,
+          "changePct": -0.45461,
           "url": "https://www.coingecko.com/en/coins/aster-2"
-        },
-        {
-          "symbol": "WLFI",
-          "name": "World Liberty Financial",
-          "price": 0.073612,
-          "changePct": -0.13007,
-          "url": "https://www.coingecko.com/en/coins/world-liberty-financial"
-        },
-        {
-          "symbol": "AVAX",
-          "name": "Avalanche",
-          "price": 8.49,
-          "changePct": -0.10002,
-          "url": "https://www.coingecko.com/en/coins/avalanche-2"
         },
         {
           "symbol": "USDG",
           "name": "Global Dollar",
           "price": 1.29,
-          "changePct": -0.04804,
+          "changePct": -0.18013,
           "url": "https://www.coingecko.com/en/coins/global-dollar"
+        },
+        {
+          "symbol": "WLFI",
+          "name": "World Liberty Financial",
+          "price": 0.073617,
+          "changePct": -0.1491,
+          "url": "https://www.coingecko.com/en/coins/world-liberty-financial"
         },
         {
           "symbol": "DOGE",
           "name": "Dogecoin",
-          "price": 0.093598,
-          "changePct": -0.02419,
+          "price": 0.093626,
+          "changePct": 0.00205,
           "url": "https://www.coingecko.com/en/coins/dogecoin"
+        },
+        {
+          "symbol": "DAI",
+          "name": "Dai",
+          "price": 1.29,
+          "changePct": 0.00654,
+          "url": "https://www.coingecko.com/en/coins/dai"
         }
       ]
     },
