@@ -1,10 +1,26 @@
 {
-  "generatedAt": "2026-07-30T00:03:33.321Z",
+  "generatedAt": "2026-07-30T00:07:15.918Z",
   "health": "ok",
   "errors": [],
   "summary": "Captured 173 updates across news, markets, FX, crypto, commodities, and Singapore policy sources.",
   "news": {
     "world": [
+      {
+        "title": "Your burger costs more this summer, but farmers say they're not cashing in",
+        "url": "https://www.bbc.co.uk/news/articles/c1519n0d01jo?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Business",
+        "category": "World finance",
+        "date": "Thu, 30 Jul 2026 00:04:19 GMT",
+        "summary": "The prices of beef, bread buns and bagged salad have risen sharply over the past year, figures show."
+      },
+      {
+        "title": "Samsung Q2 profit jumps 19-fold as AI chip demand offsets mobile loss",
+        "url": "https://www.channelnewsasia.com/business/samsung-q2-profit-jumps-19-fold-ai-chip-demand-offsets-mobile-loss-6287151",
+        "source": "CNA Business",
+        "category": "World finance",
+        "date": "Thu, 30 Jul 2026 08:03:21 +0800",
+        "summary": null
+      },
       {
         "title": "Wall Street closes down sharply after Fed holds rates unchanged",
         "url": "https://www.channelnewsasia.com/business/wall-street-closes-down-sharply-after-fed-holds-rates-unchanged-6287106",
@@ -44,22 +60,6 @@
         "category": "World finance",
         "date": "Thu, 30 Jul 2026 06:54:54 +0800",
         "summary": null
-      },
-      {
-        "title": "Meta shares fall as frustration grows over AI spending plans",
-        "url": "https://www.bbc.co.uk/news/articles/ckgd31l5yrdo?at_medium=RSS&at_campaign=rss",
-        "source": "BBC Business",
-        "category": "World finance",
-        "date": "Wed, 29 Jul 2026 22:44:18 GMT",
-        "summary": "Mark Zuckerberg said Meta intends to sell for the first time AI tools to other companies"
-      },
-      {
-        "title": "Warsh vows not to 'waver' on inflation as divided Fed leaves rates unchanged",
-        "url": "https://www.channelnewsasia.com/world/federal-reserve-rates-unchanged-kevin-warsh-vows-not-waver-inflation-6287021",
-        "source": "CNA Business",
-        "category": "World finance",
-        "date": "Thu, 30 Jul 2026 06:37:00 +0800",
-        "summary": "Despite delivering no rate cuts, US President Donald Trump stood by Fed Chair Kevin Warsh, calling him a \"brilliant guy\"."
       }
     ],
     "singapore": [
@@ -132,14 +132,14 @@
           "symbol": "HURN",
           "name": "Huron Consulting Group Inc.",
           "price": 170.37,
-          "changePct": 40.372406,
+          "changePct": 40.3724,
           "url": "https://www.nasdaq.com/market-activity/stocks/hurn"
         },
         {
           "symbol": "MANH",
           "name": "Manhattan Associates, Inc.",
           "price": 204.02,
-          "changePct": 21.317717,
+          "changePct": 21.3177,
           "url": "https://www.nasdaq.com/market-activity/stocks/manh"
         },
         {
@@ -153,7 +153,7 @@
           "symbol": "EXLS",
           "name": "ExlService Holdings, Inc.",
           "price": 35.99,
-          "changePct": 17.884052,
+          "changePct": 17.8841,
           "url": "https://www.nasdaq.com/market-activity/stocks/exls"
         },
         {
@@ -188,28 +188,28 @@
           "symbol": "CAKE",
           "name": "The Cheesecake Factory Incorpor",
           "price": 101.14,
-          "changePct": 13.627678,
+          "changePct": 13.6277,
           "url": "https://www.nasdaq.com/market-activity/stocks/cake"
         },
         {
           "symbol": "GEHC",
           "name": "GE HealthCare Technologies Inc.",
           "price": 71.9,
-          "changePct": 12.150991,
+          "changePct": 12.151,
           "url": "https://www.nasdaq.com/market-activity/stocks/gehc"
         },
         {
           "symbol": "MBIN",
           "name": "Merchants Bancorp",
           "price": 54.28,
-          "changePct": 11.297926,
+          "changePct": 11.2979,
           "url": "https://www.nasdaq.com/market-activity/stocks/mbin"
         },
         {
           "symbol": "CTSH",
           "name": "Cognizant Technology Solutions ",
           "price": 55.97,
-          "changePct": 11.250248,
+          "changePct": 11.2502,
           "url": "https://www.nasdaq.com/market-activity/stocks/ctsh"
         },
         {
@@ -230,7 +230,7 @@
           "symbol": "QURE",
           "name": "uniQure N.V.",
           "price": 40.07,
-          "changePct": 9.301691,
+          "changePct": 9.30169,
           "url": "https://www.nasdaq.com/market-activity/stocks/qure"
         }
       ],
@@ -260,7 +260,7 @@
           "symbol": "FRVO",
           "name": "Fervo Energy Company",
           "price": 17.08,
-          "changePct": -19.128792,
+          "changePct": -19.1288,
           "url": "https://www.nasdaq.com/market-activity/stocks/frvo"
         },
         {
@@ -281,7 +281,7 @@
           "symbol": "PLBL",
           "name": "Polibeli Group Ltd",
           "price": 5.58,
-          "changePct": -17.333334,
+          "changePct": -17.3333,
           "url": "https://www.nasdaq.com/market-activity/stocks/plbl"
         },
         {
@@ -302,7 +302,7 @@
           "symbol": "INIO",
           "name": "INNIO N.V.",
           "price": 21.77,
-          "changePct": -16.971773,
+          "changePct": -16.9718,
           "url": "https://www.nasdaq.com/market-activity/stocks/inio"
         },
         {
@@ -779,14 +779,14 @@
         {
           "symbol": "BEAT",
           "name": "Audiera",
-          "price": 5.09,
+          "price": 5.03,
           "changePct": 16.1,
           "url": "https://www.coingecko.com/en/coins/audiera"
         },
         {
           "symbol": "XMR",
           "name": "Monero",
-          "price": 455.63,
+          "price": 455.47,
           "changePct": 3.8,
           "url": "https://www.coingecko.com/en/coins/monero"
         },
@@ -800,35 +800,35 @@
         {
           "symbol": "CC",
           "name": "Canton",
-          "price": 0.157348,
+          "price": 0.157545,
           "changePct": 2.9,
           "url": "https://www.coingecko.com/en/coins/canton-network"
         },
         {
           "symbol": "PAXG",
           "name": "PAX Gold",
-          "price": 5255.13,
+          "price": 5250.12,
           "changePct": 1.7,
           "url": "https://www.coingecko.com/en/coins/pax-gold"
         },
         {
           "symbol": "XAUT",
           "name": "Tether Gold",
-          "price": 5246.16,
+          "price": 5240.5,
           "changePct": 1.6,
           "url": "https://www.coingecko.com/en/coins/tether-gold"
         },
         {
           "symbol": "WLFI",
           "name": "World Liberty Financial",
-          "price": 0.07175,
+          "price": 0.071804,
           "changePct": 1.6,
           "url": "https://www.coingecko.com/en/coins/world-liberty-financial"
         },
         {
           "symbol": "SKY",
           "name": "Sky",
-          "price": 0.074,
+          "price": 0.073975,
           "changePct": 1.3,
           "url": "https://www.coingecko.com/en/coins/sky"
         },
@@ -842,7 +842,7 @@
         {
           "symbol": "ZEC",
           "name": "Zcash",
-          "price": 602.31,
+          "price": 602.33,
           "changePct": 1.1,
           "url": "https://www.coingecko.com/en/coins/zcash"
         },
@@ -856,14 +856,14 @@
         {
           "symbol": "ADA",
           "name": "Cardano",
-          "price": 0.208802,
+          "price": 0.208749,
           "changePct": 0.7,
           "url": "https://www.coingecko.com/en/coins/cardano"
         },
         {
           "symbol": "BNB",
           "name": "BNB",
-          "price": 736.57,
+          "price": 736.22,
           "changePct": 0.6,
           "url": "https://www.coingecko.com/en/coins/binancecoin"
         },
@@ -886,14 +886,14 @@
         {
           "symbol": "ASTER",
           "name": "Aster",
-          "price": 0.770491,
+          "price": 0.769674,
           "changePct": -3.6,
           "url": "https://www.coingecko.com/en/coins/aster-2"
         },
         {
           "symbol": "AAVE",
           "name": "Aave",
-          "price": 123.67,
+          "price": 123.34,
           "changePct": -3.6,
           "url": "https://www.coingecko.com/en/coins/aave"
         },
@@ -921,70 +921,70 @@
         {
           "symbol": "HYPE",
           "name": "Hyperliquid",
-          "price": 69.5,
+          "price": 69.55,
           "changePct": -1.7,
           "url": "https://www.coingecko.com/en/coins/hyperliquid"
         },
         {
           "symbol": "CRO",
           "name": "Cronos",
-          "price": 0.070413,
+          "price": 0.070446,
           "changePct": -1.7,
           "url": "https://www.coingecko.com/en/coins/crypto-com-chain"
         },
         {
           "symbol": "AVAX",
           "name": "Avalanche",
-          "price": 8.27,
+          "price": 8.26,
           "changePct": -1.6,
           "url": "https://www.coingecko.com/en/coins/avalanche-2"
         },
         {
           "symbol": "MORPHO",
           "name": "Morpho",
-          "price": 2.55,
+          "price": 2.54,
           "changePct": -1.4,
           "url": "https://www.coingecko.com/en/coins/morpho"
         },
         {
           "symbol": "NEAR",
           "name": "NEAR Protocol",
-          "price": 2.09,
+          "price": 2.08,
           "changePct": -1.3,
           "url": "https://www.coingecko.com/en/coins/near"
         },
         {
           "symbol": "LTC",
           "name": "Litecoin",
-          "price": 58.52,
+          "price": 58.58,
           "changePct": -1.2,
           "url": "https://www.coingecko.com/en/coins/litecoin"
         },
         {
           "symbol": "MNT",
           "name": "Mantle",
-          "price": 0.510598,
+          "price": 0.510181,
           "changePct": -1.1,
           "url": "https://www.coingecko.com/en/coins/mantle"
         },
         {
           "symbol": "SUI",
           "name": "Sui",
-          "price": 0.884214,
+          "price": 0.884243,
           "changePct": -0.9,
           "url": "https://www.coingecko.com/en/coins/sui"
         },
         {
           "symbol": "TAO",
           "name": "Bittensor",
-          "price": 245.5,
+          "price": 245.45,
           "changePct": -0.9,
           "url": "https://www.coingecko.com/en/coins/bittensor"
         },
         {
           "symbol": "BCH",
           "name": "Bitcoin Cash",
-          "price": 271.93,
+          "price": 271.82,
           "changePct": -0.8,
           "url": "https://www.coingecko.com/en/coins/bitcoin-cash"
         }
@@ -1002,16 +1002,9 @@
         {
           "symbol": "CL",
           "name": "WTI crude futures · Commodity",
-          "price": 84.2,
-          "changePct": 6.232649168087034,
+          "price": 84.26,
+          "changePct": 6.308349393147432,
           "url": "https://www.cmegroup.com/search.html?q=WTI%20crude%20futures"
-        },
-        {
-          "symbol": "GC",
-          "name": "Gold futures · Commodity",
-          "price": 4148.4,
-          "changePct": 2.77729479512855,
-          "url": "https://www.cmegroup.com/search.html?q=Gold%20futures"
         },
         {
           "symbol": "ZC",
@@ -1021,45 +1014,52 @@
           "url": "https://www.cmegroup.com/search.html?q=Corn%20futures"
         },
         {
+          "symbol": "GC",
+          "name": "Gold futures · Commodity",
+          "price": 4144.9,
+          "changePct": 2.690581717367739,
+          "url": "https://www.cmegroup.com/search.html?q=Gold%20futures"
+        },
+        {
           "symbol": "NG",
           "name": "Natural gas futures · Commodity",
-          "price": 2.724,
-          "changePct": 2.3290781557077636,
+          "price": 2.723,
+          "changePct": 2.2915124148282695,
           "url": "https://www.cmegroup.com/search.html?q=Natural%20gas%20futures"
         },
         {
           "symbol": "SI",
           "name": "Silver futures · Commodity",
-          "price": 58.515,
-          "changePct": 2.127545614280028,
+          "price": 58.54,
+          "changePct": 2.1711786765778474,
           "url": "https://www.cmegroup.com/search.html?q=Silver%20futures"
         },
         {
           "symbol": "HO",
           "name": "Heating oil futures · Commodity",
-          "price": 4.2162,
-          "changePct": 1.5731555732821318,
+          "price": 4.2139,
+          "changePct": 1.5177459015828423,
           "url": "https://www.cmegroup.com/search.html?q=Heating%20oil%20futures"
         },
         {
           "symbol": "PL",
           "name": "Platinum futures · Commodity",
-          "price": 1632.6,
-          "changePct": 1.2653547603258848,
+          "price": 1630.7,
+          "changePct": 1.1475033735534939,
           "url": "https://www.cmegroup.com/search.html?q=Platinum%20futures"
         },
         {
           "symbol": "HG",
           "name": "Copper futures · Commodity",
-          "price": 6.386,
-          "changePct": 1.0123374411071813,
+          "price": 6.3805,
+          "changePct": 0.9253396559637205,
           "url": "https://www.cmegroup.com/search.html?q=Copper%20futures"
         },
         {
           "symbol": "PA",
           "name": "Palladium futures · Commodity",
-          "price": 1274.5,
-          "changePct": 0.6316620607974733,
+          "price": 1272.5,
+          "changePct": 0.47374654559810503,
           "url": "https://www.cmegroup.com/search.html?q=Palladium%20futures"
         },
         {
@@ -1109,8 +1109,8 @@
         {
           "symbol": "RB",
           "name": "RBOB gasoline futures · Commodity",
-          "price": 3.208,
-          "changePct": -3.793674360912018,
+          "price": 3.2082,
+          "changePct": -3.7876764603110784,
           "url": "https://www.cmegroup.com/search.html?q=RBOB%20gasoline%20futures"
         },
         {
@@ -1165,43 +1165,43 @@
         {
           "symbol": "PA",
           "name": "Palladium futures · Commodity",
-          "price": 1274.5,
-          "changePct": 0.6316620607974733,
+          "price": 1272.5,
+          "changePct": 0.47374654559810503,
           "url": "https://www.cmegroup.com/search.html?q=Palladium%20futures"
         },
         {
           "symbol": "HG",
           "name": "Copper futures · Commodity",
-          "price": 6.386,
-          "changePct": 1.0123374411071813,
+          "price": 6.3805,
+          "changePct": 0.9253396559637205,
           "url": "https://www.cmegroup.com/search.html?q=Copper%20futures"
         },
         {
           "symbol": "PL",
           "name": "Platinum futures · Commodity",
-          "price": 1632.6,
-          "changePct": 1.2653547603258848,
+          "price": 1630.7,
+          "changePct": 1.1475033735534939,
           "url": "https://www.cmegroup.com/search.html?q=Platinum%20futures"
         },
         {
           "symbol": "HO",
           "name": "Heating oil futures · Commodity",
-          "price": 4.2162,
-          "changePct": 1.5731555732821318,
+          "price": 4.2139,
+          "changePct": 1.5177459015828423,
           "url": "https://www.cmegroup.com/search.html?q=Heating%20oil%20futures"
         },
         {
           "symbol": "SI",
           "name": "Silver futures · Commodity",
-          "price": 58.515,
-          "changePct": 2.127545614280028,
+          "price": 58.54,
+          "changePct": 2.1711786765778474,
           "url": "https://www.cmegroup.com/search.html?q=Silver%20futures"
         },
         {
           "symbol": "NG",
           "name": "Natural gas futures · Commodity",
-          "price": 2.724,
-          "changePct": 2.3290781557077636,
+          "price": 2.723,
+          "changePct": 2.2915124148282695,
           "url": "https://www.cmegroup.com/search.html?q=Natural%20gas%20futures"
         }
       ]
