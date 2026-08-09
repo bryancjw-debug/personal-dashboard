@@ -194,6 +194,7 @@ h3 {
 
 .hero-grid,
 .dashboard-grid,
+.rates-grid,
 .source-grid {
   display: grid;
   gap: 16px;
@@ -208,8 +209,23 @@ h3 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.rates-section {
+  margin-bottom: 16px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(18px);
+}
+
+.rates-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .summary-card,
 .card,
+.rate-card,
 .source-link {
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -382,10 +398,47 @@ h3 {
 
 .news-item,
 .market-row,
+.rate-card,
 .fx-card {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--row);
+}
+
+.rate-card {
+  display: flex;
+  min-height: 184px;
+  padding: 16px;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.rate-card h3 {
+  min-height: 2.45em;
+}
+
+.rate-value {
+  margin-top: auto;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+.rate-label,
+.rate-secondary {
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.rate-label {
+  margin-top: 8px;
+}
+
+.rate-secondary {
+  margin: 10px 0 8px;
+  font-weight: 800;
+  color: var(--accent-ink);
 }
 
 .news-item {
@@ -522,6 +575,7 @@ h3 {
 @media (max-width: 1100px) {
   .hero-grid,
   .dashboard-grid,
+  .rates-grid,
   .source-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -573,6 +627,7 @@ h3 {
   .hero-grid,
   .dashboard-grid,
   .source-grid,
+  .rates-grid,
   .fx-grid {
     grid-template-columns: 1fr;
   }
@@ -617,6 +672,10 @@ h3 {
   }
 
   .source-section {
+    padding: 16px;
+  }
+
+  .rates-section {
     padding: 16px;
   }
 }

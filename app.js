@@ -12,7 +12,9 @@ const sourceLinks = [
   ["NASDAQ", "US listed equity market activity", "https://www.nasdaq.com/market-activity"],
   ["NYSE", "US exchange official market information", "https://www.nyse.com/markets"],
   ["CME Group", "Futures and commodities market reference", "https://www.cmegroup.com/markets.html"],
-  ["SGX ETFs", "Singapore-listed ETF reference and product pages", "https://www.sgx.com/securities/etf"]
+  ["SGX ETFs", "Singapore-listed ETF reference and product pages", "https://www.sgx.com/securities/etf"],
+  ["MAS SSB", "Latest Singapore Savings Bond issue, rates, and applications", "https://www.mas.gov.sg/bonds-and-bills/Singapore-Savings-Bonds"],
+  ["MAS T-bills", "Auction results and cut-off yields for Singapore T-bills", "https://eservices.mas.gov.sg/statistics/fdanet/BondTreasuryBillsCMTBsAuctions.aspx"]
 ];
 
 const fallbackData = {
@@ -30,7 +32,11 @@ const fallbackData = {
     crypto: { gainers: [], losers: [] },
     commodities: { gainers: [], losers: [] }
   },
-  fx: []
+  fx: [],
+  governmentRates: {
+    ssb: null,
+    tbills: []
+  }
 };
 
 const fmt = new Intl.NumberFormat("en-SG", { maximumFractionDigits: 4 });
@@ -66,6 +72,12 @@ function formatChange(value) {
   if (!Number.isFinite(number)) return "";
   const sign = number > 0 ? "+" : "";
   return `${sign}${number.toFixed(2)}%`;
+}
+
+function formatPercent(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return "n/a";
+  return `${number.toFixed(2)}%`;
 }
 
 function setTheme(theme) {
@@ -206,6 +218,66 @@ function renderFx(items) {
   });
 }
 
+function renderGovernmentRates(data) {
+  const container = document.getElementById("government-rates");
+  container.replaceChildren();
+
+  const ssb = data?.ssb;
+  const tbills = data?.tbills || [];
+
+  if (!ssb && !tbills.length) {
+    container.append(emptyState("SSB and T-bill rates will appear after the daily refresh. MAS source links are available above and in the source desk."));
+    return;
+  }
+
+  if (ssb) {
+    container.append(rateCard({
+      kicker: "Singapore Savings Bond",
+      title: ssb.issue || "Latest SSB",
+      primary: formatPercent(ssb.tenYearAverage ?? ssb.averageReturn),
+      primaryLabel: "10-year average return",
+      secondary: `${formatPercent(ssb.yearOne)} year 1`,
+      detail: [
+        ssb.issueDate ? `Issues ${ssb.issueDate}` : null,
+        ssb.closeDate ? `Closes ${ssb.closeDate}` : null,
+        ssb.status || "Redeem monthly at par"
+      ].filter(Boolean).join(" · "),
+      url: ssb.url || "https://www.mas.gov.sg/bonds-and-bills/Singapore-Savings-Bonds"
+    }));
+  }
+
+  tbills.slice(0, 2).forEach((bill) => {
+    container.append(rateCard({
+      kicker: bill.term || "Singapore T-bill",
+      title: bill.issue || "Latest auction",
+      primary: formatPercent(bill.cutoffYield),
+      primaryLabel: "Cut-off yield p.a.",
+      secondary: bill.bidToCover ? `${Number(bill.bidToCover).toFixed(2)}x bid-to-cover` : "Auction result",
+      detail: [
+        bill.auctionDate ? `Auction ${bill.auctionDate}` : null,
+        bill.issueDate ? `Issue ${bill.issueDate}` : null,
+        bill.maturityDate ? `Matures ${bill.maturityDate}` : null
+      ].filter(Boolean).join(" · "),
+      url: bill.url || "https://eservices.mas.gov.sg/statistics/fdanet/BondTreasuryBillsCMTBsAuctions.aspx"
+    }));
+  });
+}
+
+function rateCard(item) {
+  const card = create("a", "rate-card");
+  card.href = item.url;
+  card.target = "_blank";
+  card.rel = "noopener";
+  card.append(create("p", "card-kicker", item.kicker));
+  card.append(create("h3", "", item.title));
+  const value = create("div", "rate-value", item.primary);
+  card.append(value);
+  card.append(create("div", "rate-label", item.primaryLabel));
+  card.append(create("div", "rate-secondary", item.secondary));
+  if (item.detail) card.append(create("p", "row-meta", item.detail));
+  return card;
+}
+
 function renderSources() {
   const container = document.getElementById("source-links");
   container.replaceChildren();
@@ -263,6 +335,7 @@ async function loadDashboard() {
   updateStatus(data);
   renderNews("world-news", data.news?.world);
   renderNews("singapore-news", data.news?.singapore);
+  renderGovernmentRates(data.governmentRates);
   renderTabbedMarket("us-market", markets.us, "US market movers will populate after the data refresh. NASDAQ is linked for official verification.");
   renderTabbedMarket("sgx-market", markets.sgx, "SGX movers will populate after refresh. SGX is linked for official verification.");
   renderTabbedMarket("etf-market", markets.etfs, "ETF movers will populate after refresh across Singapore and US ETF watchlists.");

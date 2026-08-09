@@ -44,7 +44,11 @@ const officialLinks = {
   us: "https://www.nasdaq.com/market-activity/stocks/screener",
   etfs: "https://www.sgx.com/securities/etf",
   cme: "https://www.cmegroup.com/markets.html",
-  masFx: "https://eservices.mas.gov.sg/Statistics/msb/ExchangeRates.aspx"
+  masFx: "https://eservices.mas.gov.sg/Statistics/msb/ExchangeRates.aspx",
+  masBondsBills: "https://www.mas.gov.sg/bonds-and-bills",
+  masSsb: "https://www.mas.gov.sg/bonds-and-bills/Singapore-Savings-Bonds",
+  masTbillAuction: "https://eservices.mas.gov.sg/statistics/fdanet/BondTreasuryBillsCMTBsAuctions.aspx",
+  sgYieldHub: "https://sgyieldhub.com/"
 };
 
 const sgxWatchlist = [
@@ -127,9 +131,10 @@ async function main() {
     }
   };
 
-  const [world, singapore, us, sgx, etfs, crypto, commodities, fx] = await Promise.all([
+  const [world, singapore, governmentRates, us, sgx, etfs, crypto, commodities, fx] = await Promise.all([
     safe("World news", () => collectNews(sourcePages.world, 7)),
     safe("Singapore news", () => collectNews(sourcePages.singapore, 8)),
+    safe("Singapore government rates", fetchGovernmentRates, { ssb: null, tbills: [] }),
     safe("US market movers", fetchUsMovers, emptyMovers()),
     safe("SGX market movers", fetchSgxMovers, emptyMovers()),
     safe("ETF movers", fetchEtfMovers, emptyMovers()),
@@ -142,8 +147,9 @@ async function main() {
     generatedAt,
     health: errors.length ? "partial" : "ok",
     errors,
-    summary: buildSummary({ world, singapore, us, sgx, etfs, crypto, commodities, fx }, errors),
+    summary: buildSummary({ world, singapore, governmentRates, us, sgx, etfs, crypto, commodities, fx }, errors),
     news: { world, singapore },
+    governmentRates,
     markets: {
       us,
       sgx,
@@ -175,9 +181,100 @@ function emptyMovers() {
 function countItems(value) {
   if (Array.isArray(value)) return value.length;
   if (value && typeof value === "object") {
+    if ("ssb" in value || "tbills" in value) return (value.ssb ? 1 : 0) + (value.tbills?.length || 0);
     return (value.gainers?.length || 0) + (value.losers?.length || 0);
   }
   return 0;
+}
+
+async function fetchGovernmentRates() {
+  const [hub, auction] = await Promise.allSettled([
+    fetchSgYieldHubRates(),
+    fetchLatestTbillAuctions()
+  ]);
+  const hubRates = hub.status === "fulfilled" ? hub.value : { ssb: null, tbills: [] };
+  const auctionBills = auction.status === "fulfilled" ? auction.value : [];
+  const tbills = mergeTbillRates(auctionBills, hubRates.tbills);
+  return {
+    ssb: hubRates.ssb,
+    tbills,
+    updatedAt: new Date().toISOString(),
+    source: "MAS pages with public rate tracker fallback"
+  };
+}
+
+async function fetchSgYieldHubRates() {
+  const html = await getText(officialLinks.sgYieldHub);
+  const text = cleanHtml(html).replace(/\s+/g, " ");
+  const ssb = parseSsbFromText(text);
+  const tbills = parseTbillSummaryFromText(text);
+  return { ssb, tbills };
+}
+
+function parseSsbFromText(text) {
+  const match = text.match(/SSB year 1\s+([0-9.]+)%\s+(GX[0-9A-Z]+)\s+10y avg\s+([0-9.]+)%\s+·\s*(issues|apply)\s*([0-9]{2}\s+[A-Za-z]{3}\s+[0-9]{4})(?:\s*-\s*([0-9]{2}\s+[A-Za-z]{3}\s+[0-9]{4}))?/i);
+  if (!match) return null;
+  return {
+    issue: match[2],
+    yearOne: Number(match[1]),
+    tenYearAverage: Number(match[3]),
+    issueDate: match[4].toLowerCase() === "issues" ? match[5] : null,
+    openDate: match[4].toLowerCase() === "apply" ? match[5] : null,
+    closeDate: match[6] || null,
+    status: match[4].toLowerCase() === "apply" ? "Open for application" : "Latest announced issue",
+    url: officialLinks.masSsb
+  };
+}
+
+function parseTbillSummaryFromText(text) {
+  const items = [];
+  const pattern = /([0-9a-z]+)\s+T-bill\s+([0-9.]+)%\s+([A-Z]{2}[0-9A-Z]+)\s+Auction\s+([0-9]{1,2}\s+[A-Za-z]{3}\s+[0-9]{4})\s+·\s+B\/C\s+([0-9.]+)/gi;
+  let match;
+  while ((match = pattern.exec(text)) && items.length < 4) {
+    items.push({
+      term: `${match[1].toUpperCase()} T-bill`,
+      issue: match[3],
+      cutoffYield: Number(match[2]),
+      auctionDate: match[4],
+      bidToCover: Number(match[5]),
+      url: officialLinks.masTbillAuction
+    });
+  }
+  return items;
+}
+
+async function fetchLatestTbillAuctions() {
+  const html = await getText(officialLinks.masTbillAuction);
+  const text = cleanHtml(html).replace(/\s+/g, " ");
+  const items = [];
+  const pattern = /([A-Z]{2}[0-9A-Z]+)\s+([A-Z0-9]{12})?\s*T-bills?\s+([0-9]+-?(?:Week|Month|Year|Mth|Mths)?|[0-9]+\s*(?:Weeks?|Months?|Years?))?.{0,220}?Auction Date\s*([0-9]{1,2}\s+[A-Za-z]{3}\s+[0-9]{4}).{0,180}?Issue Date\s*([0-9]{1,2}\s+[A-Za-z]{3}\s+[0-9]{4}).{0,180}?Maturity Date\s*([0-9]{1,2}\s+[A-Za-z]{3}\s+[0-9]{4}).{0,260}?Bid-to-Cover Ratio\s*([0-9.]+).{0,160}?Cut-off Yield \(%\)\s*([0-9.]+)/gi;
+  let match;
+
+  while ((match = pattern.exec(text)) && items.length < 4) {
+    items.push({
+      term: normalizeTbillTerm(match[3]),
+      issue: match[1],
+      auctionDate: match[4],
+      issueDate: match[5],
+      maturityDate: match[6],
+      bidToCover: Number(match[7]),
+      cutoffYield: Number(match[8]),
+      url: officialLinks.masTbillAuction
+    });
+  }
+
+  return items;
+}
+
+function mergeTbillRates(primary, fallback) {
+  const combined = [...(primary || []), ...(fallback || [])];
+  return dedupe(combined.filter((item) => Number.isFinite(item.cutoffYield)), "issue").slice(0, 2);
+}
+
+function normalizeTbillTerm(value) {
+  const text = String(value || "").trim();
+  if (!text) return "Singapore T-bill";
+  return /bill/i.test(text) ? text : `${text} T-bill`;
 }
 
 async function collectNews(sources, limit) {
@@ -556,6 +653,7 @@ main().catch(async (error) => {
     health: "error",
     summary: `Refresh failed: ${error.message}. Official source links remain available.`,
     news: { world: [], singapore: [] },
+    governmentRates: { ssb: null, tbills: [] },
     markets: {
       us: emptyMovers(),
       sgx: emptyMovers(),
