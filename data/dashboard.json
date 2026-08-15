@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T23:23:51.212Z",
+  "generatedAt": "2026-08-15T23:31:20.554Z",
   "health": "ok",
   "errors": [],
   "summary": "Captured 176 updates across news, markets, FX, crypto, commodities, and Singapore policy sources.",
@@ -152,7 +152,7 @@
         "url": "https://eservices.mas.gov.sg/statistics/fdanet/BondTreasuryBillsCMTBsAuctions.aspx"
       }
     ],
-    "updatedAt": "2026-08-15T23:23:52.252Z",
+    "updatedAt": "2026-08-15T23:31:22.738Z",
     "source": "MAS pages with public rate tracker fallback"
   },
   "markets": {
@@ -192,13 +192,6 @@
           "price": 84.84,
           "changePct": 10.6849,
           "url": "https://www.nasdaq.com/market-activity/stocks/mxl"
-        },
-        {
-          "symbol": "BYND",
-          "name": "Beyond Meat, Inc.",
-          "price": 13.47,
-          "changePct": 10.3194,
-          "url": "https://www.nasdaq.com/market-activity/stocks/bynd"
         },
         {
           "symbol": "STDN",
@@ -262,6 +255,13 @@
           "price": 40.81,
           "changePct": 7.99153,
           "url": "https://www.nasdaq.com/market-activity/stocks/asth"
+        },
+        {
+          "symbol": "SIMO",
+          "name": "Silicon Motion Technology Corpo",
+          "price": 268.9,
+          "changePct": 7.93995,
+          "url": "https://www.nasdaq.com/market-activity/stocks/simo"
         }
       ],
       "losers": [
@@ -271,6 +271,13 @@
           "price": 24.39,
           "changePct": -11.2445,
           "url": "https://www.nasdaq.com/market-activity/stocks/blsh"
+        },
+        {
+          "symbol": "DDS",
+          "name": "Dillard's, Inc.",
+          "price": 560.88,
+          "changePct": -8.62319,
+          "url": "https://www.nasdaq.com/market-activity/stocks/dds"
         },
         {
           "symbol": "UCTT",
@@ -362,13 +369,6 @@
           "price": 22.78,
           "changePct": -6.52442,
           "url": "https://www.nasdaq.com/market-activity/stocks/hawk"
-        },
-        {
-          "symbol": "PTRN",
-          "name": "Pattern Group Inc. - Series A",
-          "price": 21.44,
-          "changePct": -6.04732,
-          "url": "https://www.nasdaq.com/market-activity/stocks/ptrn"
         }
       ]
     },
@@ -809,42 +809,42 @@
         {
           "symbol": "LINK",
           "name": "Chainlink",
-          "price": 12.15,
+          "price": 12.14,
           "changePct": 6.4,
           "url": "https://www.coingecko.com/en/coins/chainlink"
         },
         {
           "symbol": "CC",
           "name": "Canton",
-          "price": 0.126747,
+          "price": 0.126513,
           "changePct": 3,
           "url": "https://www.coingecko.com/en/coins/canton-network"
         },
         {
           "symbol": "WLFI",
           "name": "World Liberty Financial",
-          "price": 0.073039,
+          "price": 0.072616,
           "changePct": 2.9,
           "url": "https://www.coingecko.com/en/coins/world-liberty-financial"
         },
         {
           "symbol": "XMR",
           "name": "Monero",
-          "price": 524.66,
+          "price": 523.58,
           "changePct": 2.7,
           "url": "https://www.coingecko.com/en/coins/monero"
         },
         {
           "symbol": "WLD",
           "name": "Worldcoin",
-          "price": 0.447544,
+          "price": 0.446918,
           "changePct": 2.6,
           "url": "https://www.coingecko.com/en/coins/worldcoin-wld"
         },
         {
           "symbol": "HYPE",
           "name": "Hyperliquid",
-          "price": 72.68,
+          "price": 72.84,
           "changePct": 1.8,
           "url": "https://www.coingecko.com/en/coins/hyperliquid"
         },
@@ -858,7 +858,7 @@
         {
           "symbol": "DOT",
           "name": "Polkadot",
-          "price": 0.976673,
+          "price": 0.975416,
           "changePct": 1.7,
           "url": "https://www.coingecko.com/en/coins/polkadot"
         },
@@ -879,21 +879,21 @@
         {
           "symbol": "UNI",
           "name": "Uniswap",
-          "price": 4.13,
+          "price": 4.14,
           "changePct": 1.3,
           "url": "https://www.coingecko.com/en/coins/uniswap"
         },
         {
           "symbol": "LTC",
           "name": "Litecoin",
-          "price": 56.4,
+          "price": 56.37,
           "changePct": 1.2,
           "url": "https://www.coingecko.com/en/coins/litecoin"
         },
         {
           "symbol": "AAVE",
           "name": "Aave",
-          "price": 110.24,
+          "price": 110.2,
           "changePct": 1.1,
           "url": "https://www.coingecko.com/en/coins/aave"
         },
@@ -923,42 +923,42 @@
         {
           "symbol": "MNT",
           "name": "Mantle",
-          "price": 0.554069,
+          "price": 0.554121,
           "changePct": -2.1,
           "url": "https://www.coingecko.com/en/coins/mantle"
         },
         {
           "symbol": "RAIN",
           "name": "Rain",
-          "price": 0.01620927,
+          "price": 0.0162286,
           "changePct": -0.8,
           "url": "https://www.coingecko.com/en/coins/rain"
         },
         {
           "symbol": "ADA",
           "name": "Cardano",
-          "price": 0.226088,
+          "price": 0.225919,
           "changePct": -0.7,
           "url": "https://www.coingecko.com/en/coins/cardano"
         },
         {
           "symbol": "ZEC",
           "name": "Zcash",
-          "price": 623.6,
+          "price": 623.31,
           "changePct": -0.6,
           "url": "https://www.coingecko.com/en/coins/zcash"
         },
         {
           "symbol": "CRO",
           "name": "Cronos",
-          "price": 0.061114,
+          "price": 0.061011,
           "changePct": -0.6,
           "url": "https://www.coingecko.com/en/coins/crypto-com-chain"
         },
         {
           "symbol": "OKB",
           "name": "OKB",
-          "price": 135.63,
+          "price": 135.44,
           "changePct": -0.6,
           "url": "https://www.coingecko.com/en/coins/okb"
         },
@@ -979,21 +979,21 @@
         {
           "symbol": "TRX",
           "name": "TRON",
-          "price": 0.423621,
+          "price": 0.423557,
           "changePct": -0.3,
           "url": "https://www.coingecko.com/en/coins/tron"
         },
         {
           "symbol": "TAO",
           "name": "Bittensor",
-          "price": 252.57,
+          "price": 252.33,
           "changePct": -0.2,
           "url": "https://www.coingecko.com/en/coins/bittensor"
         },
         {
           "symbol": "BCH",
           "name": "Bitcoin Cash",
-          "price": 260.34,
+          "price": 260.27,
           "changePct": -0.1,
           "url": "https://www.coingecko.com/en/coins/bitcoin-cash"
         },
@@ -1007,14 +1007,14 @@
         {
           "symbol": "XAUT",
           "name": "Tether Gold",
-          "price": 5574.43,
+          "price": 5576.57,
           "changePct": -0.1,
           "url": "https://www.coingecko.com/en/coins/tether-gold"
         },
         {
           "symbol": "SHIB",
           "name": "Shiba Inu",
-          "price": 0.00000578,
+          "price": 0.00000577,
           "changePct": -0.1,
           "url": "https://www.coingecko.com/en/coins/shiba-inu"
         }
