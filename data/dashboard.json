@@ -1,10 +1,18 @@
 {
-  "generatedAt": "2026-08-19T23:26:19.133Z",
+  "generatedAt": "2026-08-19T23:33:22.402Z",
   "health": "ok",
   "errors": [],
   "summary": "Captured 176 updates across news, markets, FX, crypto, commodities, and Singapore policy sources.",
   "news": {
     "world": [
+      {
+        "title": "Canada and US say they are finalising a trade deal, but details remain murky",
+        "url": "https://www.bbc.co.uk/news/articles/c3ekl74jnk5o?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Business",
+        "category": "World finance",
+        "date": "Wed, 19 Aug 2026 23:32:37 GMT",
+        "summary": "Prime Minister Carney hailed \"significant progress\" in trade talks as the two countries seek to hammer out final details ahead of a new weekend tariff deadline."
+      },
       {
         "title": "I quit my £80,000 job to make ice cream - here's how",
         "url": "https://www.bbc.co.uk/news/articles/cz97148eye0o?at_medium=RSS&at_campaign=rss",
@@ -36,14 +44,6 @@
         "category": "World news",
         "date": "Thu, 20 Aug 2026 05:22:50 +0800",
         "summary": null
-      },
-      {
-        "title": "Canada and US say they are finalising a trade deal, but details remain murky",
-        "url": "https://www.bbc.co.uk/news/articles/c3ekl74jnk5o?at_medium=RSS&at_campaign=rss",
-        "source": "BBC Business",
-        "category": "World finance",
-        "date": "Wed, 19 Aug 2026 19:59:14 GMT",
-        "summary": "Prime Minister Carney hailed \"significant progress\" in trade talks as the two countries seek to hammer out final details ahead of a new weekend tariff deadline."
       },
       {
         "title": "Uber launches autonomous rides in Zagreb, its first in Europe",
@@ -154,7 +154,7 @@
         "url": "https://eservices.mas.gov.sg/statistics/fdanet/BondTreasuryBillsCMTBsAuctions.aspx"
       }
     ],
-    "updatedAt": "2026-08-19T23:26:21.497Z",
+    "updatedAt": "2026-08-19T23:33:24.407Z",
     "source": "MAS pages with public rate tracker fallback"
   },
   "markets": {
@@ -811,42 +811,42 @@
         {
           "symbol": "HYPE",
           "name": "Hyperliquid",
-          "price": 89.26,
+          "price": 88.92,
           "changePct": 20.3,
           "url": "https://www.coingecko.com/en/coins/hyperliquid"
         },
         {
           "symbol": "ETH",
           "name": "Ethereum",
-          "price": 2855.19,
+          "price": 2858.65,
           "changePct": 17.6,
           "url": "https://www.coingecko.com/en/coins/ethereum"
         },
         {
           "symbol": "LINK",
           "name": "Chainlink",
-          "price": 13.38,
+          "price": 13.42,
           "changePct": 11.2,
           "url": "https://www.coingecko.com/en/coins/chainlink"
         },
         {
           "symbol": "SOL",
           "name": "Solana",
-          "price": 108.42,
+          "price": 108.36,
           "changePct": 11,
           "url": "https://www.coingecko.com/en/coins/solana"
         },
         {
           "symbol": "ZEC",
           "name": "Zcash",
-          "price": 716.01,
+          "price": 714.3,
           "changePct": 10.5,
           "url": "https://www.coingecko.com/en/coins/zcash"
         },
         {
           "symbol": "WLD",
           "name": "Worldcoin",
-          "price": 0.458086,
+          "price": 0.457201,
           "changePct": 10.4,
           "url": "https://www.coingecko.com/en/coins/worldcoin-wld"
         },
@@ -860,7 +860,7 @@
         {
           "symbol": "XLM",
           "name": "Stellar",
-          "price": 0.215274,
+          "price": 0.215471,
           "changePct": 10.3,
           "url": "https://www.coingecko.com/en/coins/stellar"
         },
@@ -874,21 +874,21 @@
         {
           "symbol": "CC",
           "name": "Canton",
-          "price": 0.126016,
+          "price": 0.125992,
           "changePct": 9.6,
           "url": "https://www.coingecko.com/en/coins/canton-network"
         },
         {
           "symbol": "ADA",
           "name": "Cardano",
-          "price": 0.236386,
+          "price": 0.236523,
           "changePct": 9.1,
           "url": "https://www.coingecko.com/en/coins/cardano"
         },
         {
           "symbol": "SUI",
           "name": "Sui",
-          "price": 0.896161,
+          "price": 0.895843,
           "changePct": 8.8,
           "url": "https://www.coingecko.com/en/coins/sui"
         },
@@ -902,7 +902,7 @@
         {
           "symbol": "MNT",
           "name": "Mantle",
-          "price": 0.594699,
+          "price": 0.595499,
           "changePct": 8.8,
           "url": "https://www.coingecko.com/en/coins/mantle"
         },
@@ -918,7 +918,7 @@
         {
           "symbol": "LEO",
           "name": "LEO Token",
-          "price": 11.82,
+          "price": 11.83,
           "changePct": -2,
           "url": "https://www.coingecko.com/en/coins/leo-token"
         },
@@ -1009,7 +1009,7 @@
         {
           "symbol": "HTX",
           "name": "HTX DAO",
-          "price": 0.00000218,
+          "price": 0.00000219,
           "changePct": 0,
           "url": "https://www.coingecko.com/en/coins/htx-dao"
         },
@@ -1034,15 +1034,15 @@
         {
           "symbol": "PL",
           "name": "Platinum futures · Commodity",
-          "price": 1831.5,
-          "changePct": 6.087811289368364,
+          "price": 1832.3,
+          "changePct": 6.13415049167876,
           "url": "https://www.cmegroup.com/search.html?q=Platinum%20futures"
         },
         {
           "symbol": "SI",
           "name": "Silver futures · Commodity",
-          "price": 67.055,
-          "changePct": 4.870111533700251,
+          "price": 67.17,
+          "changePct": 5.049964830641194,
           "url": "https://www.cmegroup.com/search.html?q=Silver%20futures"
         },
         {
@@ -1055,8 +1055,8 @@
         {
           "symbol": "GC",
           "name": "Gold futures · Commodity",
-          "price": 4575.7,
-          "changePct": 4.8030233623453915,
+          "price": 4576,
+          "changePct": 4.809894640403115,
           "url": "https://www.cmegroup.com/search.html?q=Gold%20futures"
         },
         {
@@ -1090,8 +1090,8 @@
         {
           "symbol": "BZ",
           "name": "Brent crude futures · Commodity",
-          "price": 91.75,
-          "changePct": 0.8020252514360018,
+          "price": 91.72,
+          "changePct": 0.7690654611630514,
           "url": "https://www.cmegroup.com/search.html?q=Brent%20crude%20futures"
         },
         {
@@ -1111,22 +1111,22 @@
         {
           "symbol": "HG",
           "name": "Copper futures · Commodity",
-          "price": 6.504,
-          "changePct": 0.3316609865486617,
+          "price": 6.507,
+          "changePct": 0.3779394279631232,
           "url": "https://www.cmegroup.com/search.html?q=Copper%20futures"
         },
         {
           "symbol": "NG",
           "name": "Natural gas futures · Commodity",
-          "price": 2.779,
-          "changePct": 0.10806833887180983,
+          "price": 2.778,
+          "changePct": 0.07204528441378148,
           "url": "https://www.cmegroup.com/search.html?q=Natural%20gas%20futures"
         },
         {
           "symbol": "CL",
           "name": "WTI crude futures · Commodity",
-          "price": 84.58,
-          "changePct": -0.42383144697292713,
+          "price": 84.51,
+          "changePct": -0.5062425583315369,
           "url": "https://www.cmegroup.com/search.html?q=WTI%20crude%20futures"
         }
       ],
@@ -1134,8 +1134,8 @@
         {
           "symbol": "RB",
           "name": "RBOB gasoline futures · Commodity",
-          "price": 2.9514,
-          "changePct": -10.609689038407074,
+          "price": 2.9515,
+          "changePct": -10.606660295743884,
           "url": "https://www.cmegroup.com/search.html?q=RBOB%20gasoline%20futures"
         },
         {
@@ -1162,22 +1162,22 @@
         {
           "symbol": "CL",
           "name": "WTI crude futures · Commodity",
-          "price": 84.58,
-          "changePct": -0.42383144697292713,
+          "price": 84.51,
+          "changePct": -0.5062425583315369,
           "url": "https://www.cmegroup.com/search.html?q=WTI%20crude%20futures"
         },
         {
           "symbol": "NG",
           "name": "Natural gas futures · Commodity",
-          "price": 2.779,
-          "changePct": 0.10806833887180983,
+          "price": 2.778,
+          "changePct": 0.07204528441378148,
           "url": "https://www.cmegroup.com/search.html?q=Natural%20gas%20futures"
         },
         {
           "symbol": "HG",
           "name": "Copper futures · Commodity",
-          "price": 6.504,
-          "changePct": 0.3316609865486617,
+          "price": 6.507,
+          "changePct": 0.3779394279631232,
           "url": "https://www.cmegroup.com/search.html?q=Copper%20futures"
         },
         {
@@ -1197,8 +1197,8 @@
         {
           "symbol": "BZ",
           "name": "Brent crude futures · Commodity",
-          "price": 91.75,
-          "changePct": 0.8020252514360018,
+          "price": 91.72,
+          "changePct": 0.7690654611630514,
           "url": "https://www.cmegroup.com/search.html?q=Brent%20crude%20futures"
         },
         {
@@ -1232,8 +1232,8 @@
         {
           "symbol": "GC",
           "name": "Gold futures · Commodity",
-          "price": 4575.7,
-          "changePct": 4.8030233623453915,
+          "price": 4576,
+          "changePct": 4.809894640403115,
           "url": "https://www.cmegroup.com/search.html?q=Gold%20futures"
         }
       ]
