@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T23:27:37.229Z",
+  "generatedAt": "2026-08-21T23:34:39.979Z",
   "health": "ok",
   "errors": [],
   "summary": "Captured 176 updates across news, markets, FX, crypto, commodities, and Singapore policy sources.",
@@ -151,7 +151,7 @@
         "url": "https://eservices.mas.gov.sg/statistics/fdanet/BondTreasuryBillsCMTBsAuctions.aspx"
       }
     ],
-    "updatedAt": "2026-08-21T23:27:39.971Z",
+    "updatedAt": "2026-08-21T23:34:40.861Z",
     "source": "MAS pages with public rate tracker fallback"
   },
   "markets": {
@@ -170,6 +170,13 @@
           "price": 11.11,
           "changePct": 14.77272,
           "url": "https://www.nasdaq.com/market-activity/stocks/iqmx"
+        },
+        {
+          "symbol": "UEC",
+          "name": "Uranium Energy Corp.",
+          "price": 12.76,
+          "changePct": 14.4395,
+          "url": "https://www.nasdaq.com/market-activity/stocks/uec"
         },
         {
           "symbol": "HOOD",
@@ -254,13 +261,6 @@
           "price": 39.42,
           "changePct": 9.43919,
           "url": "https://www.nasdaq.com/market-activity/stocks/ero"
-        },
-        {
-          "symbol": "FCFS",
-          "name": "FirstCash Holdings, Inc.",
-          "price": 225.28,
-          "changePct": 9.40702,
-          "url": "https://www.nasdaq.com/market-activity/stocks/fcfs"
         }
       ],
       "losers": [
@@ -808,105 +808,105 @@
         {
           "symbol": "BCH",
           "name": "Bitcoin Cash",
-          "price": 368.37,
+          "price": 366.28,
           "changePct": 30.3,
           "url": "https://www.coingecko.com/en/coins/bitcoin-cash"
         },
         {
           "symbol": "ZEC",
           "name": "Zcash",
-          "price": 930.9,
+          "price": 932.27,
           "changePct": 28.8,
           "url": "https://www.coingecko.com/en/coins/zcash"
         },
         {
           "symbol": "PEPE",
           "name": "Pepe",
-          "price": 0.0000053,
+          "price": 0.00000534,
           "changePct": 28.2,
           "url": "https://www.coingecko.com/en/coins/pepe"
         },
         {
           "symbol": "ENA",
           "name": "Ethena",
-          "price": 0.179159,
+          "price": 0.180576,
           "changePct": 25.5,
           "url": "https://www.coingecko.com/en/coins/ethena"
         },
         {
           "symbol": "SHIB",
           "name": "Shiba Inu",
-          "price": 0.00000755,
+          "price": 0.00000757,
           "changePct": 24.4,
           "url": "https://www.coingecko.com/en/coins/shiba-inu"
         },
         {
           "symbol": "AAVE",
           "name": "Aave",
-          "price": 154.23,
+          "price": 154.03,
           "changePct": 23.6,
           "url": "https://www.coingecko.com/en/coins/aave"
         },
         {
           "symbol": "WBT",
           "name": "WhiteBIT Coin",
-          "price": 92.73,
+          "price": 92.41,
           "changePct": 20,
           "url": "https://www.coingecko.com/en/coins/whitebit"
         },
         {
           "symbol": "DOGE",
           "name": "Dogecoin",
-          "price": 0.118916,
+          "price": 0.117401,
           "changePct": 17.4,
           "url": "https://www.coingecko.com/en/coins/dogecoin"
         },
         {
           "symbol": "ADA",
           "name": "Cardano",
-          "price": 0.295416,
+          "price": 0.295202,
           "changePct": 17.1,
           "url": "https://www.coingecko.com/en/coins/cardano"
         },
         {
           "symbol": "SUI",
           "name": "Sui",
-          "price": 1.084,
+          "price": 1.082,
           "changePct": 16.2,
           "url": "https://www.coingecko.com/en/coins/sui"
         },
         {
           "symbol": "LINK",
           "name": "Chainlink",
-          "price": 15.44,
+          "price": 15.39,
           "changePct": 15.6,
           "url": "https://www.coingecko.com/en/coins/chainlink"
         },
         {
           "symbol": "XRP",
           "name": "XRP",
-          "price": 1.87,
+          "price": 1.86,
           "changePct": 15,
           "url": "https://www.coingecko.com/en/coins/ripple"
         },
         {
           "symbol": "CC",
           "name": "Canton",
-          "price": 0.142567,
+          "price": 0.142688,
           "changePct": 14.5,
           "url": "https://www.coingecko.com/en/coins/canton-network"
         },
         {
           "symbol": "ONDO",
           "name": "Ondo",
-          "price": 0.51083,
+          "price": 0.509852,
           "changePct": 13.2,
           "url": "https://www.coingecko.com/en/coins/ondo-finance"
         },
         {
           "symbol": "UNI",
           "name": "Uniswap",
-          "price": 5.33,
+          "price": 5.3,
           "changePct": 12.5,
           "url": "https://www.coingecko.com/en/coins/uniswap"
         }
@@ -922,14 +922,14 @@
         {
           "symbol": "XMR",
           "name": "Monero",
-          "price": 522.46,
+          "price": 521.71,
           "changePct": -1.2,
           "url": "https://www.coingecko.com/en/coins/monero"
         },
         {
           "symbol": "MNT",
           "name": "Mantle",
-          "price": 0.655921,
+          "price": 0.656367,
           "changePct": -0.5,
           "url": "https://www.coingecko.com/en/coins/mantle"
         },
