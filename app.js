@@ -36,10 +36,12 @@ const fallbackData = {
   governmentRates: {
     ssb: null,
     tbills: []
-  }
+  },
+  cryptoFocus: []
 };
 
 const fmt = new Intl.NumberFormat("en-SG", { maximumFractionDigits: 4 });
+const compactFmt = new Intl.NumberFormat("en-SG", { notation: "compact", maximumFractionDigits: 2 });
 const THEME_KEY = "marketBriefTheme";
 
 function text(selector, value) {
@@ -78,6 +80,25 @@ function formatPercent(value) {
   const number = Number(value);
   if (!Number.isFinite(number)) return "n/a";
   return `${number.toFixed(2)}%`;
+}
+
+function formatSignedPercent(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return "n/a";
+  return `${number > 0 ? "+" : ""}${number.toFixed(2)}%`;
+}
+
+function formatSgd(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return "n/a";
+  const digits = number < 1 ? 4 : number < 100 ? 2 : 0;
+  return `S$${new Intl.NumberFormat("en-SG", { maximumFractionDigits: digits }).format(number)}`;
+}
+
+function formatCompactSgd(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return "n/a";
+  return `S$${compactFmt.format(number)}`;
 }
 
 function setTheme(theme) {
@@ -263,6 +284,71 @@ function renderGovernmentRates(data) {
   });
 }
 
+function renderCryptoFocus(items) {
+  const container = document.getElementById("crypto-focus");
+  container.replaceChildren();
+
+  if (!items?.length) {
+    container.append(emptyState("BTC, ETH, and HYPE detailed price-action metrics will populate after the daily refresh. CoinGecko is linked for direct verification."));
+    return;
+  }
+
+  items.forEach((asset) => {
+    const card = create("article", "crypto-focus-card");
+    const header = create("div", "crypto-focus-header");
+    const title = create("div");
+    title.append(create("p", "card-kicker", asset.symbol || "Crypto"));
+    title.append(create("h3", "", asset.name || asset.symbol || "Digital asset"));
+    const rank = create("span", "pill", asset.marketCapRank ? `Rank #${asset.marketCapRank}` : "Tracked");
+    header.append(title, rank);
+
+    const priceRow = create("div", "crypto-price-row");
+    priceRow.append(create("div", "crypto-price", formatSgd(asset.price)));
+    priceRow.append(create("div", `crypto-main-change ${Number(asset.change24h) < 0 ? "negative" : ""}`, `${formatSignedPercent(asset.change24h)} 24h`));
+
+    const moves = create("div", "crypto-move-grid");
+    [
+      ["1h", asset.change1h],
+      ["7d", asset.change7d],
+      ["30d", asset.change30d]
+    ].forEach(([label, value]) => {
+      const metric = create("div", "crypto-mini-metric");
+      metric.append(create("span", "", label));
+      metric.append(create("strong", Number(value) < 0 ? "negative" : "positive", formatSignedPercent(value)));
+      moves.append(metric);
+    });
+
+    const metrics = create("div", "crypto-stat-grid");
+    [
+      ["24h high", formatSgd(asset.high24h)],
+      ["24h low", formatSgd(asset.low24h)],
+      ["24h volume", formatCompactSgd(asset.volume24h)],
+      ["Market cap", formatCompactSgd(asset.marketCap)],
+      ["FDV", formatCompactSgd(asset.fdv)],
+      ["Vol / mcap", formatPercent(asset.volumeToMarketCap)],
+      ["ATH drawdown", formatSignedPercent(asset.athDrawdown)],
+      ["Supply", asset.circulatingSupply ? compactFmt.format(asset.circulatingSupply) : "n/a"]
+    ].forEach(([label, value]) => {
+      const metric = create("div", "crypto-stat");
+      metric.append(create("span", "", label));
+      metric.append(create("strong", "", value));
+      metrics.append(metric);
+    });
+
+    const footer = create("div", "crypto-card-footer");
+    footer.append(create("span", "", asset.lastUpdated ? `Updated ${formatDate(asset.lastUpdated)} SGT` : "Refresh pending"));
+    const link = create("a", "button");
+    link.href = asset.url || "https://www.coingecko.com/";
+    link.target = "_blank";
+    link.rel = "noopener";
+    link.textContent = "Open";
+    footer.append(link);
+
+    card.append(header, priceRow, moves, metrics, footer);
+    container.append(card);
+  });
+}
+
 function rateCard(item) {
   const card = create("a", "rate-card");
   card.href = item.url;
@@ -336,6 +422,7 @@ async function loadDashboard() {
   renderNews("world-news", data.news?.world);
   renderNews("singapore-news", data.news?.singapore);
   renderGovernmentRates(data.governmentRates);
+  renderCryptoFocus(data.cryptoFocus);
   renderTabbedMarket("us-market", markets.us, "US market movers will populate after the data refresh. NASDAQ is linked for official verification.");
   renderTabbedMarket("sgx-market", markets.sgx, "SGX movers will populate after refresh. SGX is linked for official verification.");
   renderTabbedMarket("etf-market", markets.etfs, "ETF movers will populate after refresh across Singapore and US ETF watchlists.");

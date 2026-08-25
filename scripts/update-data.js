@@ -119,6 +119,12 @@ const commodityWatchlist = [
   ["HE=F", "Lean hog futures"]
 ];
 
+const cryptoFocusList = [
+  ["bitcoin", "BTC"],
+  ["ethereum", "ETH"],
+  ["hyperliquid", "HYPE"]
+];
+
 async function main() {
   const generatedAt = new Date().toISOString();
   const errors = [];
@@ -131,10 +137,11 @@ async function main() {
     }
   };
 
-  const [world, singapore, governmentRates, us, sgx, etfs, crypto, commodities, fx] = await Promise.all([
+  const [world, singapore, governmentRates, cryptoFocus, us, sgx, etfs, crypto, commodities, fx] = await Promise.all([
     safe("World news", () => collectNews(sourcePages.world, 7)),
     safe("Singapore news", () => collectNews(sourcePages.singapore, 8)),
     safe("Singapore government rates", fetchGovernmentRates, { ssb: null, tbills: [] }),
+    safe("BTC ETH HYPE metrics", fetchCryptoFocus, []),
     safe("US market movers", fetchUsMovers, emptyMovers()),
     safe("SGX market movers", fetchSgxMovers, emptyMovers()),
     safe("ETF movers", fetchEtfMovers, emptyMovers()),
@@ -147,9 +154,10 @@ async function main() {
     generatedAt,
     health: errors.length ? "partial" : "ok",
     errors,
-    summary: buildSummary({ world, singapore, governmentRates, us, sgx, etfs, crypto, commodities, fx }, errors),
+    summary: buildSummary({ world, singapore, governmentRates, cryptoFocus, us, sgx, etfs, crypto, commodities, fx }, errors),
     news: { world, singapore },
     governmentRates,
+    cryptoFocus,
     markets: {
       us,
       sgx,
@@ -498,6 +506,45 @@ async function fetchCryptoMovers() {
   return splitMovers(items);
 }
 
+async function fetchCryptoFocus() {
+  const ids = cryptoFocusList.map(([id]) => id).join(",");
+  const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=sgd&ids=${ids}&order=market_cap_desc&sparkline=false&price_change_percentage=1h,24h,7d,30d`;
+  const json = await getJson(url);
+  const byId = new Map(json.map((coin) => [coin.id, coin]));
+
+  return cryptoFocusList.map(([id, symbol]) => {
+    const coin = byId.get(id);
+    if (!coin) return null;
+    const marketCap = Number(coin.market_cap);
+    const volume24h = Number(coin.total_volume);
+    const price = Number(coin.current_price);
+    const ath = Number(coin.ath);
+    return {
+      id,
+      symbol,
+      name: coin.name,
+      price,
+      change1h: coin.price_change_percentage_1h_in_currency,
+      change24h: coin.price_change_percentage_24h_in_currency ?? coin.price_change_percentage_24h,
+      change7d: coin.price_change_percentage_7d_in_currency,
+      change30d: coin.price_change_percentage_30d_in_currency,
+      high24h: coin.high_24h,
+      low24h: coin.low_24h,
+      volume24h,
+      marketCap,
+      fdv: coin.fully_diluted_valuation,
+      volumeToMarketCap: marketCap ? (volume24h / marketCap) * 100 : null,
+      ath,
+      athDrawdown: ath ? ((price - ath) / ath) * 100 : null,
+      circulatingSupply: coin.circulating_supply,
+      totalSupply: coin.total_supply,
+      marketCapRank: coin.market_cap_rank,
+      lastUpdated: coin.last_updated,
+      url: `https://www.coingecko.com/en/coins/${id}`
+    };
+  }).filter(Boolean);
+}
+
 async function fetchCommodityMovers() {
   return moversFromWatchlist(commodityWatchlist, "Commodity", (symbol, name) => `https://www.cmegroup.com/search.html?q=${encodeURIComponent(name)}`);
 }
@@ -654,6 +701,7 @@ main().catch(async (error) => {
     summary: `Refresh failed: ${error.message}. Official source links remain available.`,
     news: { world: [], singapore: [] },
     governmentRates: { ssb: null, tbills: [] },
+    cryptoFocus: [],
     markets: {
       us: emptyMovers(),
       sgx: emptyMovers(),
