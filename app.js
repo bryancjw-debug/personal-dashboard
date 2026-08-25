@@ -46,6 +46,13 @@ const THEME_KEY = "marketBriefTheme";
 const CRYPTO_HOLDINGS_KEY = "marketBriefCryptoHoldings";
 const CRYPTO_LIVE_IDS = ["bitcoin", "ethereum", "hyperliquid"];
 const CRYPTO_LIVE_URL = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=sgd&ids=${CRYPTO_LIVE_IDS.join(",")}&order=market_cap_desc&sparkline=false&price_change_percentage=1h,24h,7d,30d`;
+const CRYPTO_BACKUP_IDS = {
+  bitcoin: "coingecko:bitcoin",
+  ethereum: "coingecko:ethereum",
+  hyperliquid: "coingecko:hyperliquid"
+};
+const CRYPTO_BACKUP_URL = `https://coins.llama.fi/prices/current/${Object.values(CRYPTO_BACKUP_IDS).join(",")}`;
+const USD_SGD_URL = "https://api.frankfurter.app/latest?from=USD&to=SGD";
 const CRYPTO_LIVE_INTERVAL = 60000;
 let cryptoFocusItems = [];
 let cryptoLiveTimer = null;
@@ -421,6 +428,36 @@ function coinGeckoToCryptoFocus(coin, fallback) {
   };
 }
 
+async function fetchBackupCryptoPrices() {
+  const [priceResponse, fxResponse] = await Promise.all([
+    fetch(`${CRYPTO_BACKUP_URL}?t=${Date.now()}`, { cache: "no-store" }),
+    fetch(`${USD_SGD_URL}&t=${Date.now()}`, { cache: "no-store" })
+  ]);
+  if (!priceResponse.ok) throw new Error(`DefiLlama returned ${priceResponse.status}`);
+  if (!fxResponse.ok) throw new Error(`FX fallback returned ${fxResponse.status}`);
+
+  const [priceJson, fxJson] = await Promise.all([
+    priceResponse.json(),
+    fxResponse.json()
+  ]);
+  const usdSgd = Number(fxJson?.rates?.SGD);
+  if (!Number.isFinite(usdSgd)) throw new Error("USD/SGD fallback unavailable");
+  const coins = priceJson?.coins || {};
+
+  cryptoFocusItems = cryptoFocusItems.map((asset) => {
+    const backup = coins[CRYPTO_BACKUP_IDS[asset.id]];
+    const usdPrice = Number(backup?.price);
+    if (!Number.isFinite(usdPrice)) return asset;
+    return {
+      ...asset,
+      price: usdPrice * usdSgd,
+      lastUpdated: backup?.timestamp ? new Date(backup.timestamp * 1000).toISOString() : new Date().toISOString()
+    };
+  });
+  renderCryptoFocus(cryptoFocusItems);
+  updateCryptoLiveStatus(`Live backup ${formatDate(new Date().toISOString())} SGT`, "live");
+}
+
 async function refreshLiveCryptoFocus() {
   if (!cryptoFocusItems.length) return;
   updateCryptoLiveStatus("Refreshing live prices...", "snapshot");
@@ -438,7 +475,11 @@ async function refreshLiveCryptoFocus() {
     renderCryptoFocus(cryptoFocusItems);
     updateCryptoLiveStatus(`Live ${formatDate(new Date().toISOString())} SGT`, "live");
   } catch (error) {
-    updateCryptoLiveStatus("Snapshot prices - live fetch paused", "warning");
+    try {
+      await fetchBackupCryptoPrices();
+    } catch (backupError) {
+      updateCryptoLiveStatus("Snapshot prices - live fetch paused", "warning");
+    }
   }
 }
 
