@@ -195,6 +195,7 @@ h3 {
 .hero-grid,
 .dashboard-grid,
 .rates-grid,
+.crypto-portfolio-strip,
 .crypto-focus-grid,
 .source-grid {
   display: grid;
@@ -238,9 +239,15 @@ h3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.crypto-portfolio-strip {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 16px;
+}
+
 .summary-card,
 .card,
 .rate-card,
+.portfolio-card,
 .crypto-focus-card,
 .source-link {
   border: 1px solid var(--line);
@@ -337,6 +344,42 @@ h3 {
   color: #fff;
 }
 
+.crypto-section-actions {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 34px;
+  padding: 8px 11px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--row);
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.live-badge.is-live {
+  color: var(--good);
+}
+
+.live-badge.is-live .status-dot {
+  background: var(--good);
+  box-shadow: 0 0 0 4px rgba(19, 138, 79, 0.1);
+}
+
+.live-badge.is-warning {
+  color: var(--warn);
+}
+
 [data-theme="dark"] .button-dark {
   border-color: rgba(16, 17, 20, 0.14);
   background: rgba(16, 17, 20, 0.08);
@@ -345,6 +388,7 @@ h3 {
 
 .theme-toggle:focus-visible,
 .tab-button:focus-visible,
+.crypto-holding-input:focus-visible,
 .button:focus-visible,
 .item-link:focus-visible,
 .source-link:focus-visible {
@@ -415,6 +459,7 @@ h3 {
 .news-item,
 .market-row,
 .rate-card,
+.portfolio-card,
 .crypto-focus-card,
 .fx-card {
   border: 1px solid var(--line);
@@ -425,6 +470,39 @@ h3 {
 .crypto-focus-card {
   min-height: 372px;
   padding: 16px;
+}
+
+.portfolio-card {
+  min-height: 132px;
+  padding: 16px;
+}
+
+.portfolio-card span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.portfolio-card strong {
+  display: block;
+  margin-top: 10px;
+  font-size: clamp(1.45rem, 3.4vw, 2.35rem);
+  line-height: 1;
+}
+
+.portfolio-card p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.portfolio-card.positive strong {
+  color: var(--good);
+}
+
+.portfolio-card.negative strong {
+  color: var(--bad);
 }
 
 .crypto-focus-header,
@@ -516,6 +594,55 @@ h3 {
   display: block;
   margin-top: 4px;
   font-size: 0.96rem;
+}
+
+.crypto-holding-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(110px, 0.78fr);
+  gap: 10px;
+  align-items: center;
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(10, 132, 255, 0.075);
+}
+
+.crypto-holding-panel span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.crypto-holding-panel strong {
+  display: block;
+  margin-top: 4px;
+}
+
+.crypto-holding-input {
+  width: 100%;
+  min-height: 42px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--surface-strong);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 800;
+  padding: 9px 10px;
+}
+
+.crypto-holding-input::placeholder {
+  color: var(--muted);
+  opacity: 0.72;
+}
+
+.crypto-holding-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 8px;
 }
 
 .crypto-card-footer {
@@ -690,6 +817,7 @@ h3 {
   .hero-grid,
   .dashboard-grid,
   .rates-grid,
+  .crypto-portfolio-strip,
   .crypto-focus-grid,
   .source-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -743,6 +871,7 @@ h3 {
   .dashboard-grid,
   .source-grid,
   .rates-grid,
+  .crypto-portfolio-strip,
   .crypto-focus-grid,
   .fx-grid {
     grid-template-columns: 1fr;
@@ -761,6 +890,10 @@ h3 {
   .section-heading {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .crypto-section-actions {
+    justify-content: flex-start;
   }
 
   .button {
@@ -802,5 +935,10 @@ h3 {
   .crypto-price-row {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .crypto-holding-panel,
+  .crypto-holding-metrics {
+    grid-template-columns: 1fr;
   }
 }

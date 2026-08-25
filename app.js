@@ -43,6 +43,12 @@ const fallbackData = {
 const fmt = new Intl.NumberFormat("en-SG", { maximumFractionDigits: 4 });
 const compactFmt = new Intl.NumberFormat("en-SG", { notation: "compact", maximumFractionDigits: 2 });
 const THEME_KEY = "marketBriefTheme";
+const CRYPTO_HOLDINGS_KEY = "marketBriefCryptoHoldings";
+const CRYPTO_LIVE_IDS = ["bitcoin", "ethereum", "hyperliquid"];
+const CRYPTO_LIVE_URL = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=sgd&ids=${CRYPTO_LIVE_IDS.join(",")}&order=market_cap_desc&sparkline=false&price_change_percentage=1h,24h,7d,30d`;
+const CRYPTO_LIVE_INTERVAL = 60000;
+let cryptoFocusItems = [];
+let cryptoLiveTimer = null;
 
 function text(selector, value) {
   const node = document.querySelector(selector);
@@ -99,6 +105,13 @@ function formatCompactSgd(value) {
   const number = Number(value);
   if (!Number.isFinite(number)) return "n/a";
   return `S$${compactFmt.format(number)}`;
+}
+
+function formatSignedSgd(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return "n/a";
+  const sign = number > 0 ? "+" : number < 0 ? "-" : "";
+  return `${sign}${formatSgd(Math.abs(number))}`;
 }
 
 function setTheme(theme) {
@@ -284,14 +297,163 @@ function renderGovernmentRates(data) {
   });
 }
 
+function loadCryptoHoldings() {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(CRYPTO_HOLDINGS_KEY) || "{}");
+    return parsed && typeof parsed === "object" ? parsed : {};
+  } catch (error) {
+    return {};
+  }
+}
+
+function saveCryptoHolding(assetId, value) {
+  const holdings = loadCryptoHoldings();
+  const amount = Number(value);
+  if (Number.isFinite(amount) && amount > 0) {
+    holdings[assetId] = amount;
+  } else {
+    delete holdings[assetId];
+  }
+  localStorage.setItem(CRYPTO_HOLDINGS_KEY, JSON.stringify(holdings));
+}
+
+function holdingValue(asset, holdings = loadCryptoHoldings()) {
+  const amount = Number(holdings[asset.id]);
+  const price = Number(asset.price);
+  if (!Number.isFinite(amount) || !Number.isFinite(price)) return 0;
+  return amount * price;
+}
+
+function holdingDayMove(asset, holdings = loadCryptoHoldings()) {
+  const value = holdingValue(asset, holdings);
+  const change = Number(asset.change24h);
+  if (!Number.isFinite(value) || !Number.isFinite(change) || change <= -100) return 0;
+  const previousValue = value / (1 + change / 100);
+  return value - previousValue;
+}
+
+function updateCryptoLiveStatus(copy, state = "snapshot") {
+  const node = document.getElementById("crypto-live-status");
+  if (!node) return;
+  node.classList.toggle("is-live", state === "live");
+  node.classList.toggle("is-warning", state === "warning");
+  node.lastChild.textContent = copy;
+}
+
+function renderCryptoPortfolio(items) {
+  const container = document.getElementById("crypto-portfolio");
+  if (!container) return;
+  container.replaceChildren();
+
+  if (!items?.length) {
+    container.append(emptyState("Add BTC, ETH, and HYPE holdings once live prices or the latest daily snapshot loads."));
+    return;
+  }
+
+  const holdings = loadCryptoHoldings();
+  const positions = items.map((asset) => ({
+    asset,
+    amount: Number(holdings[asset.id]) || 0,
+    value: holdingValue(asset, holdings),
+    dayMove: holdingDayMove(asset, holdings)
+  }));
+  const totalValue = positions.reduce((sum, item) => sum + item.value, 0);
+  const totalMove = positions.reduce((sum, item) => sum + item.dayMove, 0);
+  const largest = positions.slice().sort((a, b) => b.value - a.value)[0];
+  const activeCount = positions.filter((item) => item.amount > 0).length;
+
+  [
+    ["Portfolio value", formatSgd(totalValue), activeCount ? `${activeCount} tracked holding${activeCount === 1 ? "" : "s"}` : "Enter holdings below"],
+    ["24h holding move", formatSignedSgd(totalMove), Number(totalMove) < 0 ? "Based on current 24h price move" : "Based on current 24h price move", totalMove < 0 ? "negative" : "positive"],
+    ["Largest position", largest?.value ? largest.asset.symbol : "n/a", largest?.value ? formatSgd(largest.value) : "No holdings yet"]
+  ].forEach(([label, value, detail, tone]) => {
+    const card = create("article", `portfolio-card ${tone || ""}`.trim());
+    card.append(create("span", "", label));
+    card.append(create("strong", "", value));
+    card.append(create("p", "", detail));
+    container.append(card);
+  });
+}
+
+function updateCryptoHoldingMetrics(card, asset) {
+  const holdings = loadCryptoHoldings();
+  const amount = Number(holdings[asset.id]) || 0;
+  const value = holdingValue(asset, holdings);
+  const move = holdingDayMove(asset, holdings);
+  const valueNode = card.querySelector("[data-holding-value]");
+  const moveNode = card.querySelector("[data-holding-move]");
+  if (valueNode) valueNode.textContent = amount > 0 ? formatSgd(value) : "Add holding";
+  if (moveNode) {
+    moveNode.textContent = amount > 0 ? `${formatSignedSgd(move)} 24h` : "Local browser only";
+    moveNode.classList.toggle("negative", move < 0);
+    moveNode.classList.toggle("positive", move >= 0);
+  }
+}
+
+function coinGeckoToCryptoFocus(coin, fallback) {
+  const marketCap = Number(coin.market_cap);
+  const volume24h = Number(coin.total_volume);
+  const price = Number(coin.current_price);
+  const ath = Number(coin.ath);
+  return {
+    ...fallback,
+    id: coin.id,
+    symbol: String(coin.symbol || fallback?.symbol || "").toUpperCase(),
+    name: coin.name || fallback?.name,
+    price,
+    change1h: coin.price_change_percentage_1h_in_currency,
+    change24h: coin.price_change_percentage_24h_in_currency ?? coin.price_change_percentage_24h,
+    change7d: coin.price_change_percentage_7d_in_currency,
+    change30d: coin.price_change_percentage_30d_in_currency,
+    high24h: coin.high_24h,
+    low24h: coin.low_24h,
+    volume24h,
+    marketCap,
+    fdv: coin.fully_diluted_valuation,
+    volumeToMarketCap: marketCap ? (volume24h / marketCap) * 100 : null,
+    ath,
+    athDrawdown: ath ? ((price - ath) / ath) * 100 : null,
+    circulatingSupply: coin.circulating_supply,
+    totalSupply: coin.total_supply,
+    marketCapRank: coin.market_cap_rank,
+    lastUpdated: coin.last_updated || new Date().toISOString(),
+    url: `https://www.coingecko.com/en/coins/${coin.id}`
+  };
+}
+
+async function refreshLiveCryptoFocus() {
+  if (!cryptoFocusItems.length) return;
+  updateCryptoLiveStatus("Refreshing live prices...", "snapshot");
+  try {
+    const response = await fetch(`${CRYPTO_LIVE_URL}&t=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) throw new Error(`CoinGecko returned ${response.status}`);
+    const json = await response.json();
+    const fallbackById = new Map(cryptoFocusItems.map((item) => [item.id, item]));
+    const liveById = new Map(json.map((coin) => [coin.id, coin]));
+    cryptoFocusItems = CRYPTO_LIVE_IDS.map((id) => {
+      const coin = liveById.get(id);
+      const fallback = fallbackById.get(id);
+      return coin ? coinGeckoToCryptoFocus(coin, fallback) : fallback;
+    }).filter(Boolean);
+    renderCryptoFocus(cryptoFocusItems);
+    updateCryptoLiveStatus(`Live ${formatDate(new Date().toISOString())} SGT`, "live");
+  } catch (error) {
+    updateCryptoLiveStatus("Snapshot prices - live fetch paused", "warning");
+  }
+}
+
 function renderCryptoFocus(items) {
   const container = document.getElementById("crypto-focus");
   container.replaceChildren();
+  cryptoFocusItems = items || [];
+  renderCryptoPortfolio(cryptoFocusItems);
 
   if (!items?.length) {
     container.append(emptyState("BTC, ETH, and HYPE detailed price-action metrics will populate after the daily refresh. CoinGecko is linked for direct verification."));
     return;
   }
+
+  const holdings = loadCryptoHoldings();
 
   items.forEach((asset) => {
     const card = create("article", "crypto-focus-card");
@@ -335,6 +497,39 @@ function renderCryptoFocus(items) {
       metrics.append(metric);
     });
 
+    const holding = create("div", "crypto-holding-panel");
+    const holdingCopy = create("div");
+    holdingCopy.append(create("span", "", `${asset.symbol} holding`));
+    holdingCopy.append(create("strong", "", holdings[asset.id] ? `${fmt.format(holdings[asset.id])} ${asset.symbol}` : "Not set"));
+    const input = create("input", "crypto-holding-input");
+    input.type = "number";
+    input.inputMode = "decimal";
+    input.min = "0";
+    input.step = "any";
+    input.placeholder = `0 ${asset.symbol}`;
+    input.value = holdings[asset.id] || "";
+    input.setAttribute("aria-label", `${asset.symbol} holding amount`);
+    holding.append(holdingCopy, input);
+
+    const holdingMetrics = create("div", "crypto-holding-metrics");
+    const valueMetric = create("div", "crypto-stat");
+    valueMetric.append(create("span", "", "Holding value"));
+    valueMetric.append(create("strong", "", "Add holding"));
+    valueMetric.querySelector("strong").dataset.holdingValue = asset.id;
+    const moveMetric = create("div", "crypto-stat");
+    moveMetric.append(create("span", "", "Holding 24h move"));
+    moveMetric.append(create("strong", "positive", "Local browser only"));
+    moveMetric.querySelector("strong").dataset.holdingMove = asset.id;
+    holdingMetrics.append(valueMetric, moveMetric);
+
+    input.addEventListener("input", () => {
+      saveCryptoHolding(asset.id, input.value);
+      const updatedHoldings = loadCryptoHoldings();
+      holdingCopy.querySelector("strong").textContent = updatedHoldings[asset.id] ? `${fmt.format(updatedHoldings[asset.id])} ${asset.symbol}` : "Not set";
+      updateCryptoHoldingMetrics(card, asset);
+      renderCryptoPortfolio(cryptoFocusItems);
+    });
+
     const footer = create("div", "crypto-card-footer");
     footer.append(create("span", "", asset.lastUpdated ? `Updated ${formatDate(asset.lastUpdated)} SGT` : "Refresh pending"));
     const link = create("a", "button");
@@ -344,7 +539,8 @@ function renderCryptoFocus(items) {
     link.textContent = "Open";
     footer.append(link);
 
-    card.append(header, priceRow, moves, metrics, footer);
+    card.append(header, priceRow, moves, metrics, holding, holdingMetrics, footer);
+    updateCryptoHoldingMetrics(card, asset);
     container.append(card);
   });
 }
@@ -423,6 +619,10 @@ async function loadDashboard() {
   renderNews("singapore-news", data.news?.singapore);
   renderGovernmentRates(data.governmentRates);
   renderCryptoFocus(data.cryptoFocus);
+  updateCryptoLiveStatus(data.cryptoFocus?.length ? "Snapshot prices - connecting live" : "Snapshot prices", "snapshot");
+  if (cryptoLiveTimer) window.clearInterval(cryptoLiveTimer);
+  await refreshLiveCryptoFocus();
+  cryptoLiveTimer = window.setInterval(refreshLiveCryptoFocus, CRYPTO_LIVE_INTERVAL);
   renderTabbedMarket("us-market", markets.us, "US market movers will populate after the data refresh. NASDAQ is linked for official verification.");
   renderTabbedMarket("sgx-market", markets.sgx, "SGX movers will populate after refresh. SGX is linked for official verification.");
   renderTabbedMarket("etf-market", markets.etfs, "ETF movers will populate after refresh across Singapore and US ETF watchlists.");
