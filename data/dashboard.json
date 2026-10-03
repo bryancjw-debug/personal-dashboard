@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T01:48:14.026Z",
+  "generatedAt": "2026-10-03T01:53:47.720Z",
   "health": "ok",
   "errors": [],
   "summary": "Captured 179 updates across news, markets, FX, crypto, commodities, and Singapore policy sources.",
@@ -151,7 +151,7 @@
         "url": "https://eservices.mas.gov.sg/statistics/fdanet/BondTreasuryBillsCMTBsAuctions.aspx"
       }
     ],
-    "updatedAt": "2026-10-03T01:48:16.128Z",
+    "updatedAt": "2026-10-03T01:53:49.002Z",
     "source": "MAS pages with public rate tracker fallback"
   },
   "cryptoFocus": [
@@ -159,69 +159,69 @@
       "id": "bitcoin",
       "symbol": "BTC",
       "name": "Bitcoin",
-      "price": 108208,
+      "price": 108207,
       "change1h": 0.1608,
-      "change24h": -0.21376,
+      "change24h": -0.57707,
       "change7d": 0.6705,
       "change30d": 9.4988,
       "high24h": 111365,
       "low24h": 107289,
-      "volume24h": 57550978829,
-      "marketCap": 2174174137240,
-      "fdv": 2174175435730,
-      "volumeToMarketCap": 2.6470271098918485,
+      "volume24h": 57501553427,
+      "marketCap": 2174480205615,
+      "fdv": 2174480205615,
+      "volumeToMarketCap": 2.6443815528197483,
       "ath": 162824,
-      "athDrawdown": -33.542966638824744,
-      "circulatingSupply": 20092634,
+      "athDrawdown": -33.54358079889943,
+      "circulatingSupply": 20092646,
       "totalSupply": 20092646,
       "marketCapRank": 1,
-      "lastUpdated": "2026-10-03T01:45:30.000Z",
+      "lastUpdated": "2026-10-03T01:51:20.000Z",
       "url": "https://www.coingecko.com/en/coins/bitcoin"
     },
     {
       "id": "ethereum",
       "symbol": "ETH",
       "name": "Ethereum",
-      "price": 3427.56,
+      "price": 3427,
       "change1h": 0.2873,
-      "change24h": -0.9952,
+      "change24h": -1.52884,
       "change7d": -0.5552,
       "change30d": 11.9277,
       "high24h": 3540.28,
       "low24h": 3392.17,
-      "volume24h": 24403293803,
-      "marketCap": 418493736491,
-      "fdv": 418493736491,
-      "volumeToMarketCap": 5.831220798575753,
+      "volume24h": 24392542134,
+      "marketCap": 418454966312,
+      "fdv": 418454966312,
+      "volumeToMarketCap": 5.8291916927120235,
       "ath": 6489.66,
-      "athDrawdown": -47.184290086075386,
+      "athDrawdown": -47.1929191976159,
       "circulatingSupply": 122098689.50213154,
       "totalSupply": 122098689.5021315,
       "marketCapRank": 2,
-      "lastUpdated": "2026-10-03T01:45:30.000Z",
+      "lastUpdated": "2026-10-03T01:51:20.000Z",
       "url": "https://www.coingecko.com/en/coins/ethereum"
     },
     {
       "id": "hyperliquid",
       "symbol": "HYPE",
       "name": "Hyperliquid",
-      "price": 114.08,
+      "price": 114.11,
       "change1h": 0.1349,
-      "change24h": 1.33879,
+      "change24h": 0.84272,
       "change7d": -3.26,
       "change30d": 9.0848,
       "high24h": 116.93,
       "low24h": 110.18,
-      "volume24h": 1304593119,
-      "marketCap": 25369713506,
-      "fdv": 108951826814,
-      "volumeToMarketCap": 5.142324995871398,
+      "volume24h": 1301616382,
+      "marketCap": 25394126548,
+      "fdv": 109056670158,
+      "volumeToMarketCap": 5.125659193434685,
       "ath": 124.99,
-      "athDrawdown": -8.728698295863667,
+      "athDrawdown": -8.704696375710054,
       "circulatingSupply": 222445714.07414138,
       "totalSupply": 955307079.4341414,
       "marketCapRank": 11,
-      "lastUpdated": "2026-10-03T01:45:30.000Z",
+      "lastUpdated": "2026-10-03T01:51:20.000Z",
       "url": "https://www.coingecko.com/en/coins/hyperliquid"
     }
   ],
@@ -879,214 +879,214 @@
         {
           "symbol": "WLD",
           "name": "Worldcoin",
-          "price": 0.722689,
-          "changePct": 11.62106,
+          "price": 0.720251,
+          "changePct": 10.2954,
           "url": "https://www.coingecko.com/en/coins/worldcoin-wld"
         },
         {
           "symbol": "SKY",
           "name": "Sky",
-          "price": 0.111365,
-          "changePct": 5.1438,
+          "price": 0.11119,
+          "changePct": 4.70189,
           "url": "https://www.coingecko.com/en/coins/sky"
         },
         {
           "symbol": "AAVE",
           "name": "Aave",
-          "price": 232.06,
-          "changePct": 3.76896,
+          "price": 231.39,
+          "changePct": 2.59875,
           "url": "https://www.coingecko.com/en/coins/aave"
-        },
-        {
-          "symbol": "LTC",
-          "name": "Litecoin",
-          "price": 90.11,
-          "changePct": 2.40718,
-          "url": "https://www.coingecko.com/en/coins/litecoin"
-        },
-        {
-          "symbol": "BCH",
-          "name": "Bitcoin Cash",
-          "price": 401.14,
-          "changePct": 2.33094,
-          "url": "https://www.coingecko.com/en/coins/bitcoin-cash"
         },
         {
           "symbol": "FIGR_HELOC",
           "name": "Figure Heloc",
           "price": 1.34,
-          "changePct": 2.18975,
+          "changePct": 2.19731,
           "url": "https://www.coingecko.com/en/coins/figure-heloc"
+        },
+        {
+          "symbol": "LTC",
+          "name": "Litecoin",
+          "price": 89.82,
+          "changePct": 1.8863,
+          "url": "https://www.coingecko.com/en/coins/litecoin"
+        },
+        {
+          "symbol": "BCH",
+          "name": "Bitcoin Cash",
+          "price": 401.2,
+          "changePct": 1.80908,
+          "url": "https://www.coingecko.com/en/coins/bitcoin-cash"
         },
         {
           "symbol": "UNI",
           "name": "Uniswap",
-          "price": 11.65,
-          "changePct": 1.93758,
+          "price": 11.63,
+          "changePct": 1.22114,
           "url": "https://www.coingecko.com/en/coins/uniswap"
         },
         {
           "symbol": "HYPE",
           "name": "Hyperliquid",
-          "price": 114.05,
-          "changePct": 1.24594,
+          "price": 114.11,
+          "changePct": 0.84272,
           "url": "https://www.coingecko.com/en/coins/hyperliquid"
-        },
-        {
-          "symbol": "ADA",
-          "name": "Cardano",
-          "price": 0.316773,
-          "changePct": 0.86374,
-          "url": "https://www.coingecko.com/en/coins/cardano"
-        },
-        {
-          "symbol": "SUI",
-          "name": "Sui",
-          "price": 1.51,
-          "changePct": 0.81953,
-          "url": "https://www.coingecko.com/en/coins/sui"
-        },
-        {
-          "symbol": "LEO",
-          "name": "LEO Token",
-          "price": 11.51,
-          "changePct": 0.69109,
-          "url": "https://www.coingecko.com/en/coins/leo-token"
-        },
-        {
-          "symbol": "M",
-          "name": "MemeCore",
-          "price": 1.35,
-          "changePct": 0.65994,
-          "url": "https://www.coingecko.com/en/coins/memecore"
         },
         {
           "symbol": "ICP",
           "name": "Internet Computer",
           "price": 4.24,
-          "changePct": 0.53808,
+          "changePct": 0.60734,
           "url": "https://www.coingecko.com/en/coins/internet-computer"
         },
         {
-          "symbol": "SOL",
-          "name": "Solana",
-          "price": 152.56,
-          "changePct": 0.24306,
-          "url": "https://www.coingecko.com/en/coins/solana"
+          "symbol": "LEO",
+          "name": "LEO Token",
+          "price": 11.51,
+          "changePct": 0.22315,
+          "url": "https://www.coingecko.com/en/coins/leo-token"
         },
         {
-          "symbol": "ONDO",
-          "name": "Ondo",
-          "price": 0.630705,
-          "changePct": 0.23005,
-          "url": "https://www.coingecko.com/en/coins/ondo-finance"
+          "symbol": "ADA",
+          "name": "Cardano",
+          "price": 0.316349,
+          "changePct": 0.12618,
+          "url": "https://www.coingecko.com/en/coins/cardano"
+        },
+        {
+          "symbol": "M",
+          "name": "MemeCore",
+          "price": 1.34,
+          "changePct": -0.09486,
+          "url": "https://www.coingecko.com/en/coins/memecore"
+        },
+        {
+          "symbol": "TRX",
+          "name": "TRON",
+          "price": 0.428145,
+          "changePct": -0.11314,
+          "url": "https://www.coingecko.com/en/coins/tron"
+        },
+        {
+          "symbol": "USYC",
+          "name": "Circle USYC",
+          "price": 1.46,
+          "changePct": -0.18714,
+          "url": "https://www.coingecko.com/en/coins/hashnote-usyc"
+        },
+        {
+          "symbol": "USDT",
+          "name": "Tether",
+          "price": 1.28,
+          "changePct": -0.20255,
+          "url": "https://www.coingecko.com/en/coins/tether"
         }
       ],
       "losers": [
         {
           "symbol": "RAIN",
           "name": "Rain",
-          "price": 0.01316812,
-          "changePct": -14.76002,
+          "price": 0.01315543,
+          "changePct": -14.98182,
           "url": "https://www.coingecko.com/en/coins/rain"
         },
         {
           "symbol": "GRAM",
           "name": "Gram (prev. Toncoin)",
           "price": 1.91,
-          "changePct": -4.6385,
+          "changePct": -5.01396,
           "url": "https://www.coingecko.com/en/coins/the-open-network"
-        },
-        {
-          "symbol": "MNT",
-          "name": "Mantle",
-          "price": 0.833877,
-          "changePct": -3.55151,
-          "url": "https://www.coingecko.com/en/coins/mantle"
-        },
-        {
-          "symbol": "NEAR",
-          "name": "NEAR Protocol",
-          "price": 6.01,
-          "changePct": -3.28683,
-          "url": "https://www.coingecko.com/en/coins/near"
         },
         {
           "symbol": "PEPE",
           "name": "Pepe",
           "price": 0.00000545,
-          "changePct": -3.09079,
+          "changePct": -3.78007,
           "url": "https://www.coingecko.com/en/coins/pepe"
         },
         {
-          "symbol": "CRO",
-          "name": "Cronos",
-          "price": 0.084519,
-          "changePct": -2.63643,
-          "url": "https://www.coingecko.com/en/coins/crypto-com-chain"
+          "symbol": "NEAR",
+          "name": "NEAR Protocol",
+          "price": 6.01,
+          "changePct": -3.77969,
+          "url": "https://www.coingecko.com/en/coins/near"
         },
         {
-          "symbol": "ENA",
-          "name": "Ethena",
-          "price": 0.300021,
-          "changePct": -2.6012,
-          "url": "https://www.coingecko.com/en/coins/ethena"
+          "symbol": "MNT",
+          "name": "Mantle",
+          "price": 0.833548,
+          "changePct": -3.75489,
+          "url": "https://www.coingecko.com/en/coins/mantle"
         },
         {
           "symbol": "PUMP",
           "name": "Pump.fun",
-          "price": 0.00718421,
-          "changePct": -2.53773,
+          "price": 0.00715597,
+          "changePct": -3.22662,
           "url": "https://www.coingecko.com/en/coins/pump-fun"
+        },
+        {
+          "symbol": "ENA",
+          "name": "Ethena",
+          "price": 0.299635,
+          "changePct": -3.21045,
+          "url": "https://www.coingecko.com/en/coins/ethena"
         },
         {
           "symbol": "TAO",
           "name": "Bittensor",
-          "price": 377.63,
-          "changePct": -2.52723,
+          "price": 377.36,
+          "changePct": -3.10806,
           "url": "https://www.coingecko.com/en/coins/bittensor"
         },
         {
-          "symbol": "LINK",
-          "name": "Chainlink",
-          "price": 17.82,
-          "changePct": -2.18552,
-          "url": "https://www.coingecko.com/en/coins/chainlink"
+          "symbol": "CRO",
+          "name": "Cronos",
+          "price": 0.08444,
+          "changePct": -3.00185,
+          "url": "https://www.coingecko.com/en/coins/crypto-com-chain"
         },
         {
           "symbol": "ASTER",
           "name": "Aster",
-          "price": 0.922845,
-          "changePct": -2.18062,
+          "price": 0.921616,
+          "changePct": -2.77072,
           "url": "https://www.coingecko.com/en/coins/aster-2"
+        },
+        {
+          "symbol": "LINK",
+          "name": "Chainlink",
+          "price": 17.81,
+          "changePct": -2.73783,
+          "url": "https://www.coingecko.com/en/coins/chainlink"
         },
         {
           "symbol": "BTW",
           "name": "Bitway",
           "price": 1.79,
-          "changePct": -2.11014,
+          "changePct": -1.93855,
           "url": "https://www.coingecko.com/en/coins/bitway"
         },
         {
           "symbol": "WLFI",
           "name": "World Liberty Financial",
-          "price": 0.070249,
-          "changePct": -1.54665,
+          "price": 0.070242,
+          "changePct": -1.85984,
           "url": "https://www.coingecko.com/en/coins/world-liberty-financial"
-        },
-        {
-          "symbol": "QNT",
-          "name": "Quant",
-          "price": 316.42,
-          "changePct": -1.54117,
-          "url": "https://www.coingecko.com/en/coins/quant-network"
         },
         {
           "symbol": "DOT",
           "name": "Polkadot",
           "price": 1.49,
-          "changePct": -1.18449,
+          "changePct": -1.72657,
           "url": "https://www.coingecko.com/en/coins/polkadot"
+        },
+        {
+          "symbol": "XMR",
+          "name": "Monero",
+          "price": 690.02,
+          "changePct": -1.57244,
+          "url": "https://www.coingecko.com/en/coins/monero"
         }
       ]
     },
@@ -1203,7 +1203,7 @@
           "symbol": "HE",
           "name": "Lean hog futures · Commodity",
           "price": 70.075,
-          "changePct": -9.580645161290319,
+          "changePct": -10.98761339063673,
           "url": "https://www.cmegroup.com/search.html?q=Lean%20hog%20futures"
         },
         {
