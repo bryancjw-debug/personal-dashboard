@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T03:17:35.213Z",
+  "generatedAt": "2026-11-06T03:22:51.171Z",
   "health": "ok",
   "errors": [],
   "summary": "Captured 179 updates across news, markets, FX, crypto, commodities, and Singapore policy sources.",
@@ -152,7 +152,7 @@
         "url": "https://eservices.mas.gov.sg/statistics/fdanet/BondTreasuryBillsCMTBsAuctions.aspx"
       }
     ],
-    "updatedAt": "2026-11-06T03:17:36.200Z",
+    "updatedAt": "2026-11-06T03:22:53.306Z",
     "source": "MAS pages with public rate tracker fallback"
   },
   "cryptoFocus": [
@@ -160,69 +160,69 @@
       "id": "bitcoin",
       "symbol": "BTC",
       "name": "Bitcoin",
-      "price": 97312,
+      "price": 97249,
       "change1h": 0.0777,
-      "change24h": -5.42032,
+      "change24h": -5.62401,
       "change7d": -0.7307,
       "change30d": -9.9545,
-      "high24h": 103313,
-      "low24h": 96284,
-      "volume24h": 56365438220,
-      "marketCap": 1956528042737,
-      "fdv": 1956528042737,
-      "volumeToMarketCap": 2.8808908939097044,
+      "high24h": 103321,
+      "low24h": 96292,
+      "volume24h": 56337139861,
+      "marketCap": 1955387544583,
+      "fdv": 1955387544583,
+      "volumeToMarketCap": 2.88112400107439,
       "ath": 162824,
-      "athDrawdown": -40.234854812558346,
+      "athDrawdown": -40.2735468972633,
       "circulatingSupply": 20105365,
       "totalSupply": 20105365,
       "marketCapRank": 1,
-      "lastUpdated": "2026-11-06T03:16:56.000Z",
+      "lastUpdated": "2026-11-06T03:21:57.000Z",
       "url": "https://www.coingecko.com/en/coins/bitcoin"
     },
     {
       "id": "ethereum",
       "symbol": "ETH",
       "name": "Ethereum",
-      "price": 2863.82,
+      "price": 2859.97,
       "change1h": 0.133,
-      "change24h": -7.71019,
+      "change24h": -7.96707,
       "change7d": 2.2124,
       "change30d": -15.8928,
-      "high24h": 3112.55,
-      "low24h": 2826.65,
-      "volume24h": 22320225517,
-      "marketCap": 349953307492,
-      "fdv": 349953307492,
-      "volumeToMarketCap": 6.3780581692345475,
+      "high24h": 3112.78,
+      "low24h": 2826.87,
+      "volume24h": 22298457602,
+      "marketCap": 349454378132,
+      "fdv": 349454378132,
+      "volumeToMarketCap": 6.380935251461399,
       "ath": 6489.66,
-      "athDrawdown": -55.87103176437594,
+      "athDrawdown": -55.93035690621697,
       "circulatingSupply": 122192071.85523713,
       "totalSupply": 122192071.85523713,
       "marketCapRank": 2,
-      "lastUpdated": "2026-11-06T03:16:56.000Z",
+      "lastUpdated": "2026-11-06T03:21:57.000Z",
       "url": "https://www.coingecko.com/en/coins/ethereum"
     },
     {
       "id": "hyperliquid",
       "symbol": "HYPE",
       "name": "Hyperliquid",
-      "price": 99.56,
+      "price": 99.33,
       "change1h": 0.6596,
-      "change24h": -7.44748,
+      "change24h": -7.76762,
       "change7d": -12.4794,
       "change30d": -13.6345,
-      "high24h": 107.46,
-      "low24h": 97.62,
-      "volume24h": 1819372667,
-      "marketCap": 23837790435,
-      "fdv": 94744880172,
-      "volumeToMarketCap": 7.632304143125168,
+      "high24h": 107.47,
+      "low24h": 97.63,
+      "volume24h": 1822210317,
+      "marketCap": 23778759126,
+      "fdv": 94510256319,
+      "volumeToMarketCap": 7.663185060853625,
       "ath": 124.99,
-      "athDrawdown": -20.345627650212013,
+      "athDrawdown": -20.52964237138971,
       "circulatingSupply": 239406814.37414145,
       "totalSupply": 951538272.9141414,
       "marketCapRank": 11,
-      "lastUpdated": "2026-11-06T03:16:56.000Z",
+      "lastUpdated": "2026-11-06T03:21:57.000Z",
       "url": "https://www.coingecko.com/en/coins/hyperliquid"
     }
   ],
@@ -453,20 +453,6 @@
           "url": "https://www.sgx.com/securities/equities/S58"
         },
         {
-          "symbol": "F34",
-          "name": "Wilmar · SGX equity",
-          "price": 2.99,
-          "changePct": -0.6644515125124139,
-          "url": "https://www.sgx.com/securities/equities/F34"
-        },
-        {
-          "symbol": "C07",
-          "name": "Jardine Cycle & Carriage · SGX equity",
-          "price": 23.93,
-          "changePct": -0.8288403138106365,
-          "url": "https://www.sgx.com/securities/equities/C07"
-        },
-        {
           "symbol": "C38U",
           "name": "CapitaLand Integrated Commercial Trust · SGX equity",
           "price": 2.35,
@@ -474,32 +460,25 @@
           "url": "https://www.sgx.com/securities/equities/C38U"
         },
         {
-          "symbol": "M44U",
-          "name": "Mapletree Logistics Trust · SGX equity",
-          "price": 1.11,
-          "changePct": -0.8928575648032783,
-          "url": "https://www.sgx.com/securities/equities/M44U"
-        },
-        {
-          "symbol": "Y92",
-          "name": "Thai Beverage · SGX equity",
-          "price": 0.435,
-          "changePct": -1.1363631006607315,
-          "url": "https://www.sgx.com/securities/equities/Y92"
+          "symbol": "F34",
+          "name": "Wilmar · SGX equity",
+          "price": 2.98,
+          "changePct": -0.996677427186293,
+          "url": "https://www.sgx.com/securities/equities/F34"
         },
         {
           "symbol": "O39",
           "name": "OCBC Bank · SGX equity",
-          "price": 27.61,
-          "changePct": -1.1457225265997641,
+          "price": 27.65,
+          "changePct": -1.0025073473554351,
           "url": "https://www.sgx.com/securities/equities/O39"
         },
         {
-          "symbol": "T82U",
-          "name": "Suntec REIT · SGX equity",
-          "price": 1.39,
-          "changePct": -1.418437382613729,
-          "url": "https://www.sgx.com/securities/equities/T82U"
+          "symbol": "C07",
+          "name": "Jardine Cycle & Carriage · SGX equity",
+          "price": 23.84,
+          "changePct": -1.2018200201105542,
+          "url": "https://www.sgx.com/securities/equities/C07"
         },
         {
           "symbol": "C6L",
@@ -518,37 +497,58 @@
         {
           "symbol": "J36",
           "name": "Jardine Matheson · SGX equity",
-          "price": 60.83,
-          "changePct": -1.7920546517906224,
+          "price": 60.89,
+          "changePct": -1.6951867129299816,
           "url": "https://www.sgx.com/securities/equities/J36"
+        },
+        {
+          "symbol": "M44U",
+          "name": "Mapletree Logistics Trust · SGX equity",
+          "price": 1.1,
+          "changePct": -1.7857147038591055,
+          "url": "https://www.sgx.com/securities/equities/M44U"
         },
         {
           "symbol": "D05",
           "name": "DBS Group · SGX equity",
-          "price": 69.62,
-          "changePct": -2.219096932533212,
+          "price": 69.68,
+          "changePct": -2.1348272659999137,
           "url": "https://www.sgx.com/securities/equities/D05"
-        },
-        {
-          "symbol": "C09",
-          "name": "City Developments · SGX equity",
-          "price": 7.27,
-          "changePct": -2.546917388410204,
-          "url": "https://www.sgx.com/securities/equities/C09"
         },
         {
           "symbol": "A17U",
           "name": "CapitaLand Ascendas REIT · SGX equity",
-          "price": 2.25,
-          "changePct": -2.5974001846660313,
+          "price": 2.26,
+          "changePct": -2.164499741042334,
           "url": "https://www.sgx.com/securities/equities/A17U"
+        },
+        {
+          "symbol": "Y92",
+          "name": "Thai Beverage · SGX equity",
+          "price": 0.43,
+          "changePct": -2.2727267431818734,
+          "url": "https://www.sgx.com/securities/equities/Y92"
         },
         {
           "symbol": "U11",
           "name": "UOB · SGX equity",
-          "price": 36.74,
-          "changePct": -2.8299426988301106,
+          "price": 36.75,
+          "changePct": -2.803494670168937,
           "url": "https://www.sgx.com/securities/equities/U11"
+        },
+        {
+          "symbol": "C09",
+          "name": "City Developments · SGX equity",
+          "price": 7.25,
+          "changePct": -2.815013901784585,
+          "url": "https://www.sgx.com/securities/equities/C09"
+        },
+        {
+          "symbol": "T82U",
+          "name": "Suntec REIT · SGX equity",
+          "price": 1.37,
+          "changePct": -2.8368771325041644,
+          "url": "https://www.sgx.com/securities/equities/T82U"
         }
       ],
       "losers": [
@@ -588,38 +588,59 @@
           "url": "https://www.sgx.com/securities/equities/Z74"
         },
         {
-          "symbol": "U11",
-          "name": "UOB · SGX equity",
-          "price": 36.74,
-          "changePct": -2.8299426988301106,
-          "url": "https://www.sgx.com/securities/equities/U11"
-        },
-        {
-          "symbol": "A17U",
-          "name": "CapitaLand Ascendas REIT · SGX equity",
-          "price": 2.25,
-          "changePct": -2.5974001846660313,
-          "url": "https://www.sgx.com/securities/equities/A17U"
+          "symbol": "T82U",
+          "name": "Suntec REIT · SGX equity",
+          "price": 1.37,
+          "changePct": -2.8368771325041644,
+          "url": "https://www.sgx.com/securities/equities/T82U"
         },
         {
           "symbol": "C09",
           "name": "City Developments · SGX equity",
-          "price": 7.27,
-          "changePct": -2.546917388410204,
+          "price": 7.25,
+          "changePct": -2.815013901784585,
           "url": "https://www.sgx.com/securities/equities/C09"
+        },
+        {
+          "symbol": "U11",
+          "name": "UOB · SGX equity",
+          "price": 36.75,
+          "changePct": -2.803494670168937,
+          "url": "https://www.sgx.com/securities/equities/U11"
+        },
+        {
+          "symbol": "Y92",
+          "name": "Thai Beverage · SGX equity",
+          "price": 0.43,
+          "changePct": -2.2727267431818734,
+          "url": "https://www.sgx.com/securities/equities/Y92"
+        },
+        {
+          "symbol": "A17U",
+          "name": "CapitaLand Ascendas REIT · SGX equity",
+          "price": 2.26,
+          "changePct": -2.164499741042334,
+          "url": "https://www.sgx.com/securities/equities/A17U"
         },
         {
           "symbol": "D05",
           "name": "DBS Group · SGX equity",
-          "price": 69.62,
-          "changePct": -2.219096932533212,
+          "price": 69.68,
+          "changePct": -2.1348272659999137,
           "url": "https://www.sgx.com/securities/equities/D05"
+        },
+        {
+          "symbol": "M44U",
+          "name": "Mapletree Logistics Trust · SGX equity",
+          "price": 1.1,
+          "changePct": -1.7857147038591055,
+          "url": "https://www.sgx.com/securities/equities/M44U"
         },
         {
           "symbol": "J36",
           "name": "Jardine Matheson · SGX equity",
-          "price": 60.83,
-          "changePct": -1.7920546517906224,
+          "price": 60.89,
+          "changePct": -1.6951867129299816,
           "url": "https://www.sgx.com/securities/equities/J36"
         },
         {
@@ -635,27 +656,6 @@
           "price": 6.93,
           "changePct": -1.4224780487037294,
           "url": "https://www.sgx.com/securities/equities/C6L"
-        },
-        {
-          "symbol": "T82U",
-          "name": "Suntec REIT · SGX equity",
-          "price": 1.39,
-          "changePct": -1.418437382613729,
-          "url": "https://www.sgx.com/securities/equities/T82U"
-        },
-        {
-          "symbol": "O39",
-          "name": "OCBC Bank · SGX equity",
-          "price": 27.61,
-          "changePct": -1.1457225265997641,
-          "url": "https://www.sgx.com/securities/equities/O39"
-        },
-        {
-          "symbol": "Y92",
-          "name": "Thai Beverage · SGX equity",
-          "price": 0.435,
-          "changePct": -1.1363631006607315,
-          "url": "https://www.sgx.com/securities/equities/Y92"
         }
       ]
     },
@@ -690,18 +690,18 @@
           "url": "https://www.sgx.com/securities/etf/CFA"
         },
         {
-          "symbol": "CLR",
-          "name": "Lion-OCBC Securities Singapore Low Carbon ETF · SG ETF",
-          "price": 0.772,
-          "changePct": 0.39011784435188884,
-          "url": "https://www.sgx.com/securities/etf/CLR"
-        },
-        {
           "symbol": "A35",
           "name": "ABF Singapore Bond Index Fund · SG ETF",
           "price": 1.131,
           "changePct": 0.26595558185862966,
           "url": "https://www.sgx.com/securities/etf/A35"
+        },
+        {
+          "symbol": "CLR",
+          "name": "Lion-OCBC Securities Singapore Low Carbon ETF · SG ETF",
+          "price": 0.771,
+          "changePct": 0.26007883160013756,
+          "url": "https://www.sgx.com/securities/etf/CLR"
         },
         {
           "symbol": "TLT",
@@ -748,8 +748,8 @@
         {
           "symbol": "G3B",
           "name": "Nikko AM Singapore STI ETF · SG ETF",
-          "price": 5.345,
-          "changePct": -1.92660207229062,
+          "price": 5.35,
+          "changePct": -1.8348589498138126,
           "url": "https://www.sgx.com/securities/etf/G3B"
         },
         {
@@ -820,8 +820,8 @@
         {
           "symbol": "G3B",
           "name": "Nikko AM Singapore STI ETF · SG ETF",
-          "price": 5.345,
-          "changePct": -1.92660207229062,
+          "price": 5.35,
+          "changePct": -1.8348589498138126,
           "url": "https://www.sgx.com/securities/etf/G3B"
         },
         {
@@ -867,11 +867,11 @@
           "url": "https://www.nasdaq.com/market-activity/etf/tlt"
         },
         {
-          "symbol": "A35",
-          "name": "ABF Singapore Bond Index Fund · SG ETF",
-          "price": 1.131,
-          "changePct": 0.26595558185862966,
-          "url": "https://www.sgx.com/securities/etf/A35"
+          "symbol": "CLR",
+          "name": "Lion-OCBC Securities Singapore Low Carbon ETF · SG ETF",
+          "price": 0.771,
+          "changePct": 0.26007883160013756,
+          "url": "https://www.sgx.com/securities/etf/CLR"
         }
       ]
     },
@@ -880,213 +880,213 @@
         {
           "symbol": "BTW",
           "name": "Bitway",
-          "price": 1.42,
-          "changePct": 6.74957,
+          "price": 1.44,
+          "changePct": 7.19016,
           "url": "https://www.coingecko.com/en/coins/bitway"
         },
         {
           "symbol": "RAIN",
           "name": "Rain",
-          "price": 0.00786674,
-          "changePct": 2.8783,
+          "price": 0.00785198,
+          "changePct": 2.70821,
           "url": "https://www.coingecko.com/en/coins/rain"
         },
         {
-          "symbol": "WLFI",
-          "name": "World Liberty Financial",
-          "price": 0.0614,
-          "changePct": 0.80073,
-          "url": "https://www.coingecko.com/en/coins/world-liberty-financial"
+          "symbol": "U",
+          "name": "United Stables",
+          "price": 1.28,
+          "changePct": 0.3374,
+          "url": "https://www.coingecko.com/en/coins/united-stables"
         },
         {
           "symbol": "USDD",
           "name": "USDD",
           "price": 1.28,
-          "changePct": 0.31182,
+          "changePct": 0.32158,
           "url": "https://www.coingecko.com/en/coins/usdd"
         },
         {
           "symbol": "USDF",
           "name": "Falcon USD",
           "price": 1.27,
-          "changePct": 0.31074,
+          "changePct": 0.31977,
           "url": "https://www.coingecko.com/en/coins/falcon-finance"
-        },
-        {
-          "symbol": "U",
-          "name": "United Stables",
-          "price": 1.28,
-          "changePct": 0.29303,
-          "url": "https://www.coingecko.com/en/coins/united-stables"
         },
         {
           "symbol": "RLUSD",
           "name": "Ripple USD",
           "price": 1.28,
-          "changePct": 0.26384,
+          "changePct": 0.26779,
           "url": "https://www.coingecko.com/en/coins/ripple-usd"
-        },
-        {
-          "symbol": "DAI",
-          "name": "Dai",
-          "price": 1.28,
-          "changePct": 0.25417,
-          "url": "https://www.coingecko.com/en/coins/dai"
-        },
-        {
-          "symbol": "USDS",
-          "name": "USDS",
-          "price": 1.28,
-          "changePct": 0.24918,
-          "url": "https://www.coingecko.com/en/coins/usds"
-        },
-        {
-          "symbol": "PYUSD",
-          "name": "PayPal USD",
-          "price": 1.28,
-          "changePct": 0.24789,
-          "url": "https://www.coingecko.com/en/coins/paypal-usd"
         },
         {
           "symbol": "USYC",
           "name": "Circle USYC",
           "price": 1.46,
-          "changePct": 0.24646,
+          "changePct": 0.26418,
           "url": "https://www.coingecko.com/en/coins/hashnote-usyc"
         },
         {
           "symbol": "USDG",
           "name": "Global Dollar",
           "price": 1.28,
-          "changePct": 0.23993,
+          "changePct": 0.25915,
           "url": "https://www.coingecko.com/en/coins/global-dollar"
-        },
-        {
-          "symbol": "LEO",
-          "name": "LEO Token",
-          "price": 11.97,
-          "changePct": 0.23808,
-          "url": "https://www.coingecko.com/en/coins/leo-token"
         },
         {
           "symbol": "BUIDL",
           "name": "BlackRock USD Institutional Digital Liquidity Fund",
           "price": 1.28,
-          "changePct": 0.23675,
+          "changePct": 0.25448,
           "url": "https://www.coingecko.com/en/coins/blackrock-usd-institutional-digital-liquidity-fund"
+        },
+        {
+          "symbol": "DAI",
+          "name": "Dai",
+          "price": 1.28,
+          "changePct": 0.24706,
+          "url": "https://www.coingecko.com/en/coins/dai"
+        },
+        {
+          "symbol": "PYUSD",
+          "name": "PayPal USD",
+          "price": 1.28,
+          "changePct": 0.24532,
+          "url": "https://www.coingecko.com/en/coins/paypal-usd"
+        },
+        {
+          "symbol": "USDS",
+          "name": "USDS",
+          "price": 1.28,
+          "changePct": 0.24098,
+          "url": "https://www.coingecko.com/en/coins/usds"
+        },
+        {
+          "symbol": "LEO",
+          "name": "LEO Token",
+          "price": 11.97,
+          "changePct": 0.23205,
+          "url": "https://www.coingecko.com/en/coins/leo-token"
         },
         {
           "symbol": "USDC",
           "name": "USDC",
           "price": 1.28,
-          "changePct": 0.2156,
+          "changePct": 0.22924,
           "url": "https://www.coingecko.com/en/coins/usd-coin"
+        },
+        {
+          "symbol": "USDT",
+          "name": "Tether",
+          "price": 1.28,
+          "changePct": 0.21373,
+          "url": "https://www.coingecko.com/en/coins/tether"
         }
       ],
       "losers": [
         {
           "symbol": "ENA",
           "name": "Ethena",
-          "price": 0.209779,
-          "changePct": -10.32449,
+          "price": 0.209059,
+          "changePct": -10.71459,
           "url": "https://www.coingecko.com/en/coins/ethena"
-        },
-        {
-          "symbol": "ONDO",
-          "name": "Ondo",
-          "price": 0.478847,
-          "changePct": -9.48621,
-          "url": "https://www.coingecko.com/en/coins/ondo-finance"
         },
         {
           "symbol": "UNI",
           "name": "Uniswap",
-          "price": 8.92,
-          "changePct": -9.46203,
+          "price": 8.91,
+          "changePct": -9.79844,
           "url": "https://www.coingecko.com/en/coins/uniswap"
+        },
+        {
+          "symbol": "ONDO",
+          "name": "Ondo",
+          "price": 0.478981,
+          "changePct": -9.53262,
+          "url": "https://www.coingecko.com/en/coins/ondo-finance"
         },
         {
           "symbol": "PUMP",
           "name": "Pump.fun",
-          "price": 0.00507484,
-          "changePct": -8.81604,
+          "price": 0.00505572,
+          "changePct": -9.23032,
           "url": "https://www.coingecko.com/en/coins/pump-fun"
         },
         {
           "symbol": "NEAR",
           "name": "NEAR Protocol",
-          "price": 4.74,
-          "changePct": -8.53546,
+          "price": 4.73,
+          "changePct": -8.84586,
           "url": "https://www.coingecko.com/en/coins/near"
         },
         {
           "symbol": "ETH",
           "name": "Ethereum",
-          "price": 2863.82,
-          "changePct": -7.76496,
+          "price": 2859.97,
+          "changePct": -7.97519,
           "url": "https://www.coingecko.com/en/coins/ethereum"
         },
         {
           "symbol": "HYPE",
           "name": "Hyperliquid",
-          "price": 99.56,
-          "changePct": -7.49419,
+          "price": 99.33,
+          "changePct": -7.85964,
           "url": "https://www.coingecko.com/en/coins/hyperliquid"
-        },
-        {
-          "symbol": "XLM",
-          "name": "Stellar",
-          "price": 0.199335,
-          "changePct": -7.48912,
-          "url": "https://www.coingecko.com/en/coins/stellar"
         },
         {
           "symbol": "SUI",
           "name": "Sui",
           "price": 1.1,
-          "changePct": -7.47343,
+          "changePct": -7.84476,
           "url": "https://www.coingecko.com/en/coins/sui"
+        },
+        {
+          "symbol": "XLM",
+          "name": "Stellar",
+          "price": 0.199116,
+          "changePct": -7.56495,
+          "url": "https://www.coingecko.com/en/coins/stellar"
         },
         {
           "symbol": "XRP",
           "name": "XRP",
           "price": 1.55,
-          "changePct": -7.24389,
+          "changePct": -7.48246,
           "url": "https://www.coingecko.com/en/coins/ripple"
         },
         {
           "symbol": "QNT",
           "name": "Quant",
-          "price": 243.34,
-          "changePct": -7.23533,
+          "price": 243.04,
+          "changePct": -7.34131,
           "url": "https://www.coingecko.com/en/coins/quant-network"
         },
         {
           "symbol": "TAO",
           "name": "Bittensor",
-          "price": 281.73,
-          "changePct": -7.04455,
+          "price": 281.26,
+          "changePct": -7.31373,
           "url": "https://www.coingecko.com/en/coins/bittensor"
         },
         {
           "symbol": "ADA",
           "name": "Cardano",
-          "price": 0.236598,
-          "changePct": -6.9443,
+          "price": 0.236348,
+          "changePct": -6.97093,
           "url": "https://www.coingecko.com/en/coins/cardano"
         },
         {
           "symbol": "LTC",
           "name": "Litecoin",
-          "price": 67.1,
-          "changePct": -6.7886,
+          "price": 67.06,
+          "changePct": -6.83632,
           "url": "https://www.coingecko.com/en/coins/litecoin"
         },
         {
           "symbol": "SOL",
           "name": "Solana",
-          "price": 115.28,
-          "changePct": -6.56147,
+          "price": 115.12,
+          "changePct": -6.79085,
           "url": "https://www.coingecko.com/en/coins/solana"
         }
       ]
@@ -1096,37 +1096,30 @@
         {
           "symbol": "NG",
           "name": "Natural gas futures · Commodity",
-          "price": 2.992,
-          "changePct": 1.5269756664191598,
+          "price": 2.991,
+          "changePct": 1.4930428536964298,
           "url": "https://www.cmegroup.com/search.html?q=Natural%20gas%20futures"
         },
         {
           "symbol": "BZ",
           "name": "Brent crude futures · Commodity",
-          "price": 99.45,
-          "changePct": 1.180180154306427,
+          "price": 99.59,
+          "changePct": 1.3226158025880053,
           "url": "https://www.cmegroup.com/search.html?q=Brent%20crude%20futures"
         },
         {
           "symbol": "RB",
           "name": "RBOB gasoline futures · Commodity",
-          "price": 2.7878,
-          "changePct": 0.8829674130799712,
+          "price": 2.7892,
+          "changePct": 0.9336296393438143,
           "url": "https://www.cmegroup.com/search.html?q=RBOB%20gasoline%20futures"
         },
         {
           "symbol": "CL",
           "name": "WTI crude futures · Commodity",
-          "price": 91.28,
-          "changePct": 0.8395971996446259,
+          "price": 91.35,
+          "changePct": 0.9169281790921986,
           "url": "https://www.cmegroup.com/search.html?q=WTI%20crude%20futures"
-        },
-        {
-          "symbol": "ZS",
-          "name": "Soybean futures · Commodity",
-          "price": 1189.5,
-          "changePct": 0.7197290431837425,
-          "url": "https://www.cmegroup.com/search.html?q=Soybean%20futures"
         },
         {
           "symbol": "SB",
@@ -1134,6 +1127,13 @@
           "price": 18.6,
           "changePct": 0.7038478152596028,
           "url": "https://www.cmegroup.com/search.html?q=Sugar%20futures"
+        },
+        {
+          "symbol": "ZS",
+          "name": "Soybean futures · Commodity",
+          "price": 1189.25,
+          "changePct": 0.6985605419136325,
+          "url": "https://www.cmegroup.com/search.html?q=Soybean%20futures"
         },
         {
           "symbol": "CT",
@@ -1145,15 +1145,15 @@
         {
           "symbol": "HO",
           "name": "Heating oil futures · Commodity",
-          "price": 4.3633,
-          "changePct": 0.2619522284102358,
+          "price": 4.3623,
+          "changePct": 0.2389737597676133,
           "url": "https://www.cmegroup.com/search.html?q=Heating%20oil%20futures"
         },
         {
           "symbol": "PL",
           "name": "Platinum futures · Commodity",
-          "price": 1524.4,
-          "changePct": -0.000001601552218449657,
+          "price": 1524.6,
+          "changePct": 0.013118314270184702,
           "url": "https://www.cmegroup.com/search.html?q=Platinum%20futures"
         },
         {
@@ -1166,15 +1166,15 @@
         {
           "symbol": "HG",
           "name": "Copper futures · Commodity",
-          "price": 6.244,
-          "changePct": -0.08001396097383193,
+          "price": 6.245,
+          "changePct": -0.0640114007497673,
           "url": "https://www.cmegroup.com/search.html?q=Copper%20futures"
         },
         {
           "symbol": "ZW",
           "name": "Wheat futures · Commodity",
-          "price": 595.25,
-          "changePct": -0.6675010429703796,
+          "price": 595,
+          "changePct": -0.7092198581560284,
           "url": "https://www.cmegroup.com/search.html?q=Wheat%20futures"
         },
         {
@@ -1187,15 +1187,15 @@
         {
           "symbol": "SI",
           "name": "Silver futures · Commodity",
-          "price": 51.74,
-          "changePct": -0.9438510000461525,
+          "price": 51.76,
+          "changePct": -0.9055610313565763,
           "url": "https://www.cmegroup.com/search.html?q=Silver%20futures"
         },
         {
           "symbol": "PA",
           "name": "Palladium futures · Commodity",
-          "price": 1029.5,
-          "changePct": -1.1047070124879923,
+          "price": 1030.5,
+          "changePct": -1.0086455331412103,
           "url": "https://www.cmegroup.com/search.html?q=Palladium%20futures"
         }
       ],
@@ -1224,22 +1224,22 @@
         {
           "symbol": "GC",
           "name": "Gold futures · Commodity",
-          "price": 4067.3,
-          "changePct": -1.1231311535188966,
+          "price": 4063.1,
+          "changePct": -1.2252339856569852,
           "url": "https://www.cmegroup.com/search.html?q=Gold%20futures"
         },
         {
           "symbol": "PA",
           "name": "Palladium futures · Commodity",
-          "price": 1029.5,
-          "changePct": -1.1047070124879923,
+          "price": 1030.5,
+          "changePct": -1.0086455331412103,
           "url": "https://www.cmegroup.com/search.html?q=Palladium%20futures"
         },
         {
           "symbol": "SI",
           "name": "Silver futures · Commodity",
-          "price": 51.74,
-          "changePct": -0.9438510000461525,
+          "price": 51.76,
+          "changePct": -0.9055610313565763,
           "url": "https://www.cmegroup.com/search.html?q=Silver%20futures"
         },
         {
@@ -1252,15 +1252,15 @@
         {
           "symbol": "ZW",
           "name": "Wheat futures · Commodity",
-          "price": 595.25,
-          "changePct": -0.6675010429703796,
+          "price": 595,
+          "changePct": -0.7092198581560284,
           "url": "https://www.cmegroup.com/search.html?q=Wheat%20futures"
         },
         {
           "symbol": "HG",
           "name": "Copper futures · Commodity",
-          "price": 6.244,
-          "changePct": -0.08001396097383193,
+          "price": 6.245,
+          "changePct": -0.0640114007497673,
           "url": "https://www.cmegroup.com/search.html?q=Copper%20futures"
         },
         {
@@ -1273,15 +1273,15 @@
         {
           "symbol": "PL",
           "name": "Platinum futures · Commodity",
-          "price": 1524.4,
-          "changePct": -0.000001601552218449657,
+          "price": 1524.6,
+          "changePct": 0.013118314270184702,
           "url": "https://www.cmegroup.com/search.html?q=Platinum%20futures"
         },
         {
           "symbol": "HO",
           "name": "Heating oil futures · Commodity",
-          "price": 4.3633,
-          "changePct": 0.2619522284102358,
+          "price": 4.3623,
+          "changePct": 0.2389737597676133,
           "url": "https://www.cmegroup.com/search.html?q=Heating%20oil%20futures"
         },
         {
@@ -1292,18 +1292,18 @@
           "url": "https://www.cmegroup.com/search.html?q=Cotton%20futures"
         },
         {
+          "symbol": "ZS",
+          "name": "Soybean futures · Commodity",
+          "price": 1189.25,
+          "changePct": 0.6985605419136325,
+          "url": "https://www.cmegroup.com/search.html?q=Soybean%20futures"
+        },
+        {
           "symbol": "SB",
           "name": "Sugar futures · Commodity",
           "price": 18.6,
           "changePct": 0.7038478152596028,
           "url": "https://www.cmegroup.com/search.html?q=Sugar%20futures"
-        },
-        {
-          "symbol": "ZS",
-          "name": "Soybean futures · Commodity",
-          "price": 1189.5,
-          "changePct": 0.7197290431837425,
-          "url": "https://www.cmegroup.com/search.html?q=Soybean%20futures"
         }
       ]
     }
